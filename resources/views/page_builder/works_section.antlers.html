@@ -1,0 +1,147 @@
+
+{{ if is_homepage }}
+
+
+    <!-- start How we help section -->
+    <section class="how-we-help-section bg-tertiary content__item">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 p-0">
+                    <div class="how-we-help-img item-overflow">
+                        {{ main_image }} <img src="{{ url }}" alt="how we help img" class="content-item-zoom object-cover">{{ /main_image }}
+                        <div class="d-none content-item-y">d none</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0">
+                    <div class="how-we-help-content">
+                        <!-- start section heading -->
+                        <div class="section-heading">
+                            <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                            <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+                        </div>
+                        <!-- end section heading -->
+
+                        <!-- start How we help service -->
+                        <div class="how-we-help-list">
+                        {{ help_steps }}
+                            <div class="how-we-help-service">
+                                <div class="icon">
+                                    {{ icon }} <img src="{{ url }}" alt="business analytics icon" class="object-cover">{{ /icon }}
+                                </div>
+                                <div class="content">
+                                    <h6>{{ index + 1 }}. {{ title }}</h6>
+                                    <p>{{ description }}</p>
+                                </div>
+                            </div>
+                        {{ /help_steps }}
+                        </div>
+                        <!-- end How we help service -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+{{ /if }}
+
+{{ if segment_1 == 'home-two' }}
+
+    <section class="how-we-help-section-style-2 bg-tertiary content__item">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 p-0">
+                    <div class="how-we-help-img item-overflow">
+                         {{ main_image }} <img src="{{ url }}" alt="how we help img" class="content-item-zoom object-cover">{{ /main_image }}
+                        <div class="d-none content-item-y">d none</div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-0">
+                    <div class="how-we-help-content">
+                        <!-- start section heading -->
+                        <div class="section-heading">
+                            <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                            <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+                        </div>
+                        <!-- end section heading -->
+
+                        <!-- how we help tabs list -->
+                        <div class="how-we-help-tabs-list">
+                            <!-- tabs list -->
+                            <ul class="tabs-list">
+                                {{ help_steps }}
+                                <li class="tab-link {{ if first }}current{{ /if }}" data-tab="{{ id }}">{{ tab_type }}</li>
+                               
+                                {{ /help_steps }}
+                            </ul>
+                             {{ help_steps }}
+                            <!-- Business analytics content list -->
+                            <div class="tabs-content {{ if first }}current{{ /if }}" id="{{ id }}">
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <p>{{ description }}</p>
+                                  </div>
+                                  <div class="col-12 col-md-4">
+                                    <div class="how-we-help-feature-img">
+                                        {{ icon }}<img src="{{ url }}" alt="company mission img" class="object-cover">{{ /icon }}
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <div class="how-we-help-feature-content">
+                                        <p>{{ title }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 mt-md-5">
+                                    <a href="/about-us" class="btn btn-primary btn-style-2">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        {{ /help_steps }}
+
+                    </div>
+                    <!-- end how we help tabs list -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ /if }}
+
+
+
+{{ if segment_1 == 'home-three' }}
+
+    <section class="how-we-work-section-style-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start section heading -->
+            <div class="section-heading bottom-55">
+              <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- How We Work grid -->
+          {{ help_steps }}
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="how-we-work-grid">
+              <div class="how-we-work-front">
+                <div class="how-we-work-number">{{ index + 1 }}</div>
+                <div class="how-we-work-icon">
+                  {{ icon }}<img src="{{ url }}" alt="Task analysis icon" class="object-cover">{{ /icon }}
+                </div>
+                <h6>{{ title }}</h6>
+                <p>{{ description }}</p>
+              </div>
+            </div>
+          </div>
+          {{ /help_steps }}
+          
+
+        </div>
+      </div>
+    </section>
+{{ /if }}

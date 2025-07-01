@@ -1,0 +1,15 @@
+title: 'Related Portfolio Section'
+fields:
+  -
+    handle: sub_title
+    field:
+      type: text
+      display: 'Sub Title'
+  -
+    handle: portfolios
+    field:
+      mode: select
+      collections:
+        - portfolio
+      type: entries
+      display: Portfolios

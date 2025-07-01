@@ -1,0 +1,56 @@
+<!-- start why choose section -->
+    <section class="inner-why-choose-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <!-- why choose content -->
+            <div class="why-choose-content">
+              <h5 class="sub-title">{{section_subtitle}}</h5>
+              <h2 class="title">{{section_title}}</h2>
+
+              <!--img group -->
+              <div class="why-choose-img-group">
+                {{ gallery_images }}
+                <div class="img-group-box"><img src="{{ url }}" alt="projects gallery" class="object-cover"></div>
+                {{ /gallery_images }}
+              
+              </div>
+              <!-- ul list -->
+              <ul class="ul-list list-style-2">
+                {{ bullet_points }}
+                <li>{{ value }}</li>
+                {{ /bullet_points }}
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="why-choose-desc">
+              <p>{{ description }}</p>
+            </div>
+
+            <!-- accordion  -->
+            <div class="accordion">
+              {{ accordion_items }}
+              <!-- accordion list  -->
+              <div class="accordion-list">
+                <!-- accordion tabs  -->
+                <div class="accordion-tabs {{ if first }}active{{ /if }}">
+                  <h3>{{ accordion_heading }}</h3>
+                </div>
+                <!-- accordion content  -->
+                <div class="accordion-content  {{ if first }}active{{ /if }}">
+                  <p>{{ accordion_content }}</p>
+                </div>
+              </div>
+
+              {{ /accordion_items }}
+              
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Image with text overlay section -->

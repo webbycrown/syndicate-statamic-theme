@@ -1,0 +1,36 @@
+{{ form:online_consult id="onlineConsultForm" ajax="true" }}
+{{ csrf }}
+
+{{ fields }}
+
+{{ if index == 0 || index == 2 }}
+<div class="form-row">
+  <div class="col-12 col-sm-6">
+    {{ /if }}
+    {{ if index == 1 || index == 3 }}
+    <div class="col-12 col-sm-6">
+      {{/if}}
+      <div class="form-group">
+
+        {{ if type == 'textarea' }}
+        <textarea id="{{ handle }}" class="form-control" placeholder="{{ display }}" name="{{ handle }}"></textarea>
+        {{ else }}
+        <input type="{{ type }}" name="{{ handle }}" id="{{ handle }}" class="form-control" placeholder="{{ display }}">
+
+        {{ /if }}
+
+
+        <div class="field-error text-danger" data-error-for="{{ handle }}">{{ error }}</div>
+
+      </div>
+      {{ if index == 0 || index == 2 }}
+    </div>
+    {{ /if }}
+    {{ if index == 1 || index == 3 }}
+  </div>
+</div>
+{{ /if }}
+{{ /fields }}
+<button type="submit" class="btn btn-primary">Submit</button>
+ <p class="form-message"></p>
+{{ /form:online_consult }}

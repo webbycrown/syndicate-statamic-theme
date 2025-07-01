@@ -1,0 +1,216 @@
+
+{{ if is_homepage }}
+
+<!-- start about company section -->
+<section class="about-company-section">
+<!-- start about shape -->
+<div class="about-shape-line">
+    <span class="line1"></span>
+    <span class="line2"></span>
+    <span class="line3"></span>
+    <span class="line4"></span>
+</div>
+<!-- end about shape -->
+
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+<!-- about image gallery -->
+<div class="about-image-gallery">
+<!-- about image -->
+<div class="about-image image-1">
+   {{ image_1 }} <img src="{{ url }}" alt="about image 1" class="object-cover">{{ /image_1 }}
+</div>
+<!-- about image -->
+<div class="about-image image-2">
+    {{ image_2 }}<img src="{{ url }}" alt="about image 2" class="object-cover">{{ /image_2 }}
+</div>
+<!-- about video icon -->
+<div class="about-video-icon">
+    <a href="{{ video_url }}" class="circle-icon popup-youtube"><span><i class="fa-solid fa-play"></i></span></a>
+</div>
+
+</div>
+</div>
+<div class="col-12 col-lg-6">
+<!-- about info -->
+<div class="about-info">
+<!-- start section heading -->
+<div class="section-heading">
+    <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+    <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+</div>
+<!-- end section heading -->
+
+<!-- about description -->
+<p>{{ description }}</p>
+
+<!-- about feature list -->
+<div class="about-feature-list">
+	{{ feature_list }}
+    <div class="our-feature">
+        <div class="about-feature-icon circle-icon">
+            <span>{{ icon }}<img src="{{ url }}" alt="Moneyback Gurentee" class="object-cover">{{ /icon }}</span>
+        </div>
+        <div class="about-feature-content">
+            <h5>{{ title }}</h5>
+        </div>
+    </div>
+    {{ /feature_list }}
+   
+</div>
+
+<div class="read-more-btn">
+    <a href="{{ button_link }}" class="btn btn-primary">{{ button_text }}</a>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+    {{ /if }}
+
+
+     {{ if segment_1 == 'home-two' }}
+<section class="about-company-section-style-2 content__item">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start section heading -->
+                <div class="section-heading">
+                  <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                  <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+                </div>
+                <!-- end section heading -->
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 pe-xl-5">
+            <!-- about image gallery -->
+            <div class="about-image-gallery-style-2">
+              <!-- about image -->
+              <div class="about-image image-1 item-overflow">
+                {{ image_1 }} <img src="{{ url }}" alt="about image 1" class="content-item-zoom object-cover">{{ /image_1 }}
+                
+              </div>
+              <!-- about image -->
+              <div class="about-image image-2 content-item-y">
+               {{ image_2 }}<img src="{{ url }}" alt="about image 2 " class="object-cover">{{ /image_2 }}
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 ps-xl-5">
+             <!-- about info -->
+              <div class="about-info-style-2">
+                <!-- about video -->
+                <div class="about-video-style-2">
+                  <div class="about-video-dec">
+                    <p>{{ description }}</p>
+                  </div>
+                  <div class="about-video-box">
+                    {{ image_3 }}<img src="{{ url }}" alt="about video image" class="object-cover"> {{ /image_3 }}
+                     <!-- about video icon -->
+                    <div class="about-video-icon">
+                      <a href="{{ video_url }}" class="circle-icon"><span><i class="fa-solid fa-play"></i></span></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- about description -->
+                <p>{{ _about_image_info }}</p>
+                <!-- about feature list -->
+                <div class="about-feature-list">
+                  <div class="our-feature">
+                    <div class="about-feature-icon circle-icon">
+                      <span><img src="{{ theme:asset }}assets/images/phone-icon-dark.svg" alt="phone icon" class="object-cover"></span>
+                    </div>
+                    <div class="about-feature-content">
+                      <p>{{ phone_text }}</p>
+                    </div>
+                  </div>
+                  <div class="our-feature">
+                    <a href="tel:{{ phone_number }}" class="call-booking">{{ phone_number }}</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ /if }}
+
+    
+    {{ if segment_1 == 'about-us' || segment_1 == 'home-three'  }}
+    <section class="about-company-section-style-3 content__item">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- start section heading -->
+        <div class="section-heading bottom-55">
+          <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1000"> {{ section_title }}</h2>
+        </div>
+        <!-- end section heading -->
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-12 col-lg-6 order-2 order-md-1">
+       <!-- about info -->
+       <div class="about-info-style-3">
+        <!-- about description -->
+        {{ description }}
+        <!-- about feature list -->
+        <div class="about-feature-list">
+            {{ feature_list }}
+            
+          <div class="our-feature">
+            <div class="about-feature-icon">
+              <span>{{ icon }} <img src="{{ url }}" alt="Business Planning icon" class="object-cover">{{ /icon }}</span>
+            </div>
+            <div class="about-feature-content">
+              <p>{{ description }}</p>
+            </div>
+          </div>
+          {{ /feature_list }}
+          
+          <div class="bottom-contact-btn">
+            <a href="/contact-us" class="btn btn-secondary btn-style-3">Contact Us Now! <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 order-1 order-md-2">
+      <!-- about image gallery -->
+      <div class="about-image-gallery-style-3">
+        <!-- about image -->
+        <div class="about-image-style-3 item-overflow">
+          {{ image_1 }} <img src="{{ url }}" alt="about image 1" class="content-item-zoom object-cover">{{ /image_1 }}
+        </div>
+        <!-- about image -->
+        <div class="about-image-small content-item-y">
+           {{ image_2 }}<img src="{{ url }}" alt="about image 2" class="object-cover">{{ /image_2 }}
+        </div>
+
+        <div class="about-image-info">
+          <p>{{ about_image_info }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{{ /if }}
+    
+
+<!-- end about company section -->
+
+
+<!-- start about company section -->
+
+<!-- end about company section -->
+

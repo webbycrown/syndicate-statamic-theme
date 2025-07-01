@@ -1,0 +1,138 @@
+title: 'Team Member'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Name
+          -
+            handle: position
+            field:
+              type: text
+              display: Position
+          -
+            handle: image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: bio
+            field:
+              type: textarea
+              display: Bio
+          -
+            handle: short_description
+            field:
+              type: textarea
+              display: 'Short Description'
+          -
+            handle: additional_info
+            field:
+              type: textarea
+              display: 'Additional Info'
+          -
+            handle: socials
+            field:
+              type: grid
+              display: Socials
+              fields:
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+                    default: 'javascript:;'
+          -
+            handle: phone_numbers
+            field:
+              type: grid
+              display: 'Phone Numbers'
+              fields:
+                -
+                  handle: number
+                  field:
+                    type: text
+                    display: Number
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+              validate:
+                - email
+          -
+            handle: address
+            field:
+              type: textarea
+              display: Address
+          -
+            handle: skills
+            field:
+              type: replicator
+              display: Skills
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: label
+                          field:
+                            type: text
+                            display: label
+                        -
+                          handle: integer
+                          field:
+                            type: integer
+                            display: Integer
+          -
+            handle: qualification_desc
+            field:
+              type: markdown
+              display: 'Qualification Desc'
+          -
+            handle: experience_desc
+            field:
+              type: markdown
+              display: 'Experience Desc'
+          -
+            handle: experience_bullets
+            field:
+              type: array
+              display: Experience
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

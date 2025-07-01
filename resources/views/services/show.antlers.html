@@ -1,0 +1,18 @@
+{{ if get:slug }}
+
+{{ collection:business_services }}
+
+{{ if slug == get:slug }}
+{{ partial:services-detail slug="{get:slug}" }}
+{{ /if }}
+
+{{ /collection:business_services }}
+
+{{ else }}
+
+ 
+{{ partial:services-detail slug="{segment_2}" }}
+
+
+
+{{ /if }}

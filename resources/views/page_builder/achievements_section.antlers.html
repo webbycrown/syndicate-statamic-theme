@@ -1,0 +1,33 @@
+<!-- start Our Specialties section -->
+<section class="our-specialties-section bg-tertiary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- start section heading -->
+        <div class="section-heading bottom-55 heading-style-2">
+          <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }} </h5>
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+        </div>
+        <!-- end section heading -->
+      </div>
+    </div>
+    <div class="row">
+      {{ our_specialties }}
+      <div class="col-12 col-md-6 col-lg-3">
+        <!-- Our Specialties grid -->
+        <div class="our-specialties-box">
+          <div class="icon">
+           {{ icon }} <img src="{{ url }}" alt="Project Complate"  class="object-cover">{{ /icon }}
+          </div>
+          <div class="our-specialties-info">
+            <h3><span class="counting" data-count="24066">{{ value }}</span></h3>
+            <p>{{ label }}</p>
+          </div>
+        </div>
+      </div>
+      {{ /our_specialties }}
+    </div>
+
+  </div>
+</section>
+<!-- End Our Specialties section -->

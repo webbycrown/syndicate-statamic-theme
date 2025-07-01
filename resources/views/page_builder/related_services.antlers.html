@@ -1,0 +1,42 @@
+<!-- start Related services section -->
+    <section class="related-services-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <!-- Related services wrap -->
+              <div class="related-services-wrap">
+                <div class="row">
+                  <div class="col-12">
+                    <!-- start section heading -->
+                    <div class="section-heading">
+                      <h2 class="title">{{ section_subtitle }}</h2>
+                    </div>
+                    <!-- end section heading -->
+                  </div>
+                </div>
+                <div class="row">
+                  {{ services_grid }}
+                  
+                  <!-- start our services grid -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <div class="what-we-do-service service-style-3">
+                        <div class="icon">
+                          <span>{{ icon_image }}<img src="{{ url }}" alt="Business Analytics icon" class="object-cover">{{ /icon_image }}</span>
+                        </div>
+                        <div class="our-services-info">
+                          <h6>{{ title }}</h6>
+                          <p>{{ short_description }}</p>
+                          <a href="/services/{{slug}}" class="btn btn-secondary btn-style-3">Learn more</a>
+                        </div>
+                      </div>
+                  </div>
+                  {{ /services_grid }}
+                  
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Related services section -->

@@ -1,0 +1,15 @@
+title: 'Related Blog Post'
+fields:
+  -
+    handle: related_blog
+    field:
+      mode: select
+      collections:
+        - blog
+      type: entries
+      display: 'Related Blog'
+  -
+    handle: limit
+    field:
+      type: integer
+      display: Limit

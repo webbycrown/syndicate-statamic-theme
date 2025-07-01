@@ -1,0 +1,21 @@
+title: 'Logo Section'
+fields:
+  -
+    handle: logos
+    field:
+      type: grid
+      display: Logos
+      fields:
+        -
+          handle: url
+          field:
+            default: 'javascript:;'
+            type: text
+            display: Url
+        -
+          handle: logo
+          field:
+            max_files: 1
+            container: assets
+            type: assets
+            display: Logo

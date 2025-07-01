@@ -1,0 +1,94 @@
+ <!-- start footer -->
+ {{ footer }}
+      <footer class="footer-three">
+        <!-- start footer top -->
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-8 col-lg-7">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <!-- footer about info -->
+                    <div class="footer-widget-about">
+                      <div class="footer-logo">
+                        <a href="/"> {{ setting }}{{ logo_light }}<img src="{{ url }}" alt="logo light" class="object-cover">{{ /logo_light }}{{/setting}}</a>
+                      </div>
+                      <p>{{ description }}</p>
+                      <p class="d-none d-md-block">{{ copyright }} </p>
+
+                      <!-- Footer social link -->
+                      <ul class="header-social d-flex d-md-none align-items-center justify-content-center justify-content-lg-start gap-4">
+                        {{ setting }}
+                        {{ socials }}
+                        {{ if title == 'facebook' }} <li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if}}
+                        {{ if title == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if}}
+                        {{ if title == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if}}
+                        {{ if title == 'medium' }}<li><a href="{{ url }}"><i class="fa-brands fa-medium"></i></a></li>{{ /if}}
+                        {{ if title == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if}}
+                        {{ /socials }}
+                        {{ /setting }}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 d-none d-md-block">
+                   <!-- footer address -->
+                   <div class="footer-widget-address">
+                    <h6>Official info:</h6>
+                    <div class="footer-address">
+                      <p><span class="icon"><img src="{{ theme:asset }}assets/images/address-icon.svg" alt="address icon" class="object-cover"></span>{{ address }}</p>
+                      <p><span class="icon"><img src="{{ theme:asset }}assets/images/phone-icon.svg" alt="phone icon" class="object-cover"></span>{{ setting }}<a href="tel:{{ phone_number }}">{{ phone_number }}</a>{{ /setting }}</p>
+                      <p><span class="icon"><img src="{{ theme:asset }}assets/images/email-icon.svg" alt="email icon" class="object-cover"></span>{{ setting }}<a href="mailto:{{ email }}">{{ email }}</a>{{ /setting }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-5">
+              <!-- footer Newsletter -->
+              <div class="footer-newsletter">
+                <h6>Newsletter:</h6>
+                <div class="newsletter-form">
+                  <p>{{ newsletter_text }}</p>
+                  <!-- Newsletter form -->
+                  <form class="get-free-quote-form">
+                    <div class="quote_div">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
+                    <button type="submit" class="btn btn-primary"><img src="{{ theme:asset }}assets/images/submit-icon.svg" alt="icon btn" class="object-cover"></button>
+                    </div>
+                    <p class="form-message" style="display:none;"></p>
+                  </form>
+                </div>
+                <!-- Footer social link -->
+                <ul class="header-social d-none d-md-flex align-items-center justify-content-center justify-content-lg-start gap-4">
+                  {{ social_links }}
+                  <li><a href="{{ url }}">{{ icon }}</a></li>
+                   {{ /social_links }}
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer top -->
+  <!-- start footer bottom -->
+  <div class="footer-bottom-part">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7 col-lg-8 d-none d-md-block">
+          <ul class="footer-menu">
+            {{ footer_links }}
+            <li><a href="{{ url }}">{{ label }}</a></li>
+            {{ /footer_links }}
+          </ul>
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 designed-by-text">
+          {{ designed_by_text }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer bottom -->
+
+</footer>
+{{ /footer }}
+<!-- end footer -->

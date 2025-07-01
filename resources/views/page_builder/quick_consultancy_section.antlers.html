@@ -1,0 +1,30 @@
+<!-- start Quick Online Consultancy section -->
+<section class="quick-consultancy-section content__item">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 pe-lg-4">
+        <!-- start quick-consultancy images -->
+        <div class="quick-consultancy-left">
+          <div class="quick-consultancy-img item-overflow">
+            {{ service_image }}<img src="{{ url }}" alt="quick consultancy img" class="content-item-zoom object-cover">{{ /service_image }}
+          </div>
+          <div class="quick-consultancy-service content-item-y">
+           {{ service_text }}
+          </div>
+        </div>
+        <!-- end quick-consultancy images -->
+      </div>
+      <div class="col-12 col-lg-6">
+        <!-- start quick-consultancy form -->
+        <div class="quick-consultancy-form">
+          <h3>{{ form_title }}</h3>
+          <!-- Quick Online form-->
+           {{ partial:contact-form }}
+        </div>
+        <!-- end quick-consultancy images -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End Quick Online Consultancy section -->

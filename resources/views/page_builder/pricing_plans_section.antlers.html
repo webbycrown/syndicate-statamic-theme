@@ -1,0 +1,44 @@
+   <!-- start Pricing services -->
+<section class="pricing-section-style-2">
+   <div class="row">
+      <div class="col-12">
+         <!-- start section heading -->
+         <div class="section-heading">
+            <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+            <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+         </div>
+         <!-- end section heading -->
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         {{ pricing_items }}
+         <!-- Pricing Grid -->
+         <div class="col-12 col-md-6">
+            <div class="pricing-box">
+               <div class="pricing-heading">
+                  <div class="pricing-icon">
+                     {{ image }}<img src="{{ url }}" alt="basic-plan-icon" class="object-cover">{{ /image }}
+                  </div>
+                  <div class="pricing-title">
+                     <h5>{{ title }}</h5>
+                     <p>{{ description }}</p>
+                  </div>
+               </div>
+               <div class="pricing-list">
+                  <ul>
+                     {{ plan_item }}
+                     <li><p>{{ title }}</p><span>{{ price }}</span></li>
+                     {{ /plan_item }}
+                  </ul>
+               </div>
+               <div class="pricing-btn">
+                  <a href="/contact-us" class="btn btn-primary btn-style-2">Get it now <i class="fa-solid fa-arrow-right"></i></a>
+               </div>
+            </div>
+         </div>
+         {{ /pricing_items }}
+      </div>
+   </div>
+</section>

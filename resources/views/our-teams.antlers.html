@@ -1,0 +1,28 @@
+        <!-- start inner hero banner section -->
+{{ if show_hero_section == true }}
+  {{ partial:inner-hero-section }}
+{{ /if }}
+    <!-- end inner hero banner section -->
+
+    {{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+
+<!-- Team Popup -->
+
+<div id="team-popup" class="mfp-hide all-pupop team-popup">
+  {{ if {partial:our-teams/show} }}
+    {{ partial:our-teams/show }}
+  {{ else }}
+    <div class="default-content">
+      <h2>Team Member Details</h2>
+      {{ our-teams:show }}
+        {{ if no_results }}
+          <p>No team member selected</p>
+        {{ else }}
+          {{ title }} - {{ position }}
+        {{ /if }}
+      {{ /our-teams:show }}
+    </div>
+  {{ /if }}
+</div>

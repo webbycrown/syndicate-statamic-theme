@@ -1,0 +1,130 @@
+title: 'Multipurpose Section'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: main_text
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - strikethrough
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              remove_empty_nodes: false
+              type: bard
+              display: 'Main Text'
+              validate:
+                - required
+          -
+            handle: main_image
+            field:
+              container: assets
+              type: assets
+              display: 'Main Image'
+              validate:
+                - required
+          -
+            handle: template_count
+            field:
+              type: text
+              display: 'Template Count'
+              validate:
+                - required
+          -
+            handle: template_text
+            field:
+              type: text
+              display: 'Template Text'
+              validate:
+                - required
+          -
+            handle: template_icon
+            field:
+              container: assets
+              type: assets
+              display: 'Template Icon'
+              validate:
+                - required
+          -
+            handle: template_button_url
+            field:
+              type: text
+              display: 'Template Button url'
+              validate:
+                - required
+          -
+            handle: template_button_text
+            field:
+              type: text
+              display: 'Template Button Text'
+              validate:
+                - required
+          -
+            handle: why_choose_items
+            field:
+              type: grid
+              display: 'Why Choose Items'
+              sortable: false
+              validate:
+                - required
+              fields:
+                -
+                  handle: icon
+                  field:
+                    container: assets
+                    type: assets
+                    display: Icon
+                    validate:
+                      - required
+                -
+                  handle: text
+                  field:
+                    type: text
+                    display: Text
+                    validate:
+                      - required
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

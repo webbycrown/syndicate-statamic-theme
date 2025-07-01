@@ -1,0 +1,51 @@
+
+    <!-- start Image with text section -->
+    <section class="inner-cms-section inner-wrapper">
+      <div class="container">
+        <div class="row mb-5 align-items-end">
+          <div class="col-12 col-md-6">
+            <!-- start section heading -->
+            <div class="section-heading inner-heading">
+              <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="section-heading-des">
+              <p>{{ description }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="row">
+            
+           {{ if collections == "testimonial" }}
+            
+            {{ collection:testimonial limit="{limit}" }}
+
+            {{ /if }}
+            <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="500">
+              <div class="testimonial-item-box">
+                <!-- avatar image -->
+                <div class="avatar-img">
+                  <a href="javascript:;">{{ image }}<img src="{{ url }}" alt="testimonial img" class="object-cover">{{ /image }}</a>
+                </div>
+                
+                <!-- testimonial user info  -->
+                <div class="testimonial-user">
+                  <h6><a href="javascript:;">{{ title }}</a></h6>
+                  <span>{{ position }}</span>
+                  <p>{{ short_description }}</p>
+                </div>
+              </div>
+            </div>
+            {{ if collections == "testimonial" }}
+            {{ /collection:testimonial }}
+            {{ /if }}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Image with text section -->

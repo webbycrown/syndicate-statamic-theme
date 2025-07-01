@@ -1,0 +1,27 @@
+
+   <!-- start Image with text overlay section -->
+    <section class="image-with-text-overlay-section content__item">
+      <!-- Image overlay -->
+      <div class="image-overlay-full item-overflow">{{ background_image }}<img src="{{ url }}" alt="Image overlay" class="content-item-zoom object-cover">{{ /background_image }}</div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- image text overlay -->
+            <div class="image-text-overlay content-item-y">
+              <h2 class="title">{{ overlay_title }}</h2>
+              <a href="/contact-us" class="btn btn-secondary btn-style-3">Contact Us Now! <i class="fa-solid fa-arrow-right"></i></a> 
+            </div>
+
+            <div class="call-action-quote">
+              <div class="phone-icon">{{ phone_icon }}<img src="{{ url }}" alt="phone icon" class="object-cover">{{ /phone_icon }}</div>
+              <div class="call-info">
+                <p>{{ phone_text }}<br>
+                Call: <a href="tel:{{phone_number}}">{{phone_number}}</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Image with text overlay section -->

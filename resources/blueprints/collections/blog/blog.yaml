@@ -1,0 +1,154 @@
+title: Blog
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: short_description
+            field:
+              type: textarea
+              display: 'Short Description'
+          -
+            handle: image
+            field:
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: featured_image
+            field:
+              container: assets
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: category
+            field:
+              mode: select
+              taxonomies:
+                - blog_category
+              type: terms
+              display: Category
+          -
+            handle: tag
+            field:
+              mode: select
+              taxonomies:
+                - blog_tag
+              type: terms
+              display: Tag
+          -
+            handle: team
+            field:
+              max_items: 1
+              mode: select
+              collections:
+                - team_members
+              type: entries
+              display: Team
+          -
+            handle: socials
+            field:
+              type: grid
+              display: Socials
+              fields:
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+                    default: 'javascript:;'
+          -
+            handle: content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+                - underline
+                - strikethrough
+                - small
+                - superscript
+                - subscript
+                - code
+                - codeblock
+                - horizontalrule
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    image:
+                      display: Image
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            min_files: 2
+                            container: assets
+                            type: assets
+                            display: Image
+                    blockqoute:
+                      display: Blockqoute
+                      fields:
+                        -
+                          handle: blockqoute
+                          field:
+                            type: textarea
+                            display: Blockqoute
+      -
+        display: 'Page Builder'
+        fields:
+          -
+            import: page_builder
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

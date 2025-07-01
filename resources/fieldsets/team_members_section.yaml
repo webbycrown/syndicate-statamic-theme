@@ -1,0 +1,42 @@
+title: 'Team Members Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: sub_title
+    field:
+      type: text
+      display: 'Sub Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: team_members
+    field:
+      mode: select
+      collections:
+        - team_members
+      type: entries
+      display: 'Team Members'
+  -
+    handle: collections
+    field:
+      max_items: 1
+      mode: select
+      type: collections
+      display: Collections
+  -
+    handle: pagination
+    field:
+      type: text
+      display: Pagination
+  -
+    handle: limit
+    field:
+      type: integer
+      display: Limit

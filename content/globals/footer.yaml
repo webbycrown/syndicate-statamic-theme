@@ -1,0 +1,49 @@
+title: Footer
+data:
+  description: 'We work with a passion of taking challenges and creating new ones in advertising sector.'
+  address: '30 Commercial Road Fratton, Australia'
+  newsletter_text: 'Subscribe our newsletter to get our latest update & news'
+  footer_links:
+    -
+      id: mbkrug3q
+      label: Home
+      url: /
+    -
+      id: mbkruovq
+      label: About
+      url: /about-us
+    -
+      id: mbkruz66
+      label: Blog
+      url: /blog
+    -
+      id: mbkrv2dj
+      label: Services
+      url: /services
+    -
+      id: mbkrv98e
+      label: Contact
+      url: /contact-us
+  copyright: 'Copyright © 2023 <a href="/">Synndicate</a>. All Rights Reserved'
+  designed_by_text: 'Designed by <a href="https://webbytemplate.com/">Webbytemplate.</a>'
+  service_links:
+    -
+      id: mbvpwtoa
+      label: 'Our Team'
+      url: /our-teams
+    -
+      id: mbvpwz4h
+      label: Career
+      url: /career
+    -
+      id: mbvpx3d5
+      label: Portfolio
+      url: /portfolio
+    -
+      id: mbvpx6cr
+      label: FAQ
+      url: /faq
+    -
+      id: mbvpxa4i
+      label: Testimonial
+      url: /testimonial

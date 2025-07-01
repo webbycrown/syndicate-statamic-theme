@@ -1,0 +1,42 @@
+title: 'Hero Section'
+fields:
+  -
+    handle: hero_slider
+    field:
+      type: replicator
+      display: 'Hero Slider'
+      validate:
+        - required
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            hero_slide:
+              display: 'Hero Slide'
+              fields:
+                -
+                  handle: section_subtitle
+                  field:
+                    type: text
+                    display: 'Section SubTitle'
+                    validate:
+                      - required
+                -
+                  handle: sub_title
+                  field:
+                    type: text
+                    display: 'Sub Title'
+                -
+                  handle: short_description
+                  field:
+                    type: textarea
+                    display: 'Short Description'
+                -
+                  handle: hero_image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: 'Hero Image'
+                    validate:
+                      - required

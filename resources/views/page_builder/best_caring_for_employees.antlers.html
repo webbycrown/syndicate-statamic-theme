@@ -1,0 +1,41 @@
+<!-- start how we care section -->
+        <section class="how-we-care-section inner-wrapper">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-7 pe-md-5">
+                <!-- -->
+                <div class="how-we-care-gallery">
+                  <div class="row">
+                    {{ care_items }}
+                    {{ if index == "0" }}{{ duration = "500" }}{{ /if }}
+                    {{ if index == "1" }}{{ duration = "800" }}{{ /if }}
+                    {{ if index == "2" }}{{ duration = "1000" }}{{ /if }}
+                    {{ if index == "3" }}{{ duration = "1200" }}{{ /if }}
+                    <div class="col-6 {{ if index == 0 }} mt-7{{ /if }} {{ if index == 3 }} m-top{{ /if }}" data-aos="fade-up" data-aos-duration="{{ duration }}">
+                      <!-- how we care box -->
+                      <div class="how-we-care-box">
+                        <a class="thumb" href="{{ link }}">{{ image }}<img src="{{ url }}" alt="thumb img" class="object-cover">{{ /image }}</a>
+                        <div class="how-we-care-title">
+                          <a href="javascript:;">{{ title }}</a>
+                        </div>
+                      </div>
+                    </div>
+                    {{ /care_items }}
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-5">
+                <div class="how-we-care-info">
+                <!-- start section heading -->
+                  <div class="section-heading">
+                    <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                    <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+                  </div>
+                  <!-- end section heading -->
+                  <p data-aos="fade-up" data-aos-duration="1200">{{ description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End how we care section -->

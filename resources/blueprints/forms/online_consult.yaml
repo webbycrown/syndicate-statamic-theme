@@ -1,0 +1,42 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: 'Your name'
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              type: text
+              display: 'Email addrress'
+              validate:
+                - required
+                - email
+          -
+            handle: advisor
+            field:
+              type: text
+              display: 'Choose advisor'
+              validate:
+                - required
+          -
+            handle: phone_number
+            field:
+              type: text
+              display: Number
+              validate:
+                - required
+          -
+            handle: message
+            field:
+              type: textarea
+              display: Message
+              validate:
+                - required

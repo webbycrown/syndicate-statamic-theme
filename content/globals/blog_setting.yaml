@@ -1,0 +1,4 @@
+title: 'Blog Setting'
+data:
+  blog_page: blog_grid
+  blog_single_page: blog_single_2

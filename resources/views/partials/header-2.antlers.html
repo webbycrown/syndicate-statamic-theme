@@ -1,0 +1,98 @@
+
+<header class="header-style-2">
+<div class="header-style-2-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4 col-md-4">
+                    <!-- header top left -->
+                    <div class="{{ if !is_homepage }} header-style-2-left {{ /if }}">
+                        <!-- Start search icon -->
+                        <div class="search-icon">
+                            <a href="javascript:;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        <!-- End search icon -->
+                        <!-- email link -->
+                        <p class="d-none d-md-flex">Email : {{ setting }}<a href="mailto:{{ email }}">{{ email }}</a>{{ /setting }}</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <!-- Site logo -->
+                    <div class="logo-img">
+                        <a href="/">
+                           {{ if !is_homepage }} {{ setting }}{{ logo_light }}<img src="{{ url }}" alt="logo" class="desktop-logo object-cover">{{ /logo_light }}{{ /setting }}
+                           {{ else }}
+                           {{ setting }}{{ logo }}<img src="{{ url }}" alt="logo"  class="desktop-logo object-cover">{{ /logo }}{{ /setting }}
+                           {{ /if }}
+                            {{ setting }}{{ logo }}<img src="{{ url }}" alt="logo"  class="mobile-logo object-cover">{{ /logo }}{{ /setting }}
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <!-- header social link -->
+                    <ul class="{{ if !is_homepage }} header-social {{ /if }} d-flex align-items-center justify-content-end gap-2 gap-sm-3">
+                       {{ setting }}
+                       {{ socials }}
+                        {{ if title == 'facebook' }} <li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if}}
+                        {{ if title == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if}}
+                        {{ if title == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if}}
+                        {{ if title == 'medium' }}<li><a href="{{ url }}"><i class="fa-brands fa-medium"></i></a></li>{{ /if}}
+                        {{ if title == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if}}
+                        {{ /socials }}
+                        {{ /setting }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-style-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <!-- Start Header nav Menu Bar -->
+            <nav class="mainmenu-style-2">
+              <!-- Start mobile toggle icon -->
+              <div class="toggle-menu-button">
+                <a href="javascript:;" class="">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+
+              <ul class="main-menu d-none d-lg-flex">
+                {{ nav:header_menu }}
+                <li class="{{ if children }}dropdown{{ /if }} {{ if is_current || is_parent }}active{{ /if }}">
+                    <a href="{{ if url != '' }}{{ url }}{{ else }}javascript:;{{ /if }}">{{ title }}</a>
+
+                    {{ if children }}
+                    <ul class="dropdown-menu fade-down">
+                        {{ children }}
+                        <li class="{{ if is_current }}active{{ /if }}">
+                            <a href="{{ url }}">{{ title }}</a>
+                        </li>
+                        {{ /children }}
+                    </ul>
+                    {{ /if }}
+                </li>
+                {{ /nav:header_menu }}
+            </ul>
+            <!-- header coll us -->
+              <div class="phoneline-style-2">
+                {{ setting }}
+                <a href="tel:{{ phone_number }}">
+                  <span class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                 {{ phone_number }}
+                  <span class="phone-title">phone line</span>
+                </a>
+                {{ /setting }}
+              </div>
+            </nav>
+            <!-- End Header nav Menu Bar -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>

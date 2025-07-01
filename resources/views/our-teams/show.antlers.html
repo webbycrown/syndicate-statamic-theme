@@ -1,0 +1,196 @@
+{{ if segment_2=='{slug}' }}
+{{ if get:type == "popup" }}
+    <div class="popup-body teams_html">
+      <div class="container">
+
+        <div class="row bottom-3">
+          <div class="col-12 col-md-5 pe-md-4">
+            <!-- Image with text img -->
+            <div class="inner-image-box">
+              {{ image }}<img src="{{ url }}" alt="what we do image" class="object-cover">{{ /image }}
+            </div>
+            <!-- end Image with text img -->
+          </div>
+            <div class="col-12 col-md-7">
+              <!-- start Image with text content -->
+              <div class="image-with-text-content">
+                <h5 class="sub-title">{{ position }}</h5>
+                <h2 class="popup-title">{{ title }}</h2>
+                <p>{{ bio }}</p>
+
+                <p>{{ additional_info }}</p>
+                
+              </div>
+              <!-- end Image with text content -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-5 pe-md-5">
+              <!-- contact address -->
+                <div class="contact-address">
+                  <p>
+                    <span class="icon"><img src="{{ theme:asset }}assets/images/phone-icon-primary-2.svg" alt="phone icon" class="object-cover"></span>
+                    <span>
+                      {{ phone_numbers }}
+                      <a href="tel:{{ number }}">{{ number }}</a><br>
+                      {{ /phone_numbers }}
+                    
+                    </span>
+                  </p>
+                  <p><span class="icon"><img src="{{ theme:asset }}assets/images/mail-icon-primary.svg" alt="email icon" class="object-cover"></span><a href="mailto:{{email}}">{{ email }}</a></p>
+                  <p><span class="icon"><img src="{{ theme:asset }}assets/images/address-icon-primary.svg" alt="address icon" class="object-cover"></span>{{ address }}</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 ps-md-5">
+              <!-- start Experience & Skill content -->
+              <div class="skill-progress">
+
+                {{ skills }}
+                <div class="progress-list">
+                  <div class="progress-title">
+                    <h5>{{ label }}</h5>
+                    <span class="progress-count">{{ integer }}%</span>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="{{ integer }}" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: {{ integer  }}%"></div>
+                  </div>
+                </div>
+                {{ /skills }}
+              
+              </div>
+              <!-- end Experience & Skill content -->
+            </div>
+        </div>
+      </div>
+    </div>
+    {{ else }}
+
+    <!-- start inner hero banner section -->
+    <section class="inner-hero-section content__item">
+      <!-- inner- banner img -->
+      <div class="inner-banner-img item-overflow">
+          {{ setting }}{{ inner_banner_image }}<img src="{{ url }}" alt="inner banner img" class="content-item-zoom" class="object-cover">  {{ /inner_banner_image }}{{ /setting }}
+        <div class="d-none content-item-y">d none</div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start inner hero content -->
+              <div class="inner-hero-content">
+                <h1 class="title">Team Member detail</h1>
+                
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Team Member detail</li>
+                  </ol>
+                </nav>
+              </div>
+            <!-- end inner hero content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end inner hero banner section -->
+
+    <!-- start Image with text section -->
+    <section class="inner-cms-section inner-wrapper content__item">
+      <div class="container">
+
+        <div class="row align-items-center bottom-55">
+          <div class="col-12 col-md-6 pe-md-4">
+            <!-- Image with text img -->
+            <div class="inner-image-box item-overflow">
+             {{ image }} <img src="{{ url }}" alt="what we do image" class="content-item-zoom object-cover">{{ /image }}
+              <div class="d-none content-item-y">d none</div>
+            </div>
+            <!-- end Image with text img -->
+          </div>
+            <div class="col-12 col-md-6">
+              <!-- start Image with text content -->
+              <div class="image-with-text-content">
+                <h5 class="sub-title">{{ position }}</h5>
+                <h2 class="title">{{ title }}</h2>
+                <p>{{bio}}</p>
+
+                  <!-- contact address -->
+                  <div class="contact-address">
+                    <p>
+                      <span class="icon">
+                        <img src="{{ theme:asset }}assets/images/phone-icon-primary-2.svg" alt="phone icon" class="object-cover">
+                      </span>
+                      <span>
+                        {{ phone_numbers }}
+                        <a href="tel:{{ number }}">{{ number }}</a><br>
+                        {{ /phone_numbers }}
+                      </span>
+                    </p>
+                    <p><span class="icon"><img src="{{ theme:asset }}assets/images/mail-icon-primary.svg" alt="email icon" class="object-cover"></span><a href="mailto:{{ email }}">{{ email }}</a></p>
+                    <p><span class="icon"><img src="{{ theme:asset }}assets/images/address-icon-primary.svg" alt="address icon" class="object-cover"></span>{{ address }}</p>
+                  </div>
+              </div>
+              <!-- end Image with text content -->
+            </div>
+        </div>
+
+        <div class="row align-items-center bottom-55">
+            <div class="col-12">
+              <h2 class="title mb-3">Experience & Skill</h2>
+            </div>
+            <div class="col-12 col-md-6 pe-md-5">
+              <!-- start Experience & Skill content -->
+              <div class="experience-skill-content">
+                
+                <p>{{ experience_desc }}</p>
+
+                <ul class="ul-list">
+                  {{ experience_bullets }}
+                  <li>{{ value }}</li>
+                  {{ /experience_bullets }}
+                </ul>
+              </div>
+              <!-- end Experience & Skill content -->
+            </div>
+
+             
+            <div class="col-12 col-md-6 ps-md-5">
+              <!-- start Experience & Skill content -->
+              <div class="skill-progress">
+
+                {{ skills }}
+                <div class="progress-list">
+                  <div class="progress-title">
+                    <h5>{{ label }}</h5>
+                    <span class="progress-count">{{ integer }}%</span>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="{{ integer }}" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: {{ integer  }}%"></div>
+                  </div>
+                </div>
+                {{ /skills }}
+              </div>
+              <!-- end Experience & Skill content -->
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-12">
+              <!-- start Qualification & Experience content -->
+              <div class="qualification-experience-content">
+                <h2 class="title">Qualification & Experience</h2>
+                {{ qualification_desc }}
+              </div>
+              <!-- end Experience & Skill content -->
+            </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- end Image with text section -->
+
+
+{{/if}}
+{{/if}}
+  

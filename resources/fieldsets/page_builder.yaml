@@ -1,0 +1,167 @@
+title: 'all page builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      display: 'Page Builder'
+      collapse: true
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            business_services:
+              display: 'Business Services'
+              fields:
+                -
+                  import: business_services
+            about_company_section:
+              display: 'About Company Section'
+              fields:
+                -
+                  import: about_company_section
+            service_highlights:
+              display: 'Service Highlights'
+              fields:
+                -
+                  import: service_highlights
+            choose_us_tabs:
+              display: 'Choose Us Tabs'
+              fields:
+                -
+                  import: choose_us_tabs
+            success_metrics:
+              display: 'Success Metrics'
+              fields:
+                -
+                  import: success_metrics
+            testimonial_section:
+              display: 'Testimonial Section'
+              fields:
+                -
+                  import: testimonial_section
+            works_section:
+              display: 'Works Section'
+              fields:
+                -
+                  import: works_section
+            latest_blog_posts_section:
+              display: 'Latest Blog Posts Section'
+              fields:
+                -
+                  import: latest_blog_posts_section
+            hero_section:
+              display: 'Hero Section'
+              fields:
+                -
+                  import: hero_section
+            achievements_section:
+              display: 'Achievements Section'
+              fields:
+                -
+                  import: achievements_section
+            team_members_section:
+              display: 'Team Members Section'
+              fields:
+                -
+                  import: team_members_section
+            quick_consultancy_section:
+              display: 'Quick Consultancy Section'
+              fields:
+                -
+                  import: quick_consultancy
+            contact_section:
+              display: 'Contact Section'
+              fields:
+                -
+                  import: contact_section
+            image_text_with_icons:
+              display: 'Image Text With Icons'
+              fields:
+                -
+                  import: image_text_with_icons
+            services_image_text_overlay:
+              display: 'Services Image Text Overlay'
+              fields:
+                -
+                  import: services_image_text_overlay
+            why_choose_with_accordion:
+              display: 'Why Choose With Accordion'
+              fields:
+                -
+                  import: why_choose_with_accordion
+            related_services:
+              display: 'Related Services'
+              fields:
+                -
+                  import: related_services
+            career_opportunity_section:
+              display: 'Career Opportunity Section'
+              fields:
+                -
+                  import: career_opportunity_section
+            current_opportunity_list_section:
+              display: 'Current Opportunity List Section'
+              fields:
+                -
+                  import: current_opportunity_list_section
+            recruitment_process_section:
+              display: 'Recruitment Process Section'
+              fields:
+                -
+                  import: recruitment_process_section
+            best_caring_for_employees:
+              display: 'Best Caring For Employees'
+              fields:
+                -
+                  import: best_caring_for_employees
+            faq_section:
+              display: 'FAQ Section'
+              fields:
+                -
+                  import: faq_section
+            client_testimonials:
+              display: 'Client Testimonials'
+              fields:
+                -
+                  import: client_testimonials
+            intro_section:
+              display: 'Intro Section'
+              fields:
+                -
+                  import: intro_section
+            portfolio_general_content_section:
+              display: 'Portfolio General Content Section'
+              fields:
+                -
+                  import: portfolio_general_content_section
+            related_portfolio_section:
+              display: 'Related Portfolio Section'
+              fields:
+                -
+                  import: related_portfolio_section
+            related_blog_post:
+              display: 'Related Blog Post'
+              fields:
+                -
+                  import: related_blog_post
+            logo_section:
+              display: 'Logo Section'
+              fields:
+                -
+                  import: logo_section
+            quote_request_section:
+              display: 'Quote Request Section'
+              fields:
+                -
+                  import: quote_request_section
+            pricing_plans_section:
+              display: 'Pricing Plans Section'
+              fields:
+                -
+                  import: pricing_plans_section
+            our_recent_projects_section:
+              display: 'Our Recent Projects Section'
+              fields:
+                -
+                  import: our_recent_projects_section

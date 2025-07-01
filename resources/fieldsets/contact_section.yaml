@@ -1,0 +1,65 @@
+title: 'Contact Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: contact_info
+    field:
+      type: grid
+      display: 'Contact Info'
+      fields:
+        -
+          handle: icon
+          field:
+            max_files: 4
+            container: assets
+            type: assets
+            display: Icon
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+        -
+          handle: lines
+          field:
+            type: grid
+            display: Lines
+            fields:
+              -
+                handle: line
+                field:
+                  type: text
+                  display: line
+  -
+    handle: image_1
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image 1'
+  -
+    handle: image_2
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image 2'
+  -
+    handle: google_map_iframe
+    field:
+      type: textarea
+      display: 'Google Map Iframe'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description

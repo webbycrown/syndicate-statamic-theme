@@ -1,0 +1,51 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+              validate:
+                - required
+                - email
+          -
+            handle: position
+            field:
+              type: text
+              display: Position
+              validate:
+                - required
+          -
+            handle: number
+            field:
+              type: text
+              display: Number
+              validate:
+                - required
+          -
+            handle: describe_yourself
+            field:
+              type: textarea
+              display: 'Describe Yourself'
+              validate:
+                - required
+          -
+            handle: portfolio
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Portfolio
+              validate:
+                - required

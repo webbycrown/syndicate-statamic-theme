@@ -1,0 +1,58 @@
+<!-- start Why choose Us? section -->
+<section class="why-choose-us-section content__item">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+<!-- start section heading -->
+<div class="section-heading">
+    <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ subtitle }}</h5>
+    <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ title }}</h2>
+</div>
+<!-- end section heading -->
+</div>
+</div>
+<div class="row">
+    <div class="col-12">
+
+<!-- Why choose Us feature list -->
+<div class="whychooseus-feature-list">
+<!-- tabs list -->
+<ul class="tabs-list">
+        {{ tabs }}
+
+        <li class="tab-link {{ if first }}current{{ /if }}" data-tab="{{ id }}">
+          {{ tab_title }}
+        </li>
+       
+        {{ /tabs }}
+</ul>
+
+<!-- Company Mission content list -->
+{{ tabs }}
+<div class="tabs-content {{ if first }}current{{ /if }}" id="{{ id }}">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+            <div class="whychooseus-feature-img item-overflow">
+                {{ image }}<img src="{{ url }}" alt="company mission img" class="content-item-zoom object-cover">{{ /image }}
+                <div class="d-none content-item-y">d none</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="whychooseus-feature-content">
+                <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ subtitle }}</h5>
+                <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ title_text }}</h2>
+                <p>{{ description }}</p>
+                <a href="{{ button_url }}" class="btn btn-primary">{{ button_text }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{ /tabs }}
+<!-- Awards Winner content list -->
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- end Why choose Us? section -->

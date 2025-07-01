@@ -1,0 +1,141 @@
+{{ if slug == 'about-us'  }}
+<!-- start Our Team Members section -->
+<section class="team-members-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- start section heading -->
+        <div class="section-heading bottom-55 heading-style-2">
+          <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle}}</h5>
+          <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ sub_title }}</h2>
+        </div>
+        <!-- end section heading -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <!-- start Our Team Members slider -->
+        <div class="our-team-members-slider">
+          <!-- swiper -->
+          <div class="swiper mySwiper">
+            <!-- swiper wrapper -->
+            <div class="swiper-wrapper">
+              {{ team_members }}
+              <!-- start Our Team Members slide -->
+              <div class="swiper-slide">
+                <!-- Our Team Members box-->
+                <div class="team-members-box">
+                  <!-- Team members img -->
+                  <div class="team-members-img">
+                    <a href="/our-teams/{{ slug }}">{{ image }}<img src="{{ url }}" alt="Team members img" class="object-cover">{{ /image }}</a>
+                  </div>
+                  <!-- Team members info -->
+                  <div class="team-members-info">
+                    <span class="founder">{{ position }}</span>
+                    <h6><a href="/our-teams/{{ slug }}">{{ title }}</a></h6>
+                    <p>{{ short_description }}</p>
+                    <!-- Team members social link -->
+                    <ul class="social-link">
+                      {{ socials }}
+                      {{ if name == 'facebook' }} <li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li> {{ /if }}
+                      {{ if name == 'instagram' }} <li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li> {{ /if }}
+                      {{ if name == 'youtube' }} <li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li> {{ /if }}
+                       {{ if name == 'medium' }} <li><a href="{{ url }}"><i class="fa-brands fa-medium"></i></a></li> {{ /if }}
+                      {{ /socials }}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {{ /team_members }}
+
+            </div>
+          </div>
+          <!-- slider arrow -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="team-members-section our-twam-page inner-wrapper">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-12 col-md-6">
+            <!-- start section heading -->
+            <div class="section-heading inner-heading">
+              <h5 class="sub-title">{{ section_subtitle}}</h5>
+              <h2 class="title">{{ sub_title }}</h2>
+            </div>
+            <!-- end section heading -->
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="section-heading-des">
+              <p>{{ description }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-list row">
+            {{ if collections == "team_members" }}
+          
+            {{ collection:team_members as="team_members" paginate={pagination} limit="{limit}" }}
+
+            {{ /if }}
+
+            {{ team_members }}
+            <!-- start Our Team Members column -->
+            <div class="service-item col-12 col-sm-6 col-md-4 service-item">
+              <!-- Our Team Members box-->
+              <div class="team-members-box">
+                <!-- Team members img -->
+                <div class="team-members-img">
+                  <a href="#team-popup" class="team-popup-link"  data-slug="{{ slug }}" data-type="popup">{{ image }}<img src="{{ url }}" alt="Team members img" class="object-cover">{{/image}}</a>
+                </div>
+                <!-- Team members info -->
+                <div class="team-members-info">
+                  <span class="founder">{{ position }}</span>
+                  <h6><a href="/our-teams/{{slug}}">{{ title }}</a></h6>
+                  <p>{{ short_description }}</p>
+                  <!-- Team members social link -->
+                  <ul class="social-link">
+                   {{ socials }}
+                   {{ if name == 'facebook' }} <li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li> {{ /if }}
+                   {{ if name == 'instagram' }} <li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li> {{ /if }}
+                   {{ if name == 'youtube' }} <li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li> {{ /if }}
+                   {{ if name == 'medium' }} <li><a href="{{ url }}"><i class="fa-brands fa-medium"></i></a></li> {{ /if }}
+                   {{ /socials }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {{ /team_members }}
+
+            {{ paginate }}
+            <!-- our services grid loader -->
+             <input type="hidden" class="lastPage" value="{{ total_pages }}">
+            <input type="hidden" class="currentPage" value="{{ current_page }}">
+
+            <div class="col-12 load-more-wrap">
+                <div class="read-more-bottom">
+                    <a href="{{ next_page }}" class="btn btn-secondary btn-style-3 ajax-load-more">Load more <img src="{{ theme:asset }}assets/images/loader.svg" alt="loader" class="object-cover d-none"></a>
+                </div>
+            </div>
+
+            {{ /paginate }}
+
+            {{ if collections == "team_members" }}
+            {{ /collection:team_members  }}
+
+            {{ /if }}
+             
+        </div>
+         
+      </div>
+    </section>
+{{ /if }}
+<!-- End Our Team Members section -->

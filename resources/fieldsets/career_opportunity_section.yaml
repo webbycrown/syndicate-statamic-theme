@@ -1,0 +1,29 @@
+title: 'Career Opportunity Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: quote_icon
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Quote Icon'
+  -
+    handle: quote_text
+    field:
+      type: textarea
+      display: 'Quote Text'

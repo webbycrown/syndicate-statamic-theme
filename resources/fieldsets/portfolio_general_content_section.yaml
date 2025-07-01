@@ -1,0 +1,68 @@
+title: 'Portfolio General Content Section'
+fields:
+  -
+    handle: sub_title
+    field:
+      type: text
+      display: 'Sub Title'
+  -
+    handle: content
+    field:
+      type: textarea
+      display: Content
+  -
+    handle: details_list
+    field:
+      type: grid
+      display: 'Details List'
+      fields:
+        -
+          handle: key
+          field:
+            type: text
+            display: Key
+        -
+          handle: value
+          field:
+            type: text
+            display: Value
+  -
+    handle: gallery_images
+    field:
+      max_files: 3
+      container: assets
+      type: assets
+      display: 'Gallery Images'
+  -
+    handle: full_description
+    field:
+      type: textarea
+      display: 'Full Description'
+  -
+    handle: accordions
+    field:
+      type: grid
+      display: Accordions
+      fields:
+        -
+          handle: column
+          field:
+            options:
+              -
+                key: left
+                value: Left
+              -
+                key: right
+                value: Right
+            type: select
+            display: 'Column (Left/Right)'
+        -
+          handle: question
+          field:
+            type: text
+            display: Question
+        -
+          handle: answer
+          field:
+            type: textarea
+            display: Answer

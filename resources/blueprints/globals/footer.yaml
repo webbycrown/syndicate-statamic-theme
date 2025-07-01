@@ -1,0 +1,65 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: description
+            field:
+              type: markdown
+              display: Description
+          -
+            handle: address
+            field:
+              type: text
+              display: Address
+          -
+            handle: newsletter_text
+            field:
+              type: text
+              display: 'Newsletter Text'
+          -
+            handle: footer_links
+            field:
+              type: grid
+              display: 'Footer Links'
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url
+          -
+            handle: copyright
+            field:
+              type: markdown
+              display: Copyright
+          -
+            handle: designed_by_text
+            field:
+              type: markdown
+              display: 'Designed by text'
+          -
+            handle: service_links
+            field:
+              type: grid
+              display: 'Service Links'
+              validate:
+                - required
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: url
+                  field:
+                    type: text
+                    display: Url

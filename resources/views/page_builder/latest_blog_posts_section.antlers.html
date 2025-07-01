@@ -1,0 +1,138 @@
+
+{{ if is_homepage }}
+
+<!-- start Blog & Articles section -->
+<section class="blog-articles-section">
+    <div class="container">
+        <div class="row align-items-end mb-4 mb-sm-5">
+            <div class="col-12 col-md-8">
+<!-- start section heading -->
+<div class="section-heading">
+    <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+    <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+</div>
+<!-- end section heading -->
+</div>
+<div class="col-12 col-md-4">
+    <div class="read-more-right">
+        <a href="/blog" class="btn btn-primary">View all</a>
+    </div>
+</div>
+</div>
+
+<div class="row">
+<!-- blog grid -->
+{{ blog }}
+
+<div class="col-12 col-md-4">
+    <div class="blog-grid">
+        <div class="blog-grid-wrap">
+            <div class="blog-img">
+                <a href="/blog/{{slug}}">{{ image }}<img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
+            </div>
+            <div class="blog-info">
+                <h5><a href="/blog/{{slug}}">{{ title }}</a></h5>
+                <p>{{ short_description }}</p>
+            </div>
+        </div>
+        <div class="read-more-btn">
+            <a href="/blog/{{slug}}" class="btn btn-primary">Read more</a>
+        </div>
+    </div>
+</div>
+
+{{ /blog }}
+<!-- blog grid -->
+
+</div>
+</div>
+</section>
+
+{{ /if }}
+
+{{ if segment_1 == 'home-two' }}
+<section class="blog-posts-section-style-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start section heading -->
+            <div class="section-heading">
+              <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+          </div>
+        </div>
+
+        <div class="row row-custome">
+            {{ blog }}
+            <!-- blog grid -->
+            <div class="col-12 {{ if index == 0 }}col-md-6{{ else }}col-md-4{{ /if }}">
+                <div class="blog-grid-style-2">
+                    <div class="blog-img">
+                        <a href="/blog/{{slug}}">{{ image }}<img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
+                    </div>
+                    <div class="blog-info">
+                        <div class="blog-date">
+                            <span class="btn btn-secondary btn-style-2"> {{ updated_at format="M j, Y" }}</span>
+                            <!-- <p>by Jhone Doe  -  No Comments</p> -->
+                        </div>
+                        <h5><a href="/blog/{{slug}}">{{ title }}</a></h5>
+                        <p>{{ short_description }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ /blog }}
+        </div>
+      </div>
+    </section>
+{{ /if }}
+
+
+
+{{ if segment_1 == 'home-three' }}
+<section class="blog-articles-section-style-3">
+      <div class="container">
+        <div class="row align-items-end mb-4 mb-sm-5">
+          <div class="col-12 col-md-8">
+            <!-- start section heading -->
+            <div class="section-heading bottom-55">
+              <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="read-more-right">
+              <a href="/blog" class="btn btn-primary">View all</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- blog grid -->
+          {{ blog }}
+          <div class="col-12 col-md-6">
+            <div class="blog-grid-style-3">
+              <div class="blog-img">
+                <a href="/blog/{{slug}}">{{ image }}<img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
+                <div class="blog-date">
+                  {{ updated_at format="M j, Y" }}
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-admin-info">
+                  <!-- <i class="fa-solid fa-user"></i> Admin - <span>3</span> comments -->
+                </div>
+                <h6><a href="/blog/{{slug}}">{{ title }}</a></h6>
+                <p>{{ short_description }}</p>
+                <a href="/blog/{{slug}}" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+        </div>
+            {{ /blog }}
+
+
+      </div>
+    </section>
+{{ /if }}

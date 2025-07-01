@@ -1,0 +1,82 @@
+{{ if slug == 'career' }}
+<!-- start Current Openings section -->
+        <section class="current-opportunity-section inner-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <!-- start section heading -->
+                <div class="section-heading inner-heading">
+                  <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_subtitle }}</h2>
+                </div>
+                <!-- end section heading -->
+                <!-- start Current Openings list -->
+                <div class="career-opportunity-list">
+                  <!-- accordion  -->
+                    <div class="accordion">
+                      {{ jobs }}
+                      <!-- accordion list  -->
+                      <div class="accordion-list">
+                        <!-- accordion tabs  -->
+                        <div class="accordion-tabs {{ if first }}active{{ /if }}">
+                          <h3>{{ job_title }}</h3>
+                        </div>
+                        <!-- accordion content  -->
+                        <div class="accordion-content {{ if first }}active{{ /if }}">
+                          <p>{{ job_description }}</p>
+                          <h6><strong>LOCATION:</strong> {{ location }} <strong>QUALIFICATION:</strong> {{ qualification }}</h6>
+
+                          <a href="#enquiry-form-popup" class="btn btn-secondary btn-style-3 enquiry-apply">Apply now</a>
+                        </div>
+                      </div>
+                      {{ /jobs }}
+                    </div>
+                </div>
+                <!-- end Current Openings list -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Current Openings section -->
+        {{ else }}
+         <!-- start Current Openings section -->
+        <section class="current-opportunity-section inner-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <!-- start section heading -->
+                <div class="section-heading inner-heading">
+                  <h2 class="title">Current Openings</h2>
+                </div>
+                <!-- end section heading -->
+                <!-- start Current Openings list -->
+                <div class="row">
+                    {{ jobs }}
+                  <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="500">
+                    <!-- current-openings-grid -->
+                    <div class="current-openings-grid">
+                      <div class="current-openings-box">
+                        <h3>{{ job_title }}</h3>
+                        <div class="current-openings-body">
+                          <p>{{ job_description }}</p>
+                          <p>
+                            <strong>Exprience:</strong> {{ exprience }}<br>
+                            <strong>Vacancy :</strong> {{ vacancy }}
+                          </p>
+
+                          <a href="#enquiry-form-popup" class="btn btn-primary btn-style-2 enquiry-apply">Apply now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    {{ /jobs }}
+                </div>
+                <!-- end Current Openings list -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Current Openings section -->
+
+        {{ /if }}
+
+

@@ -1,0 +1,181 @@
+
+<!-- start hero slider -->
+{{ if is_homepage }}
+
+        <section class="hero-section bg-secondary-light height100">
+            <!-- start hero content slider-->
+            <div class="hero-content-slider swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    {{ hero_slider }}
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- start hero content -->
+                                    <div class="hero-content">
+                                        <h5 class="sub-title">{{ section_subtitle }}</h5>
+                                        <h1 class="title">{{ sub_title }}</h1>
+                                        <p>{{ short_description }}</p>
+                                        <a href="/about-us" class="hero-btn"><img src="{{ theme:asset }}assets/images/arrow-btn.svg" alt="arrow btn" class="object-cover"></a>
+                                    </div>
+                                    <!-- end hero content -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- start hero images-->
+                        <div class="hero-images">
+                            <!-- start hero images slider-->
+                            <div class="hero-images-slider">
+                                {{ hero_image }}<img src="{{ url }}" alt="hero img" class="object-cover">{{ /hero_image }}
+                            </div>
+                            <!-- end hero images slider-->
+                        </div>
+                        <!-- end hero images-->
+                    </div>
+                    {{ /hero_slider }}
+                    
+                </div>
+            </div>
+            <!-- end hero content slider-->
+
+            <!-- start hero thumbs-->
+            <div class="hero-thumbs">
+                <div class="swiper-button-prev">
+                    <svg width="35" height="54" viewBox="0 0 35 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5032 4.27817L33.4788 19.2538L34.8552 17.8773L17.5287 0.550781L0.202131 17.8773L1.57857 19.2538L16.5569 4.28092L16.5542 53.5325L18.5004 53.5352L18.5032 4.27817Z" fill="currentColor"/>
+                    </svg>
+                </div>
+
+                <!-- start hero images slider-->
+                <div class="hero-thumbs-slider swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        {{ hero_slider }}
+                        <div class="swiper-slide">
+                            <div class="hero-thumbs-img"> {{ hero_image }}<img src="{{ url }}" alt="hero img" class="object-cover"> {{ /hero_image }}</div>
+                        </div>
+                        {{ /hero_slider }}
+                    </div>
+                </div>
+                <!-- end hero thumbs slider-->
+
+                <div class="swiper-button-next">
+                    <svg width="35" height="54" viewBox="0 0 35 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5032 49.7795L33.4788 34.8038L34.8552 36.1803L17.5287 53.5068L0.202131 36.1803L1.57857 34.8038L16.5569 49.7767L16.5542 0.525127L18.5004 0.522373L18.5032 49.7795Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- end hero images-->
+
+            <!-- start hero shape -->
+            <div class="hero-line-shape">
+                <img src="{{ theme:asset }}assets/images/hero-shape.svg" alt="hero shape img" class="object-cover">
+            </div>
+            <!-- end hero shape -->
+        </section>
+
+    {{ /if }}
+
+
+  {{ if segment_1 == 'home-three' }}
+
+   <section class="hero-section-style-3 content__item">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-7 order-2 order-md-1">
+                <!-- start hero content -->
+                <div class="hero-content content-item-y">
+                  <h1 class="title" data-aos="fade-up" data-aos-duration="1000">Strategy and <span>growth</span> solutions for business</h1>
+                  <p>At augue eget arcu dictum. Maecenas ultricies mi eget mauris pharetra et. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Mattis nunc sed blandit libero. At consectetur lorem donec massa sapien.</p>
+                  <a href="/about-us" class="btn btn-secondary btn-style-3">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- end hero content -->
+              </div>
+              <div class="col-12 col-md-5 order-1 order-md-2">
+                <div class="hero-images-style-3">
+                  <div class="hero-images-box item-overflow">
+                    <img src="{{ theme:asset }}assets/images/index-3-hero-img.jpg" alt="home Three banner" class="content-item-zoom object-cover">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  {{ /if }}
+
+  {{ if segment_1 == 'home-two' }}
+  <section class="hero-section-style-2 height100 content__item">
+            <!-- start hero slider-->
+            <div class="hero-slider-style-2 swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    {{ hero_slider }}
+
+                    <div class="swiper-slide">
+                        <div class="hero-img-style-2">
+                            {{ hero_image }}<img src="{{ url }}" alt="home two banner" class="content-item-zoom object-cover">{{ /hero_image }}
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- start hero content -->
+                                    <div class="hero-content content-item-y">
+                                        <h1 class="title" data-aos="fade-up" data-aos-duration="1000">{{ sub_title }}</h1>
+                                        <p>{{ short_description }}</p>
+                                        <a href="/about-us" class="btn btn-secondary btn-style-2">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                    <!-- end hero content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /hero_slider }}
+                </div>
+
+                <!-- hero slider arrow -->
+                <div class="swiper-button-prev"><img src="{{theme:asset}}assets/images/arrow-left.svg" alt="arrow left" class="object-cover"></div>
+                <div class="swiper-button-next"><img src="{{ theme:asset }}assets/images/arrow-right.svg" alt="arrow right" class="object-cover"></div>
+            </div>
+            <!-- end hero slider-->
+        </section>
+  {{ /if }}
+<!-- start hero slider -->
+<!-- end main wrapper -->
+{{ if !is_homepage }}
+
+
+
+{{ if show_hero_section == true }}
+<!-- start inner hero banner section -->
+<section class="inner-hero-section content__item">
+  <!-- inner- banner img -->
+  <div class="inner-banner-img item-overflow">
+    {{ hero_slider }}
+    {{ hero_image }}<img src="{{ url }}" alt="inner banner img" class="content-item-zoom object-cover">{{ /hero_image }}
+    {{ /hero_slider }}
+    <div class="d-none content-item-y">d none</div>
+  </div>
+  <div class="container">
+    <div class="row">
+        {{ hero_slider }}
+      <div class="col-12">
+        <!-- start inner hero content -->
+        <div class="inner-hero-content">
+          <h1 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_subtitle }}</h1>
+          
+          <!-- breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{ section_subtitle }}</li>
+            </ol>
+          </nav>
+        </div>
+        <!-- end inner hero content -->
+      </div>
+      {{ /hero_slider }}
+    </div>
+  </div>
+</section>
+<!-- end inner hero banner section -->
+{{ /if }}
+{{ /if }}

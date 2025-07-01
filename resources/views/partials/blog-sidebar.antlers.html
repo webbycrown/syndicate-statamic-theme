@@ -1,0 +1,60 @@
+<!-- blog sidebar -->
+          <div class="sidebar">
+            <!-- widget search -->
+            <div class="widget search">
+              <h5 class="widget-title">Search</h5>
+              <div class="search-form-box">
+                <form class="search-form">
+                  <input type="text"  id="blog-search-input" name="search-input" class="form-control" placeholder="Search Here...">
+                  <button ><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+            </div>
+            <!-- widget Recent blogs -->
+            <div class="widget recent-blogs">
+              <h5 class="widget-title">Recent blogs</h5>
+              <div class="recent-blogs-list" id="recent-blogs-result">
+
+                 {{  collection:blog sort="-updated_at" limit="3" }}
+                <!-- Recent blogs list -->
+                <div class="recent-post-single">
+                  <div class="recent-post-img">
+                    {{ image }}<img src="{{ url }}" alt="thumb" class="object-cover">{{ /image }}
+                  </div>
+                  <div class="recent-post-bio">
+                    <h6><a href="{{ slug }}">{{ title }}</a></h6>
+                    <span>{{ updated_at format="F d, Y" }}</span>
+                  </div>
+                 </div>
+                 {{ /collection:blog }}
+              </div>
+            </div>
+            <!-- widget category -->
+            <div class="widget category">
+              <h5 class="widget-title">Categories</h5>
+              <ul class="category-list">
+                {{ taxonomy:blog_category }}
+                {{ count_blog_category = 0 }}
+                {{ collection:blog category:contains="{slug}" }}
+                {{ count_blog_category = total_results }}
+                {{ /collection:blog }}
+
+                <li>
+                  <a href="#">{{ title }} <span>{{ count_blog_category }}</span></a>
+                </li>
+                {{ /taxonomy:blog_category }}
+              </ul>
+
+            </div>
+            <!-- widget sidebar tag -->
+            <div class="widget sidebar-tag">
+              <h5 class="widget-title">Popular Tags</h5>
+              <div class="tag-list">
+                {{ taxonomy:blog_tag }}
+                <a href="#">{{title}}</a>
+                {{ /taxonomy:blog_tag }}
+              </div>
+
+            </div>
+            
+          </div>

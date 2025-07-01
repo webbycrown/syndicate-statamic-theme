@@ -1,0 +1,20 @@
+title: 'Service Highlights'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: business_services
+    field:
+      mode: select
+      collections:
+        - business_services
+      type: entries
+      display: 'Business Services'

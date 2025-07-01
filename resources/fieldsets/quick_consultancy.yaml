@@ -1,0 +1,19 @@
+title: 'Quick Consultancy Section'
+fields:
+  -
+    handle: service_text
+    field:
+      type: text
+      display: 'Service Text'
+  -
+    handle: service_image
+    field:
+      max_files: 4
+      container: assets
+      type: assets
+      display: 'Service Image'
+  -
+    handle: form_title
+    field:
+      type: text
+      display: 'Form Title'

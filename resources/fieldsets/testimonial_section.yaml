@@ -1,0 +1,47 @@
+title: 'Testimonial Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+      validate:
+        - required
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+      validate:
+        - required
+  -
+    handle: testimonial
+    field:
+      mode: select
+      collections:
+        - testimonial
+      type: entries
+      display: Testimonial
+  -
+    handle: video_url
+    field:
+      type: text
+      display: 'Video Url'
+  -
+    handle: image
+    field:
+      container: assets
+      type: assets
+      display: Image
+  -
+    handle: section_type
+    field:
+      options:
+        -
+          key: vertical_slider
+          value: 'Vertical Slider'
+        -
+          key: horizontal_slider
+          value: 'Horizontal Slider'
+      type: select
+      display: 'Section Type'

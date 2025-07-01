@@ -1,0 +1,11 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: order_by
+            field:
+              type: integer
+              display: 'order by'

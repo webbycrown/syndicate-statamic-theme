@@ -1,0 +1,9 @@
+{
+    "name": "webbycrown/syndicate-statamic-theme",
+    "extra": {
+        "statamic": {
+            "name": "Syndicate Statamic Theme",
+            "description": "A Statamic starter kit for information sites."
+        }
+    }
+}

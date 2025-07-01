@@ -1,0 +1,51 @@
+title: 'Pricing Plans Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: pricing_items
+    field:
+      type: grid
+      display: 'Pricing Items'
+      fields:
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+        -
+          handle: description
+          field:
+            type: textarea
+            display: Description
+        -
+          handle: image
+          field:
+            max_files: 1
+            container: assets
+            type: assets
+            display: Image
+        -
+          handle: plan_item
+          field:
+            type: grid
+            display: 'Plan Item'
+            fields:
+              -
+                handle: title
+                field:
+                  type: text
+                  display: Title
+              -
+                handle: price
+                field:
+                  type: text
+                  display: Price

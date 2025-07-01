@@ -1,0 +1,22 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: home_page
+            field:
+              options:
+                -
+                  key: home_1
+                  value: 'Home 1'
+                -
+                  key: home-two
+                  value: 'Home 2'
+                -
+                  key: home-three
+                  value: 'Home 3'
+              default: home_1
+              type: select
+              display: 'Home Page'

@@ -1,0 +1,40 @@
+title: 'Best Caring For Employees'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: care_items
+    field:
+      type: grid
+      display: 'Care Items'
+      fields:
+        -
+          handle: image
+          field:
+            max_files: 1
+            container: assets
+            type: assets
+            display: Image
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+        -
+          handle: link_optional
+          field:
+            type: text
+            display: Link

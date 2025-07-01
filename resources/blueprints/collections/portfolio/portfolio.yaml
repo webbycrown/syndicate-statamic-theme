@@ -1,0 +1,65 @@
+title: Portfolio
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: category
+            field:
+              mode: select
+              taxonomies:
+                - portfolio_category
+              type: terms
+              display: Category
+              max_items: 1
+          -
+            handle: image
+            field:
+              max_files: 3
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: link_text
+            field:
+              type: text
+              display: 'Link Text'
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+      -
+        display: 'Page Builder'
+        fields:
+          -
+            import: page_builder
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+  seo_section:
+    display: 'Seo Section'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            import: seo_section

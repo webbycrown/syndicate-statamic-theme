@@ -1,0 +1,43 @@
+title: 'Current Opportunity List Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: jobs
+    field:
+      type: grid
+      display: Jobs
+      fields:
+        -
+          handle: job_title
+          field:
+            type: text
+            display: 'Job Title'
+        -
+          handle: job_description
+          field:
+            type: textarea
+            display: 'Job Description'
+        -
+          handle: location
+          field:
+            type: text
+            display: Location
+        -
+          handle: qualification
+          field:
+            type: text
+            display: Qualification
+        -
+          handle: vacancy
+          field:
+            type: integer
+            display: Vacancy
+        -
+          handle: exprience
+          field:
+            type: text
+            display: Exprience

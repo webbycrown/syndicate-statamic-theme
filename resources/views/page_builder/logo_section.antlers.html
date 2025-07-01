@@ -1,0 +1,47 @@
+ {{ if segment_1 == 'home-two' }}
+<!-- start Logos section -->
+    <div class="logos-section-style-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start Logos slider -->
+              <div class="logos-slider">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <!-- start Logos slider item -->
+                    {{ logos }}
+                    <div class="swiper-slide">
+                      <div class="logos-box">
+                        <a href="{{ url }}">{{ logo }}<img src="{{ url }}" alt="logo1" class="object-cover">{{ /logo }}</a>
+                      </div>
+                    </div>
+                    {{ /logos }}
+                   
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Logos section -->
+    {{ /if }}
+
+    {{ if segment_1 == 'home-three' }}
+    <div class="logos-section-style-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <!-- start Logos gallery -->
+            <div class="logos-gallery">
+              {{ logos }}
+              <div class="logos-box">
+                <a href="{{ url }}">{{ logo }}<img src="{{ url }}" alt="logo{{index}}" class="object-cover">{{ /logo }}</a>
+              </div>
+              {{ /logos }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ /if }}

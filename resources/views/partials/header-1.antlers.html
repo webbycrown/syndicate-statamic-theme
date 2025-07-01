@@ -1,0 +1,119 @@
+<header class="header">
+	<div class="header-top-bar">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-6 col-sm-8">
+					<p class="d-none d-md-flex">Call : {{ setting }}<a href="tel:{{ phone_number }}">{{ phone_number }}</a>{{ /setting }}   Email : {{ setting }}<a href="mailto:{{ email }}">{{ email }}</a>{{ /setting }}</p>
+					<p class="d-flex d-md-none">{{ setting }}<a href="tel:{{ phone_number }}"><i class="fa-solid fa-phone"></i></a>{{ /setting }} {{ setting }}<a href="mailto:{{ email }}"><i class="fa-solid fa-envelope"></i></a>{{ /setting }}</p>
+				</div>
+				<div class="col-6 col-sm-4">
+					<!-- header social link -->
+					<ul class="header-social d-flex align-items-center justify-content-end gap-3">
+						{{ setting }}
+						{{ socials }}
+						{{ if title == 'facebook' }} <li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if}}
+						{{ if title == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if}}
+						{{ if title == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if}}
+						{{ if title == 'medium' }}<li><a href="{{ url }}"><i class="fa-brands fa-medium"></i></a></li>{{ /if}}
+						{{ if title == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if}}
+						{{ /socials }}
+						{{ /setting }}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-navigation">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-6 col-md-4 col-lg-2 pe-0">
+					<!-- Site logo -->
+					<div class="logo-img">
+						<a href="/">
+							
+							{{ setting }}
+							{{ logo }}<img src="{{ url }}" alt="logo" class="object-cover">{{ /logo }}
+							{{ /setting }}
+							
+
+						</a>
+					</div>
+				</div>
+				<div class="col-6 col-md-8">
+					<div class="header-right">
+						<!-- Start Header nav Menu Bar -->
+						<nav class="mainmenu-nav d-none d-lg-block">
+							<ul class="main-menu">
+								{{ nav:header_menu }}
+								<li class="{{ if children }}dropdown{{ /if }} {{ if is_current || is_parent }}active{{ /if }}">
+									<a href="{{ if url != '' }}{{ url }}{{ else }}javascript:;{{ /if }}">{{ title }}</a>
+
+									{{ if children }}
+									<ul class="dropdown-menu fade-down">
+										{{ children }}
+										<li class="{{ if is_current }}active{{ /if }}">
+											<a href="{{ url }}">{{ title }}</a>
+										</li>
+										{{ /children }}
+									</ul>
+									{{ /if }}
+								</li>
+								{{ /nav:header_menu }}
+							</ul>
+
+						</nav>
+						<!-- End Header nav Menu Bar -->
+
+						
+					</div>
+				</div>
+
+				<div class="col-5 col-md-4 col-lg-2">
+            <div class="header-right">
+              <!-- Start search icon -->
+              <div class="search-icon">
+                <a href="javascript:;"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+              <!-- End search icon -->
+
+              <!-- Start mobile toggle icon -->
+              <div class="toggle-menu-button">
+                <a href="javascript:;" class="">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
+              <!-- End mobile toggle icon -->
+            </div>
+          </div>
+			</div>
+		</div>
+	</div>
+	<!-- end header main navigation -->
+
+	<!-- Mobile menu -->
+	<div class="mobile-menu">
+		<div class="menu-close">
+			<a href="javascript:;"><img src="{{ theme:asset }}assets/images/close-menu.svg" alt="close-menu" class="object-cover"></a>
+		</div>
+		<ul class="main-menu">
+			{{ nav:header_menu }}
+			<li class="{{ if is_current || is_parent }}active{{ /if }} {{ if children }}dropdown{{ /if }}">
+				<a href="{{ url }}">{{ title }}</a>
+
+				{{ if children }}
+				<ul class="dropdown-menu fade-down">
+					{{ children }}
+					<li class="{{ if is_current }}active{{ /if }}">
+						<a href="{{ url }}">{{ title }}</a>
+					</li>
+					{{ /children }}
+				</ul>
+				{{ /if }}
+			</li>
+			{{ /nav:header_menu }}
+		</ul>
+	</div>
+</header>

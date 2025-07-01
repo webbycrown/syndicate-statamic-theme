@@ -1,0 +1,32 @@
+title: Setting
+data:
+  favicon: images/favicon.png
+  logo: images/logo.svg
+  logo_light: images/logo-light.svg
+  inner_banner_image: images/inner-banner-img.jpg
+  email: syndicate@gmail.com
+  phone_number: '+1 992 233 5544'
+  socials:
+    -
+      id: mburw3tb
+      title: facebook
+      url: 'https://www.facebook.com/'
+    -
+      id: mburwbbk
+      title: twitter
+      url: 'https://twitter.com/'
+    -
+      id: mburwjds
+      title: youtube
+      url: 'https://www.youtube.com/'
+    -
+      id: mburwmsv
+      title: medium
+      url: 'https://medium.com/'
+    -
+      id: mburwq0w
+      title: instagram
+      url: 'https://www.instagram.com/'
+  header_section: header_1
+  footer_section: footer_3
+  site_name: Syndicate

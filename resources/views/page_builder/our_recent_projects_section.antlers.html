@@ -1,0 +1,57 @@
+<section class="our-recent-projects-section">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <!-- start section heading -->
+            <div class="section-heading bottom-55">
+               <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+               <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-12">
+            <!--  Our Recent Projects gallery -->
+            <div class="recent-projects-gallery">
+               <!-- button tabs list -->
+               <ul class="button-tabs-list button-group" id="filters">
+                  <li class="button-tab-link current is-checked" data-filter="*">All</li>
+                  {{ category }}
+
+                  <li class="button-tab-link" data-filter=".{{ slug }}">{{ title }}</li>
+                  {{ /category }}
+               </ul>
+
+               <!-- All gallery -->
+               <div class="gallery-list">
+                  <div class="row grid">
+
+                     {{ portfolios }}
+                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 grid-item {{ category:slug }}">
+                        <div class="projects-gallery-box">
+                           <div class="projects-gallery-img">{{ image }}<img src="{{ url }}" alt="projects gallery img 1" class="object-cover">{{ /image }}</div>
+                           <div class="projects-gallery-hover">
+                              <a href="/portfolio/{{ slug }}">
+                                 <span class="icon"><img src="{{ theme:asset }}assets/images/arrow-btn.svg" alt="arrow btn" class="object-cover"></span>
+                                 {{ link_text }}
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     {{ /portfolios }}
+                  </div>
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="read-more-btn">
+                           <a href="/portfolio" class="btn btn-primary btn-style-3">View all</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

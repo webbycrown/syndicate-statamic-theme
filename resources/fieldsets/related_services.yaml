@@ -1,0 +1,15 @@
+title: 'Related Services'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: services_grid
+    field:
+      mode: select
+      collections:
+        - business_services
+      type: entries
+      display: Services

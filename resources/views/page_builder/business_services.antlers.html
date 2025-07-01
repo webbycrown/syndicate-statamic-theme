@@ -1,0 +1,213 @@
+{{ if is_homepage }}
+
+<!-- start business services -->
+<section class="business-services-section">
+<!-- start business shape -->
+<div class="business-shape">
+    <div class="shape-circle"></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+<!-- start section heading -->
+<div class="section-heading">
+    <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+    <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+</div>
+<!-- end section heading -->
+</div>
+</div>
+
+<div class="row">
+<!-- business services Grid-->
+{{ if collections == "business_services" }}
+{{ collection:business_services as="business_services" paginate="{pagination}" limit="{limit}" }}
+
+{{ /if }}
+{{business_services}}
+<div class="col-12 col-md-4">
+    <div class="business-service-grid">
+        <div class="business-service-icon">
+            {{ icon_image }}<img src="{{ url }}" alt="business planning icon" class="object-cover">{{ /icon_image }}
+        </div>
+        <h4><a href="/services/{{ slug }}">{{ title }}</a></h4>
+        <p>{{ short_description }}</p>
+        <a href="/services/{{ slug }}" class="service-btn"><img src="{{ theme:asset }}assets/images/arrow-btn.svg" alt="arrow btn" class="object-cover"></a>
+    </div>
+</div>
+{{ /business_services}}
+{{ if collections == "business_services" }}
+{{ /collection:business_services }}
+{{ /if }}
+<!-- business services Grid-->
+
+</div>
+
+</div>
+</section>
+
+{{ /if }}
+
+{{ if segment_1 == 'home-two' }}
+<section class="why-choose-us-section-style-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start section heading -->
+            <div class="section-heading">
+              <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+          </div>
+        </div>
+
+        <div class="row">
+            {{ if collections == "business_services" }}
+            {{ collection:business_services as="business_services" paginate="{pagination}" limit="{limit}" }}
+
+            {{ /if }}
+            {{business_services}}
+            <!-- why-choose-us Grid-->
+            <div class="col-12 col-md-4">
+                <div class="why-choose-us-grid">
+                  <div class="why-choose-us-icon">
+                     {{ icon_image }}<img src="{{ url }}" alt="business planning icon" class="object-cover">{{ /icon_image }}
+                 </div>
+                 <h4><a href="/services/{{ slug }}">{{ title }}</a></h4>
+                 <p>{{ short_description }}</p>
+             </div>
+         </div>
+         {{ /business_services}}
+         {{ if collections == "business_services" }}
+         {{ /collection:business_services }}
+         {{ /if }}
+        </div>
+      </div>
+    </section>
+{{ /if }}
+<!-- end business services -->
+
+
+{{ if segment_1 == 'home-three' }}
+<section class="why-choose-us-section-style-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- start section heading -->
+              <div class="section-heading bottom-55">
+                <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+              </div>
+              <!-- end section heading -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- why choose us Grid slider-->
+              <div class="why-choose-us-grid-slider">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    {{ if collections == "business_services" }}
+                    {{ collection:business_services as="business_services" paginate="{pagination}" limit="{limit}" }}
+
+                    {{ /if }}
+                    {{business_services}}
+                    <div class="swiper-slide">
+                        <!-- why-choose-us Grid-->
+                        <div class="why-choose-us-grid-style-3">
+                            <!-- <div class="why-choose-image">
+
+                            </div> -->
+                            <div class="why-choose-info">
+                                <div class="circle-icon mt-0 d-flex align-items-center justify-content-center">
+                                    {{ icon_image }}<img src="{{ url }}" alt="business planning icon" class="object-cover">{{ /icon_image }}
+                                    <!-- <span><img src="assets/images/why-choose-us-icon1.svg" alt="business planning icon"></span> -->
+                                </div>
+                                <h4><a href="/services/{{slug}}">{{ title }}</a></h4>
+                                <p>{{ short_description }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{ /business_services}}
+                    {{ if collections == "business_services" }}
+                    {{ /collection:business_services }}
+                    {{ /if }}
+
+                  </div>
+                  <!-- testimonial slider pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+{{ /if }}
+
+
+{{ if segment_1 == 'services'  }}
+
+ <section class="our-services-section-page inner-wrapper">
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <!-- start section heading -->
+              <div class="section-heading bottom-55 heading-style-2">
+                <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+              </div>
+              <!-- end section heading -->
+            </div>
+          </div>
+          <div class="services-list row">
+            
+            {{ if collections == "business_services" }}
+            {{ collection:business_services as="business_services" paginate="{pagination}" limit="{limit}" }}
+
+            {{ /if }}
+            {{business_services}}
+            <!-- start our services grid -->
+            <div class="service-item col-12 col-md-6 col-lg-4">
+                <div class="what-we-do-service service-style-3">
+                    <div class="icon">
+                        <span> {{ icon_image }}<img src="{{ url }}" alt="strategic block icon" class="object-cover"> {{ /icon_image }}</span>
+                    </div>
+                    <div class="our-services-info">
+                        <h6>{{ title }}</h6>
+                        <p>{{ short_description }}</p>
+                        <a href="/services/{{slug}}" class="btn btn-secondary btn-style-3">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            {{/business_services}}
+
+
+            {{ paginate }}
+            <!-- our services grid loader -->
+            <input type="hidden" class="lastPage" value="{{ total_pages }}">
+            <input type="hidden" class="currentPage" value="{{ current_page }}">
+            <div class="col-12 load-more-wrap">
+                <div class="read-more-bottom">
+                    <a href="{{ next_page }}" class="btn btn-secondary btn-style-3 ajax-load-more">Load more <img src="assets/images/loader.svg" alt="loader" class="object-cover d-none"></a>
+                </div>
+            </div>
+
+            {{ /paginate }}
+            {{ if collections == "business_services" }}
+            {{ /collection:business_services }}
+            {{ /if }}
+
+        </div>
+    </div>
+</section>
+
+
+{{ /if }}
+
+

@@ -1,0 +1,7 @@
+title: 'Team Members'
+template: our-teams/show
+revisions: false
+route: '/our-teams/{slug}'
+date_behavior:
+  past: public
+  future: private

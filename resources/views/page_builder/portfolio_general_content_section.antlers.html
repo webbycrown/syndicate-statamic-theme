@@ -1,0 +1,101 @@
+ <!-- start Image with text section -->
+
+    <section class="inner-cms-section inner-wrapper content__item">
+      <div class="container">
+        {{ page_builder scope="block" }}
+        {{if type == "intro_section"}}
+        {{ partial src="page_builder/{type}" }}
+        {{ /if }}
+        {{ /page_builder }}
+
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 pe-md-4">
+            <!-- Image with text img -->
+            <div class="inner-image-box item-overflow">
+              {{ image }}<img src="{{ url }}" alt="what we do image" class="content-item-zoom object-cover">{{ /image }}
+              <div class="d-none content-item-y">d none</div>
+            </div>
+            <!-- end Image with text img -->
+          </div>
+            <div class="col-12 col-md-6">
+              <!-- start Image with text content -->
+              <div class="image-with-text-content">
+                <h2 class="title">{{ title }}</h2>
+                <p>{{ content }}</p>
+
+                  <ul class="ul-list">
+                   {{ details_list }}
+                   <li><strong>{{ key }}:</strong> {{ value }}</li>
+                   {{ /details_list }}
+                  </ul>
+              </div>
+              <!-- end Image with text content -->
+            </div>
+        </div>
+
+        <!-- portfolio gallery -->
+        <div class="portfolio-gallery">
+          <div class="row align-items-center">
+            {{ gallery_images }}
+
+            <div class="col-12 col-md-4">
+              <div class="inner-image-box">
+                <img src="{{ url }}" alt="what we do image">
+              </div>
+            </div>
+            {{ /gallery_images }}
+          </div>
+        </div>
+
+         <div class="row">
+            <div class="col-12">
+              <div class="full-des-part">
+                <p>{{ full_description }}</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <!-- accordion  -->
+              <div class="accordion">
+                {{ accordions }}
+                {{ if column=="left" }}
+                <!-- accordion list  -->
+                <div class="accordion-list">
+                  <!-- accordion tabs  -->
+                  <div class="accordion-tabs {{ if first }}active{{ /if }}">
+                    <h3>{{ question }}</h3>
+                  </div>
+                  <!-- accordion content  -->
+                  <div class="accordion-content {{ if first }}active{{ /if }}">
+                    <p>{{ answer }}</p>
+                  </div>
+                </div>
+                {{ /if }}
+                {{ /accordions }}
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <!-- accordion  -->
+              <div class="accordion">
+                <!-- accordion list  -->
+                {{ accordions }}
+                {{ if column=="right" }}
+                <div class="accordion-list">
+                  <!-- accordion tabs  -->
+                  <div class="accordion-tabs">
+                    <h3>{{ question }}</h3>
+                  </div>
+                  <!-- accordion content  -->
+                  <div class="accordion-content">
+                    <p>{{ answer }}</p>
+                  </div>
+                </div>
+                {{ /if }}
+                {{ /accordions }}
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+    <!-- end Image with text section -->

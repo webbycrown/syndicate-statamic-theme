@@ -1,0 +1,159 @@
+{{ if is_homepage }}
+
+   
+    <!-- start Our sucess section -->
+    <section class="our-sucess-section">
+        <!-- start Our sucess box -->
+        <div class="our-sucess-box bg-tertiary" id="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- start section heading -->
+                        <div class="section-heading">
+                            <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                            <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+                        </div>
+                        <!-- end section heading -->
+                        <div class="row our-sucess-list">
+
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2><span class="counting" data-count="1099">{{ year_of_establishment }}</span>+</h2>
+                                    <h6>Year of<br> establishment</h6>
+                                </div>
+                            </div>
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2><span class="counting" data-count="33">{{ customers_worldwide }}</span>+</h2>
+                                    <h6>Of customers<br> worldwide</h6>
+                                </div>
+                            </div>
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2><span class="counting" data-count="20">{{ active_client_countries }}</span>+</h2>
+                                    <h6>Countries with active<br> client base</h6>
+                                </div>
+                            </div>
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2>{{ customer_rating }}</h2>
+                                    <h6>Customer<br> rating</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Our sucess box -->
+    </section>
+
+    {{ else }}
+    {{ if segment_1 != 'home-two' }}
+    <!-- start Our sucess section -->
+    <section class="our-sucess-section">
+        <!-- start Our sucess box -->
+        <div class="our-sucess-box bg-tertiary" id="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- start section heading -->
+                        <div class="section-heading">
+                            <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                            <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+                        </div>
+                        <!-- end section heading -->
+                        <div class="row our-sucess-list">
+
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2><span class="counting" data-count="1099">{{ year_of_establishment }}</span>+</h2>
+                                    <h6>Year of<br> establishment</h6>
+                                </div>
+                            </div>
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2><span class="counting" data-count="33">{{ customers_worldwide }}</span>+</h2>
+                                    <h6>Of customers<br> worldwide</h6>
+                                </div>
+                            </div>
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2><span class="counting" data-count="20">{{ active_client_countries }}</span>+</h2>
+                                    <h6>Countries with active<br> client base</h6>
+                                </div>
+                            </div>
+                            <!-- Our sucess service -->
+                            <div class="col-6 col-md-3">
+                                <div class="our-sucess-service">
+                                    <h2>{{ customer_rating }}</h2>
+                                    <h6>Customer<br> rating</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Our sucess box -->
+    </section>
+    <!-- end Our sucess section -->
+
+{{ /if }}
+{{ /if }}
+
+
+{{ if segment_1 == 'home-two' }}
+
+ <section class="our-sucess-section-style-2" id="counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start Our sucess box -->
+            <div class="our-sucess-box-style-2">
+              <div class="row our-sucess-list">
+                <!-- Our sucess service -->
+                <div class="col-6 col-md-3">
+                  <div class="our-sucess-service">
+                    <h2><span class="counting" data-count="200">{{ year_of_establishment }}</span>+</h2>
+                    <p>Year of establishment</p>
+                  </div>
+                </div>
+                <!-- Our sucess service -->
+                <div class="col-6 col-md-3">
+                  <div class="our-sucess-service">
+                    <h2><span class="counting" data-count="33">{{ customers_worldwide }}</span>+</h2>
+                    <p>Of customers worldwide</p>
+                  </div>
+                </div>
+                <!-- Our sucess service -->
+                <div class="col-6 col-md-3">
+                  <div class="our-sucess-service">
+                    <h2><span class="counting" data-count="22">{{ active_client_countries }}</span>+</h2>
+                    <p>Countries with active client base</p>
+                  </div>
+                </div>
+                <!-- Our sucess service -->
+                <div class="col-6 col-md-3">
+                  <div class="our-sucess-service">
+                    <h2>{{ customer_rating }}</h2>
+                    <p>Customer rating</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Our sucess box -->
+          </div>
+        </div>
+      </div>
+    </section>
+{{ /if }}

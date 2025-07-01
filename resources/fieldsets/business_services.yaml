@@ -1,0 +1,36 @@
+title: 'Business Services'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: collections
+    field:
+      max_items: 1
+      mode: select
+      type: collections
+      display: Collections
+  -
+    handle: limit
+    field:
+      type: integer
+      display: limit
+  -
+    handle: pagination
+    field:
+      options:
+        -
+          key: 'true'
+          value: 'true'
+        -
+          key: 'false'
+          value: 'false'
+      type: select
+      display: pagination

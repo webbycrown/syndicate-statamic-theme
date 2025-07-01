@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12">
+    <h2 class="title" data-aos="fade-up" data-aos-duration="1000">Related post</h2>
+  </div>
+  {{ related_blog limit='{limit}' }}
+  <!-- blog grid -->
+  <div class="col-12 col-md-6">
+    <div class="blog-grid-style-3">
+      <div class="blog-img">
+        {{ image }}<a href="/blog/{{slug}}"><img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
+        <div class="blog-date">
+          {{ updated_at format="d M Y" }}
+        </div>
+      </div>
+      <div class="blog-info">
+        <div class="blog-admin-info">
+        </div>
+        <h6><a href="/blog/{{slug}}">{{ title }}</a></h6>
+        <p>{{ short_description }}</p>
+        <a href="/blog/{{slug}}" class="btn btn-primary">Read more</a>
+      </div>
+    </div>
+  </div>
+  {{ /related_blog }}
+  <!-- blog grid -->
+</div>

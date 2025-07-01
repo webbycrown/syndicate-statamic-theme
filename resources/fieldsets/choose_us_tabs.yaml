@@ -1,0 +1,67 @@
+title: 'Choose Us Tabs'
+fields:
+  -
+    handle: subtitle
+    field:
+      type: text
+      display: Subtitle
+      validate:
+        - required
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: tabs
+    field:
+      type: grid
+      display: Tabs
+      fields:
+        -
+          handle: tab_title
+          field:
+            type: text
+            display: 'Tab Title'
+        -
+          handle: image
+          field:
+            max_files: 1
+            container: assets
+            type: assets
+            display: Image
+        -
+          handle: subtitle
+          field:
+            type: text
+            display: Subtitle
+            validate:
+              - required
+        -
+          handle: title_text
+          field:
+            type: text
+            display: 'Title Text'
+            validate:
+              - required
+        -
+          handle: description
+          field:
+            type: textarea
+            display: Description
+            validate:
+              - required
+        -
+          handle: button_text
+          field:
+            type: text
+            display: 'Button Text'
+            validate:
+              - required
+        -
+          handle: button_url
+          field:
+            type: text
+            display: 'Button Url'
+            validate:
+              - required

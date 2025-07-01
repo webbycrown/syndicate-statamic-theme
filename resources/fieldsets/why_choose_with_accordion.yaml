@@ -1,0 +1,51 @@
+title: 'Why Choose With Accordion'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: gallery_images
+    field:
+      max_files: 2
+      container: assets
+      type: assets
+      display: 'Gallery Images'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: accordion_items
+    field:
+      type: replicator
+      display: 'Accordion Items'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: accordion_heading
+                  field:
+                    type: text
+                    display: 'Accordion Heading'
+                -
+                  handle: accordion_content
+                  field:
+                    type: textarea
+                    display: 'Accordion Content'
+  -
+    handle: bullet_points
+    field:
+      type: array
+      display: 'Bullet Points'

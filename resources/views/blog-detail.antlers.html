@@ -1,0 +1,119 @@
+    <!-- start inner hero banner section -->
+    <section class="inner-hero-section content__item">
+      <!-- inner- banner img -->
+      <div class="inner-banner-img item-overflow">
+        {{ image }}<img src="{{ url }}" alt="what we do image" class="object-cover">{{ /image }}
+        <div class="d-none content-item-y">d none</div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start inner hero content -->
+              <div class="inner-hero-content">
+                <h1 class="title">Blog Detail</h1>
+                
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog Detail</li>
+                  </ol>
+                </nav>
+              </div>
+            <!-- end inner hero content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end inner hero banner section -->
+
+    <!-- start blog single page -->
+    <section class="blog-single-page inner-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <!-- blog single wrapper -->
+            <div class="blog-single-wrapper">
+              <!-- blog single content -->
+              <div class="blog-single-content">
+                <div class="blog-thumb-img">
+                 {{ featured_image }} <img src="{{ url }}" alt="blog img1" class="object-cover">{{ /featured_image }}
+                </div>
+                <div class="blog-info">
+                  <div class="blog-admin-info">
+                    <div class="blog-date">
+                      {{ updated_at format="d M Y" }}
+                    </div>
+                  </div>
+                  
+                  <h2 class="title">{{ title }}</h2>
+                  {{ content }}
+                  {{ if type == "text" }}
+                  <p>{{ text }}</p>
+                  {{ /if }}
+
+                  {{ if type == "blockqoute" }}
+                  <blockquote class="blockqoute">
+                   {{ blockqoute }}
+                    </blockquote>
+                    {{ /if }}
+
+                  {{ if type == "image" }}
+                  <div class="row">
+                     {{ image }}
+                    <div class="col-12 col-md-6">
+                       <img src="{{ url }}" alt="blog image" class="img-fluid object-cover">
+                    </div>
+                     {{ /image }}
+                  </div>
+                  {{ /if }}
+
+                  {{ /content }}
+
+                  <div class="blog-details-tags">
+                    <div class="share-icon"><img src="{{ theme:asset }}assets/images/share-icon.svg" alt="share icon" class="object-cover"></div>
+                    <ul class="blog-tags">
+
+                      {{ tag }}
+
+                      <li><a href="#">{{ title }}</a></li>
+                      {{ /tag }}
+                    </ul>
+
+                    <ul class="social-link">
+                     
+                      {{ socials }}
+                      {{ if name == 'facebook' }}<li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li> {{ /if  }}
+                      {{ if name == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
+                      {{ if name == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
+                      {{ if name == 'medium' }} <li><a href="{{ url }}"><i class="fa-brands fa-medium"></i></a></li>{{ /if }}
+                      {{ if name == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
+                      {{ /socials }}
+                    </ul>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+            
+        </div>
+        <div class="col-12 col-md-4 ps-lg-5">
+
+          <!-- blog sidebar -->
+         {{ partial:blog-sidebar }}
+          <!-- blog sidebar -->
+         
+        </div>
+      </div>
+
+      {{ page_builder scope="block" }}
+      {{if type == "related_blog_post"}}
+      {{ partial src="page_builder/{type}" }}
+      {{ /if }}
+      {{ /page_builder }}
+        
+      </div>
+    </section>
+    <!-- End Our Team Members section -->
+
+   

@@ -1,0 +1,42 @@
+
+    <!-- start Image with text section -->
+    <section class="inner-image-with-text-section content__item">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 pe-md-4">
+            <!-- Image with text img -->
+            <div class="inner-image-box item-overflow">
+              {{ image }}<img src="{{ url }}" alt="what we do image" class="content-item-zoom" class="object-cover">{{ /image }}
+              <div class="d-none content-item-y">d none</div>
+            </div>
+            <!-- end Image with text img -->
+          </div>
+            <div class="col-12 col-md-6">
+              <!-- start Image with text content -->
+              <div class="image-with-text-content">
+                <h5 class="sub-title">{{ section_subtitle }}</h5>
+                <h2 class="title">{{ section_title }}</h2>
+                <p>{{ short_description }}</p>
+
+                  <ul class="ul-list">
+                    {{ bullet_points }}<li>{{ value }}</li>{{ /bullet_points }}
+                  </ul>
+              </div>
+              <!-- end Image with text content -->
+            </div>
+        </div>
+
+        <div class="row icon-box-list">
+          {{ icon_boxes }}
+          <div class="col-6 col-sm-6 col-md-3">
+            <div class="icon-box">
+              <span class="box-count">{{ count }}</span>
+              <div class="icon">{{ icon }}<img src="{{ url }}" alt="box icon" class="object-cover">{{ /icon }}</div>
+              <h6>{{ title }}</h6>
+            </div>
+          </div>
+          {{ /icon_boxes }}
+        </div>
+      </div>
+    </section>
+    <!-- end Image with text section -->

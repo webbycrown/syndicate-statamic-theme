@@ -1,0 +1,168 @@
+
+{{ if is_homepage }}
+
+<!-- start what we do section -->
+<section class="what-we-do-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+<!-- start section heading -->
+<div class="section-heading">
+    <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+    <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+</div>
+<!-- end section heading -->
+
+<!-- start what we do slider -->
+<div class="what-we-do-slider">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+<!-- start what we do slider item -->
+{{ business_services }}
+<div class="swiper-slide">
+    <div class="what-we-do-service">
+        <div class="circle-icon">
+            <span>{{ icon_image }}<img src="{{ url }}" alt="strategic block icon" class="object-cover">{{ /icon_image }}</span>
+        </div>
+        <div class="what-we-do-info">
+            <h6>{{ title }}</h6>
+            <p>{{ short_description }}</p>
+        </div>
+    </div>
+</div>
+{{ /business_services }}
+<!-- start what we do slider item -->
+
+
+</div>
+</div>
+<!-- What we do slider arrow-->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+<!-- end what we do slider -->
+
+</div>
+</div>
+</div>
+</section>
+<!-- end what we do section -->
+
+{{ /if }}
+
+{{ if segment_1 == 'home-two' }}
+ <section class="our-services-section-style-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start section heading -->
+            <div class="section-heading">
+              <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+
+              <div class="row">
+                {{ business_services }}
+                    <!-- start our services grid -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="what-we-do-service">
+                          <div class="circle-icon">
+                            <span>{{ icon_image }}<img src="{{ url }}" alt="strategic block icon" class="object-cover">{{ /icon_image }}</span>
+                          </div>
+                          <h6>{{ title }}</h6>
+                          <p>{{ short_description }}</p>
+                          <a href="/services/{{slug}}" class="btn btn-primary btn-style-2">Read more</a>
+                        </div>
+                    </div>
+                    {{ /business_services }}
+                    <div class="col-12 text-center mt-sm-4 bottom-view-btn">
+                      <a href="/services" class="btn btn-primary btn-style-2">View all</a>
+                    </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+{{ /if }}
+
+
+{{ if segment_1 == 'home-three' }}
+   <section class="our-services-section-style-3">
+          <div class="container">
+            <div class="row mb-5 align-items-end">
+              <div class="col-12 col-md-8">
+                <!-- start section heading -->
+                <div class="section-heading bottom-55">
+                  <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                  <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+                </div>
+                <!-- end section heading -->
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="text-right right-view-btn">
+                  <a href="/services" class="btn btn-secondary btn-style-3">View all <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="services-list row">
+                {{ business_services }}
+              <!-- start our services grid -->
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <div class="what-we-do-service service-style-3">
+                  <div class="icon">
+                    <span>{{ icon_image }}<img src="{{ url }}" alt="strategic block icon" class="object-cover">{{ /icon_image }}</span>
+                  </div>
+                  <div class="our-services-info">
+                    <h6>{{ title }}</h6>
+                    <p>{{ short_description }}</p>
+                    <a href="/services/{{slug}}" class="btn btn-secondary btn-style-3">Read more</a>
+                  </div>
+                </div>
+              </div>
+              {{ /business_services }}
+            </div>
+          </div>
+        </section>
+{{ /if }}
+
+
+
+{{ if segment_1 == 'services' }}
+ <section class="our-services-section-style-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start section heading -->
+            <div class="section-heading">
+              <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+              <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+            </div>
+            <!-- end section heading -->
+
+              <div class="row">
+                {{ business_services }}
+                    <!-- start our services grid -->
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="what-we-do-service">
+                          <div class="circle-icon">
+                            <span>{{ icon_image }}<img src="{{ url }}" alt="strategic block icon" class="object-cover">{{ /icon_image }}</span>
+                          </div>
+                          <h6>{{ title }}</h6>
+                          <p>{{ short_description }}</p>
+                          <a href="/services/{{slug}}" class="btn btn-primary btn-style-2">Read more</a>
+                        </div>
+                    </div>
+                    {{ /business_services }}
+                    <div class="col-12 text-center mt-sm-4 bottom-view-btn">
+                      <a href="/services" class="btn btn-primary btn-style-2">View all</a>
+                    </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+{{ /if }}

@@ -1,0 +1,300 @@
+{{ if section_type == "vertical_slider" }}
+
+   <!-- start testimonial section -->
+   <section class="testimonial-section-style-3 content__item">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <!-- start section heading -->
+               <div class="section-heading bottom-55">
+                  <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                  <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+               </div>
+               <!-- end section heading -->
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-12 col-lg-6">
+               <!-- testimonial video image -->
+               <div class="testimonial-video-image item-overflow">
+                  <img src="{{ theme:asset }}assets/images/about-image2.jpg" alt="testimonial image" class="content-item-zoom object-cover">
+                  <div class="d-none content-item-y">d none</div>
+                  <!-- testimonial video icon -->
+                  <div class="about-video-icon">
+                     <a href="{{ video_url }}" class="circle-icon popup-youtube"><span><i class="fa-solid fa-play"></i></span></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+               <!-- start testimonial slider -->
+               <div class="testimonial-slider-home-3">
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        {{  testimonial }}
+                        <!-- start testimonial slide -->
+                        <div class="swiper-slide">
+                           <div class="testimonial-item-box">
+                              <!-- avatar image -->
+                              <div class="avatar-img">
+                                 <a href="/testimonial">{{ image }}<img src="{{ url }}" alt="testimonial img" class="object-cover">{{ /image }}</a>
+                              </div>
+
+                              <!-- testimonial user info  -->
+                              <div class="testimonial-user">
+                                 <h6><a href="/testimonial">{{title}}</a></h6>
+                                 <span>{{ position }}</span>
+                                 <p>{{ short_description }}</p>
+                              </div>
+                           </div>
+                        </div>
+                        {{ /testimonial }}
+                        <!-- start testimonial slide -->
+                     </div>
+
+
+                  </div>
+                  <!-- testimonial slider pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+               <!-- end testimonial slider -->
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End testimonial section -->
+
+
+
+     {{ /if }} 
+
+   {{ if is_homepage }}
+
+   
+   <!-- start testimonial section -->
+   <section class="testimonial-section">
+      <div class="shape-image">
+         <img src="{{ theme:asset }}assets/images/start-shape.svg" alt="start shape" class="object-cover">
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <!-- start section heading -->
+               <div class="section-heading">
+                  <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                  <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+               </div>
+               <!-- end section heading -->
+
+               <!-- start testimonial slider -->
+               <div class="testimonial-slider">
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        {{ testimonial }}
+
+                        <!-- start testimonial slide -->
+                        <div class="swiper-slide">
+                           <div class="testimonial-info">
+                              <span class="quotes-icon"><img src="{{ theme:asset }}assets/images/quotes-icon.svg" alt="quotes icon" class="object-cover"></span>
+                              <p>{{ short_description }}</p>
+                              <!-- testimonial user info  -->
+                              <div class="testimonial-user">
+                                 <!-- avatar image -->
+                                 <div class="avatar-img">
+                                    <a href="/testimonial">{{ image }}<img src="{{ url }}" alt="testimonial img" class="object-cover">{{ /image }}</a>
+                                 </div>
+                                 <h6><a href="/testimonial">{{ title }}</a></h6>
+                                 <span>{{ position }}</span>
+                              </div>
+                           </div>
+                        </div>
+
+                        {{ /testimonial }}
+
+
+                     </div>
+
+                     <!-- testimonial slider arrow -->
+                     <div class="swiper-button-prev"><img src="{{ theme:asset }}assets/images/arrow-left.svg" alt="arrow left" class="object-cover"></div>
+                     <div class="swiper-button-next"><img src="{{ theme:asset }}assets/images/arrow-right.svg" alt="arrow right" class="object-cover"></div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
+               <!-- end testimonial slider -->
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- End testimonial section -->
+{{ else }}
+{{ if segment_1 == 'about_us' }}
+   <section class="testimonial-section-style-2 content__item">
+      <div class="testimonial-bg-image">
+         {{ image }}<img src="{{ url }}" alt="testimonial-bg-image" class="content-item-zoom object-cover">{{ /image }}
+      </div>
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+               <!-- start section heading -->
+               <div class="section-heading content-item-y">
+                  <span class="quotes-icon"><img src="{{ theme:asset }}assets/images/quotes-icon.svg" alt="quotes icon" class="object-cover"></span>
+                  <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                  <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+               </div>
+               <!-- end section heading -->
+            </div>
+            <div class="col-12 col-lg-7">
+               <!-- start testimonial slider -->
+               <div class="testimonial-slider-home-2">
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        {{ testimonial }}
+                        <!-- start testimonial slide -->
+                        <div class="swiper-slide">
+                           <div class="testimonial-info">
+                              <p>{{ short_description }}</p>
+                              <!-- testimonial user info  -->
+                              <div class="testimonial-user">
+                                 <!-- avatar image -->
+                                 <div class="avatar-img">
+                                    <a href="/testimonial">{{ image }}<img src="{{ url }}" alt="testimonial img" class="object-cover"> {{ /image }}</a>
+                                 </div>
+                                 <h6><a href="/testimonial">{{ title }}</a></h6>
+                                 <span>{{ position }}</span>
+                              </div>
+                           </div>
+                        </div>
+                        {{ /testimonial }}
+
+                     </div>
+                  </div>
+                  <!-- testimonial slider pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+               <!-- end testimonial slider -->
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+{{ /if }}
+{{ /if }}
+
+{{ if segment_1 == 'home-two' }}
+{{ if segment_1 != 'about_us' }}
+
+<section class="testimonial-section-style-2 content__item">
+      <div class="testimonial-bg-image">
+         {{ image }}<img src="{{ url }}" alt="testimonial-bg-image" class="content-item-zoom object-cover">{{ /image }}
+      </div>
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+               <!-- start section heading -->
+               <div class="section-heading content-item-y">
+                  <span class="quotes-icon"><img src="{{ theme:asset }}assets/images/quotes-icon.svg" alt="quotes icon" class="object-cover"></span>
+                  <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                  <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+               </div>
+               <!-- end section heading -->
+            </div>
+            <div class="col-12 col-lg-7">
+               <!-- start testimonial slider -->
+               <div class="testimonial-slider-home-2">
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        {{ testimonial }}
+                        <!-- start testimonial slide -->
+                        <div class="swiper-slide">
+                           <div class="testimonial-info">
+                              <p>{{ short_description }}</p>
+                              <!-- testimonial user info  -->
+                              <div class="testimonial-user">
+                                 <!-- avatar image -->
+                                 <div class="avatar-img">
+                                    <a href="/testimonial">{{ image }}<img src="{{ url }}" alt="testimonial img" class="object-cover">{{ /image }}</a>
+                                 </div>
+                                 <h6><a href="/testimonial">{{ title }}</a></h6>
+                                 <span>{{ position }}</span>
+                              </div>
+                           </div>
+                        </div>
+                        {{ /testimonial }}
+
+                     </div>
+                  </div>
+                  <!-- testimonial slider pagination -->
+                  <div class="swiper-pagination"></div>
+               </div>
+               <!-- end testimonial slider -->
+            </div>
+         </div>
+      </div>
+   </section>
+{{ /if }}
+{{ /if }}
+
+
+{{ if segment_1 == 'home-three' }}
+
+< <section class="testimonial-section-style-3 content__item">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- start section heading -->
+              <div class="section-heading bottom-55">
+                <h5 class="sub-title" data-aos="fade-up" data-aos-duration="500">{{ section_subtitle }}</h5>
+                <h2 class="title" data-aos="fade-up" data-aos-duration="1000">{{ section_title }}</h2>
+              </div>
+              <!-- end section heading -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <!-- testimonial video image -->
+              <div class="testimonial-video-image item-overflow">
+                {{ image }} <img src="{{ url }}" alt="testimonial image" class="content-item-zoom object-cover">{{ /image }}
+                <div class="d-none content-item-y">d none</div>
+                <!-- testimonial video icon -->
+                <div class="about-video-icon">
+                  <a href="{{ video_url }}" class="circle-icon popup-youtube"><span><i class="fa-solid fa-play"></i></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <!-- start testimonial slider -->
+              <div class="testimonial-slider-home-3">
+               <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  {{ testimonial }}
+                  <!-- start testimonial slide -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item-box">
+                      <!-- avatar image -->
+                      <div class="avatar-img">
+                        <a href="/testimonial">{{ image }}<img src="{{ url }}" alt="testimonial img" class="object-cover">{{ /image }}</a>
+                      </div>
+                      
+                      <!-- testimonial user info  -->
+                      <div class="testimonial-user">
+                        <h6><a href="/testimonial">{{title}}</a></h6>
+                        <span>{{position}}</span>
+                        <p>{{ short_description }}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {{ /testimonial }}
+
+                </div>
+
+                
+              </div>
+              <!-- testimonial slider pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- end testimonial slider -->
+          </div>
+        </div>
+      </div>
+    </section>
+{{ /if }}

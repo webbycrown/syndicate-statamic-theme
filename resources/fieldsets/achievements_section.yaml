@@ -1,0 +1,39 @@
+title: 'Achievements Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: our_specialties
+    field:
+      type: grid
+      display: 'Our Specialties'
+      fields:
+        -
+          handle: icon
+          field:
+            container: assets
+            type: assets
+            display: Icon
+        -
+          handle: label
+          field:
+            type: text
+            display: label
+        -
+          handle: value
+          field:
+            type: text
+            display: Value
+        -
+          handle: key
+          field:
+            type: text
+            display: Key

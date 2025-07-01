@@ -1,0 +1,33 @@
+
+
+    <section class="inner-hero-section content__item">
+      <!-- inner- banner img -->
+      <div class="inner-banner-img item-overflow">
+       {{ hero_image }} <img src="{{ url }}" alt="inner banner img" class="content-item-zoom object-cover">{{ /hero_image }}
+        <div class="d-none content-item-y">d none</div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- start inner hero content -->
+              <div class="inner-hero-content">
+                <h1 class="title">Service detail</h1>
+                
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Service detail</li>
+                  </ol>
+                </nav>
+              </div>
+            <!-- end inner hero content -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end inner hero banner section -->
+
+  {{ page_builder scope="block" }}
+  {{ partial src="page_builder/{type}" }}
+  {{ /page_builder }}

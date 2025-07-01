@@ -1,0 +1,20 @@
+title: 'Latest Blog Posts Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: blog
+    field:
+      mode: select
+      collections:
+        - blog
+      type: entries
+      display: Blog

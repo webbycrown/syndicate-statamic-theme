@@ -1,0 +1,61 @@
+
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Primary Meta Tags -->
+  <title>{{ title ?? site:name }}</title>
+  <meta name="title" content="{{ title ?? site:name }}">
+
+
+ <meta name="description" content="{{ seo_description ?? 'Discover beautiful content and services at ' }}">
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  {{ setting }}
+  {{ favicon }}
+  <link rel="icon" href="{{ url }}" type="image/gif">
+  {{ /favicon }}
+  {{ /setting }}
+
+  <!-- Open Graph / Facebook -->
+
+  <meta name="description" content="{{ seo_description ?? 'Discover beautiful content and services at '}}">
+  <meta property="og:title" content="{{ seo_title ?? site:name }}">
+  <meta property="og:description" content="{{ seo_description ?? 'Explore services and stories with us.' }}">
+  <meta property="twitter:title" content="{{ seo_title ?? site:name }}">
+  <meta property="twitter:description" content="{{ seo_description ?? 'Explore services and stories with us.' }}">
+
+ {{ if seo_image }}
+    {{ seo_image }}
+        <meta property="og:image" content="{{ url }}">
+        <meta property="twitter:image" content="{{ url }}">
+    {{ /seo_image }}
+{{ else }}
+    <meta property="og:image" content="{{ theme:asset src='assets/images/og-default.jpg' }}">
+    <meta property="twitter:image" content="{{ theme:asset src='assets/images/og-default.jpg' }}">
+{{ /if }}
+
+
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ current_url }}">
+
+  <!-- Fonts style file -->
+  <link rel="stylesheet" href="{{ theme:asset src='assets/css/all-fontawesome.min.css' }}">
+
+  <!-- Custom Libraries style -->
+  <link rel="stylesheet" type="text/css" href="{{ theme:asset src='assets/css/bootstrap.min.css' }}">
+  <link rel="stylesheet" type="text/css" href="{{ theme:asset src='assets/css/swiper-bundle.min.css' }}">
+  <link rel="stylesheet" type="text/css" href="{{ theme:asset src='assets/css/aos.css' }}">
+  <link rel="stylesheet" type="text/css" href="{{ theme:asset src='assets/css/magnific-popup.css' }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+  <!-- Custom style -->
+  <link rel="stylesheet" type="text/css" href="{{ theme:asset src='assets/css/style.css' }}">
+  <link rel="stylesheet" type="text/css" href="{{ theme:asset src='assets/css/responsive.css' }}">
+
+</head>

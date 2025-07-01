@@ -1,0 +1,41 @@
+ <!-- start Related services section -->
+    <section class="related-services-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <!-- Related services wrap -->
+              <div class="related-services-wrap">
+                <div class="row">
+                  <div class="col-12">
+                    <!-- start section heading -->
+                    <div class="section-heading">
+                      <h2 class="title">{{ sub_title }}</h2>
+                    </div>
+                    <!-- end section heading -->
+                  </div>
+                </div>
+                <div class="row">
+                  {{ portfolios }}
+             
+
+                  <!-- start projects grid -->
+                  <div class="col-6 col-md-6 col-lg-3">
+                      <div class="projects-gallery-box">
+                        <div class="projects-gallery-img">{{ image }}<img src="{{ url }}" alt="projects gallery img 1" class="object-cover">{{ /image }}</div>
+                        <div class="projects-gallery-hover">
+                          <a href="/portfolio/{{ slug }}">
+                            <span class="icon"><img src="{{ theme:asset }}assets/images/arrow-btn.svg" alt="arrow btn" class="object-cover"></span>
+                            {{ link_text }}
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+                  {{ /portfolios }}
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Related services section -->

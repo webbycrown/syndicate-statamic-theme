@@ -1,0 +1,28 @@
+{{ if show_hero_section == true }}
+  {{ partial:inner-hero-section }}
+{{ /if }}
+
+       
+ {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+        {{ /page_builder }}
+
+
+      <!-- ENQUIRY FORMS Popup -->
+  <div id="enquiry-form-popup" class="mfp-hide all-pupop enquiry-form-popup">
+    <!-- popup body -->
+    <div class="popup-body">
+      <!-- start Popup heading -->
+      <div class="section-heading">
+        <h5 class="sub-title">ENQUIRY FORMS</h5>
+        <h2 class="popup-title">Contact information</h2>
+      </div>
+      <!-- end Popup heading -->
+
+      <!-- enquiry-form -->
+      <div class="enquiry-form">
+          {{ partial:enquiry-form }}
+      </div>
+    </div>
+  </div>
+  <!-- End Newsletter Popup -->

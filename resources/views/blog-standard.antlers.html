@@ -1,0 +1,56 @@
+  <!-- start inner hero banner section -->
+  {{ if show_hero_section == true }}
+  {{ partial:inner-hero-section }}
+  {{ /if }}
+  <!-- end inner hero banner section -->
+
+    <!-- start blog grid page section -->
+    <section class="blog-grid-section blog-grid-page inner-wrapper">
+      <div class="container">
+        {{ page_builder scope="block" }}
+        {{if type == "intro_section"}}
+        {{ partial src="page_builder/{type}" }}
+        {{ /if }}
+        {{ /page_builder }}
+
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <!-- blog grid -->
+            {{ collection:blog as="blogs" paginate="true" limit="6" }}
+            {{ blogs }}
+              <div class="blog-grid-style-3 blog-full-grig">
+                <div class="blog-img">
+                  <a href="blog/{{slug}}">{{ image }}<img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
+                  
+                </div>
+                <div class="blog-info">
+                  <div class="blog-admin-info">
+                    <div class="blog-date">
+                      {{ updated_at format="d M Y" }}
+                    </div>
+                  </div>
+                  <h6><a href="blog/{{slug}}">{{ title }}</a></h6>
+                  <p>{{ short_description }}</p>
+                  <a href="blog/{{slug}}" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+               {{ /blogs }}
+               {{ /collection:blog }}
+            
+              <div class="col-12">
+                <div class="read-more-bottom text-start">
+                    <a href="/blog" class="btn btn-secondary btn-style-3">Load more <img src="assets/images/loader.svg" alt="loader" class="object-cover"></a>
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-md-4 ps-lg-5">
+
+          <!-- blog sidebar -->
+          {{ partial:blog-sidebar }}
+          <!-- blog sidebar -->
+        </div>
+      </div>
+        
+      </div>
+    </section>
+    <!-- End Our Team Members section -->

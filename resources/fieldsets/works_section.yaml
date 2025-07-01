@@ -1,0 +1,53 @@
+title: 'Works Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: main_image
+    field:
+      max_files: 3
+      container: assets
+      type: assets
+      display: 'Main Image'
+  -
+    handle: help_steps
+    field:
+      type: grid
+      display: 'Help Steps'
+      fields:
+        -
+          handle: tab_type
+          field:
+            type: text
+            display: 'Tab Type'
+        -
+          handle: icon
+          field:
+            max_files: 1
+            container: assets
+            type: assets
+            display: Icon
+            validate:
+              - required
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+            validate:
+              - required
+        -
+          handle: description
+          field:
+            type: textarea
+            display: Description
+            validate:
+              - required

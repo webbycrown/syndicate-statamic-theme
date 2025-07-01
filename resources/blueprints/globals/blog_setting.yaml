@@ -1,0 +1,22 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: blog_single_page
+            field:
+              options:
+                -
+                  key: blog_single_1
+                  value: 'Blog Single 1'
+                -
+                  key: blog_single_2
+                  value: 'Blog Single 2'
+                -
+                  key: blog_single_3
+                  value: 'Blog Single 3'
+              default: blog_single_1
+              type: select
+              display: 'Blog Single Page'

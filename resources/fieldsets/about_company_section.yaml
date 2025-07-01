@@ -1,0 +1,90 @@
+title: 'About Company Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: image_1
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image 1'
+  -
+    handle: image_2
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image 2'
+  -
+    handle: video_url
+    field:
+      type: text
+      display: 'Video URL'
+  -
+    handle: image_3
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image 3'
+  -
+    handle: feature_list
+    field:
+      type: grid
+      display: 'Feature List'
+      fields:
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+        -
+          handle: icon
+          field:
+            container: assets
+            type: assets
+            display: Icon
+        -
+          handle: description
+          field:
+            type: textarea
+            display: Description
+  -
+    handle: button_text
+    field:
+      type: text
+      display: 'Button Text'
+  -
+    handle: button_link
+    field:
+      type: text
+      display: 'Button Link'
+  -
+    handle: about_image_info
+    field:
+      type: textarea
+      display: 'About image info'
+  -
+    handle: phone_text
+    field:
+      type: textarea
+      display: 'Phone Text'
+  -
+    handle: phone_number
+    field:
+      type: text
+      display: 'Phone Number'

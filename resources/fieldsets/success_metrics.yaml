@@ -1,0 +1,39 @@
+title: 'Success Metrics'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+      validate:
+        - required
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+      validate:
+        - required
+  -
+    handle: year_of_establishment
+    field:
+      default: '0'
+      type: integer
+      display: 'Year of establishment'
+  -
+    handle: customers_worldwide
+    field:
+      default: '0'
+      type: integer
+      display: 'Customers Worldwide'
+  -
+    handle: active_client_countries
+    field:
+      default: '0'
+      type: integer
+      display: 'Active Client Countries'
+  -
+    handle: customer_rating
+    field:
+      type: text
+      display: 'Customer Rating'

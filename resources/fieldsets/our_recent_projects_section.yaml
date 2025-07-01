@@ -1,0 +1,28 @@
+title: 'Our Recent Projects Section'
+fields:
+  -
+    handle: section_subtitle
+    field:
+      type: text
+      display: 'Section Subtitle'
+  -
+    handle: section_title
+    field:
+      type: text
+      display: 'Section Title'
+  -
+    handle: portfolios
+    field:
+      mode: select
+      collections:
+        - portfolio
+      type: entries
+      display: Portfolios
+  -
+    handle: category
+    field:
+      mode: select
+      taxonomies:
+        - portfolio_category
+      type: terms
+      display: Category

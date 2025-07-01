@@ -1,0 +1,101 @@
+{{ footer }}
+<footer class="footer-one">
+    <!-- start Get free quote!! -->
+    <div class="get-free-quote">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5">
+            <h2>Get free quote!!</h2>
+          </div>
+          <div class="col-12 col-md-7">
+            <!-- Get free quote form -->
+            <form class="get-free-quote-form">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
+              <button class="btn btn-primary">Submit</button>
+            </form>
+               <p class="form-message" style="display:none;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Get free quote!! -->
+
+    <!-- start footer main -->
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-3">
+            <!-- footer about info -->
+            <div class="footer-widget-about">
+              <div class="footer-logo">
+                <a href="/">{{ setting }}{{ logo_light }}<img src="{{ url }}" alt="logo light" class="object-cover">{{ /logo_light }}{{ /setting }}</a>
+              </div>
+              <p>{{ description }}</p>
+
+              <!-- Footer social link -->
+              <ul class="header-social d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+               {{ setting }}
+               {{ socials }}
+               {{ if title == 'facebook' }}<li><a href="{{ url }}"><i class="fa-brands fa-facebook-f"></i></a></li>{{ /if }}
+               {{ if title == 'twitter' }}<li><a href="{{ url }}"><i class="fa-brands fa-twitter"></i></a></li>{{ /if }}
+               {{ if title == 'youtube' }}<li><a href="{{ url }}"><i class="fa-brands fa-youtube"></i></a></li>{{ /if }}
+               {{ if title == 'medium' }}<li><a href="{{ url }}"><i class="fa-brands fa-medium"></i></a></li>{{ /if}}
+               {{ if title == 'instagram' }}<li><a href="{{ url }}"><i class="fa-brands fa-instagram"></i></a></li>{{ /if }}
+               {{/socials }}
+               {{ /setting }}
+             </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <!-- footer link -->
+            <div class="footer-link menu1">
+              <h6>Links</h6>
+              <ul>
+               {{ footer_links }}
+               <li><a href="{{ url }}">{{ label }}</a></li>
+               {{ /footer_links }}
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <!-- footer link -->
+            <div class="footer-link menu2">
+              <h6>Our Services</h6>
+              <ul>
+                {{ service_links }}
+                <li><a href="{{ url }}">{{ label }}</a></li>
+                {{ /service_links }}
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- footer address -->
+            <div class="footer-widget-address">
+              <h6>Official info</h6>
+              <div class="footer-address">
+                <p><span class="icon"><img src="{{ theme:asset }}assets/images/address-icon.svg" alt="address icon" class="object-cover"></span>{{ address }}</p>
+                <p><span class="icon"><img src="{{ theme:asset }}assets/images/phone-icon.svg" alt="phone icon" class="object-cover"></span>{{ setting }}<a href="tel:{{ phone_number }}">{{ phone_number }}</a>{{ /setting }}</p>
+                <p><span class="icon"><img src="{{ theme:asset }}assets/images/email-icon.svg" alt="email icon" class="object-cover"></span>{{ setting }}<a href="mailto:{{ email }}">{{ email }}</a>{{ /setting }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="footer-bottom-copyright">
+            <div class="row">
+              <div class="col-12 order-2 order-md-1 col-md-6">
+                <p>{{ copyright }}
+              </div>
+              <div class="col-12 order-1 col-md-6 designed-by-text">
+                <p>{{ designed_by_text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer main -->
+    
+  </footer>
+  {{ /footer }}
