@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Route-to-Market Reset'
 category: fianance
 image:
-  - images/how-we-help-img.jpg
+  - images/unique-stock-07.jpg
 link_text: 'Finance'
 description: 'Direct, distributor, and digital given territories that do not overlap.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.granitepeak.com
     gallery_images:
-      - images/projects-gallery-img3.jpg
-      - images/projects-gallery-img6.jpg
-      - images/projects-gallery-img10.jpg
+      - images/unique-stock-07.jpg
+      - images/unique-stock-19.jpg
+      - images/unique-stock-22.jpg
     full_description: 'Syndicate sat with the Granite Peak Mining leadership team and mapped the current state in one week. Direct, distributor, and digital given territories that do not overlap. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600026
 seo_title: 'Route-to-Market Reset'
 seo_description: 'Direct, distributor, and digital given territories that do not overlap.'
-seo_image: images/how-we-help-img.jpg
+seo_image: images/unique-stock-07.jpg
 ---

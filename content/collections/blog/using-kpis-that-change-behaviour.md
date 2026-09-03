@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Using KPIs That Change Behaviour'
 short_description: 'Dashboards fail when they measure everything. Choose a short list of KPIs that people can move this month, and review them in the same meeting every week.'
 image:
-  - images/blog-single-img.jpg
+  - images/masonary-img4.jpg
 featured_image:
-  - images/blog-single-img.jpg
+  - images/masonary-img4.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750400005
 category:

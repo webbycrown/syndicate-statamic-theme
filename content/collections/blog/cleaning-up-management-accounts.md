@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Cleaning Up Management Accounts'
 short_description: 'If your P&L arrives late and nobody trusts it, delivery is already slower than you think. Here is a 30-day clean-up sequence.'
 image:
-  - images/about.jpg
+  - images/blog-grid.jpg
 featured_image:
-  - images/about.jpg
+  - images/blog-grid.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500003
 category:

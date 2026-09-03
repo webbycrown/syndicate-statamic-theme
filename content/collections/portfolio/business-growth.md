@@ -4,20 +4,20 @@ blueprint: portfolio
 title: 'Business Growth'
 category: analyzing
 image:
-  - images/projects-gallery-img1.jpg
-link_text: 'Digital Marketing'
+  - images/presantation-hero-img.jpg
+link_text: 'Growth'
 page_builder:
   -
     id: mbtafp9p
     section_subtitle: Portfolio
-    section_title: 'We want to build good market in world wide.'
-    description: 'Our goal is to establish a trusted and influential position in markets around the world. Through innovation, customer focus, and strategic growth, we strive to expand our reach and deliver value to clients across diverse regions and industries.'
+    section_title: 'A growth plan the board could fund'
+    description: 'We built a 18-month growth plan for Real Madrid C.F.’s commercial partners: where to add revenue, what to stop, and who owns each move.'
     type: intro_section
     enabled: true
   -
     id: mbtahfot
-    sub_title: 'Business Growth'
-    content: 'Dut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.'
+    sub_title: 'A growth plan the board could fund'
+    content: 'The brief was not “grow faster”. It was to name the three channels that could take more volume without breaking fulfilment, and to write a cash view so leadership could fund the work. We sat with sales, operations, and finance for two weeks, then locked a plan with owners and dates.'
     details_list:
       -
         id: mbtahx7y
@@ -26,7 +26,7 @@ page_builder:
       -
         id: mbtaj7mu
         key: Client
-        value: 'Real Madrid C.F'
+        value: 'Real Madrid C.F commercial unit'
       -
         id: mbtajdnp
         key: Date
@@ -36,42 +36,31 @@ page_builder:
         key: Website
         value: www.giorf.esp
     gallery_images:
-      - images/projects-gallery-img11.jpg
-      - images/projects-gallery-img10.jpg
-      - images/projects-gallery-img2.jpg
-    full_description: |-
-      We collaborated with the client to unlock untapped potential and establish a solid foundation for long-term success. Through a combination of market research, operational analysis, and revenue modeling, we developed a scalable growth strategy tailored to their specific industry challenges. This involved optimizing internal processes, identifying key performance indicators (KPIs), and aligning their offerings with evolving customer needs.
-      The result? Significant improvement in operational efficiency, measurable revenue growth, and stronger market positioning. Our holistic approach ensured that the business was not only expanding—but doing so sustainably.
+      - images/presantation-hero-img.jpg
+      - images/unique-stock-21.jpg
+      - images/unique-stock-19.jpg
+    full_description: 'Syndicate mapped the current book of work, the true cost to serve, and the capacity the client could actually add. We then set a 90-day sequence: clean the pipeline, reset prices on two SKUs, and hire one operations lead. Revenue moved in quarter two. More important, the weekly pack now shows the same numbers the board uses to decide.'
     accordions:
       -
-        id: mbtak4im
+        id: fixbusinea
         column: left
-        question: 'What does FAQ mean in business?'
-        answer: |-
-          FAQ stands for Frequently Asked Questions.
-          In business, an FAQ section provides quick answers to common customer queries about a company’s products, services, policies, or processes—helping reduce support time and improve customer satisfaction.
+        question: 'What was the brief?'
+        answer: 'We built a 18-month growth plan for Real Madrid C.F.’s commercial partners: where to add revenue, what to stop, and who owns each move.'
       -
-        id: mbtakds5
+        id: fixbusineb
         column: left
-        question: 'Pina & Associates Insurance'
-        answer: 'This appears to be the name of an insurance company or firm—likely offering services such as personal, business, or specialized insurance solutions. They may also provide expert advice and risk assessments.'
+        question: 'How did the work run?'
+        answer: 'Discovery in the first two weeks, a written plan with owners, then a weekly review until the first result showed in the numbers.'
       -
-        id: mbtakmf1
+        id: fixbusinec
         column: right
-        question: 'Payment at Contingency'
-        answer: |-
-          This usually refers to a contingency-based payment model, where the client pays only if certain results or conditions are met (e.g., winning a legal case, securing a claim, etc.).
-          In insurance or consulting, this may mean the fee is paid only when a claim is approved or a successful outcome is achieved.
+        question: 'Who owned the outcome?'
+        answer: 'A named client sponsor and a Syndicate lead. Work without an owner did not start.'
       -
-        id: mbtakw2m
+        id: fixbusined
         column: right
-        question: 'Better insurancefor everyone'
-        answer: "This is likely a slogan or mission statement, emphasizing the company's goal to provide accessible, affordable, and comprehensive insurance solutions for all types of clients."
-      -
-        id: mbtakzt1
-        column: right
-        question: 'We inspire and help our customers'
-        answer: 'Another mission-oriented statement suggesting that the company not only offers services, but also empowers customers through guidance, support, and tailored solutions.'
+        question: 'What changed?'
+        answer: 'Syndicate mapped the current book of work, the true cost to serve, and the capacity the client could actually add. We then set a 90-day sequence: clean the pipeline, reset prices on two SKUs, and hire one operations lead'
     type: portfolio_general_content_section
     enabled: true
   -
@@ -88,5 +77,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750311361
 seo_title: 'Business Growth'
 seo_description: 'Business Growth'
-seo_image: images/projects-gallery-img1.jpg
+seo_image: images/presantation-hero-img.jpg
 ---

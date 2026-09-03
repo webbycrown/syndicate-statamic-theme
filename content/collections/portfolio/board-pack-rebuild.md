@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Board Pack Rebuild'
 category: marketing
 image:
-  - images/projects-gallery-img4.jpg
+  - images/multipurpose-img1.jpg
 link_text: 'Consulting'
 description: 'A ten-page pack that directors actually finish before the meeting.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.oakriverfoods.com
     gallery_images:
-      - images/projects-gallery-img4.jpg
-      - images/projects-gallery-img7.jpg
-      - images/projects-gallery-img11.jpg
+      - images/multipurpose-img1.jpg
+      - images/unique-stock-19.jpg
+      - images/unique-stock-22.jpg
     full_description: 'Syndicate sat with the Oak & River Foods leadership team and mapped the current state in one week. A ten-page pack that directors actually finish before the meeting. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600003
 seo_title: 'Board Pack Rebuild'
 seo_description: 'A ten-page pack that directors actually finish before the meeting.'
-seo_image: images/projects-gallery-img4.jpg
+seo_image: images/multipurpose-img1.jpg
 ---

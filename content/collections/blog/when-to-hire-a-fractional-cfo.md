@@ -4,9 +4,9 @@ blueprint: blog
 title: 'When to Hire a Fractional CFO'
 short_description: 'A fractional CFO is not a bookkeeper. Use one when forecasts, funding, or a board need a finance lead you are not ready to hire full time.'
 image:
-  - images/about-image2.jpg
+  - images/masonary-img8.jpg
 featured_image:
-  - images/about-image2.jpg
+  - images/masonary-img8.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500002
 category:

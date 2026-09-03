@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Digital Onboarding Flow'
 category: marketing
 image:
-  - images/company-mission-img.jpg
+  - images/projects-gallery-img6.jpg
 link_text: 'Consulting'
 description: 'New clients live in ten days instead of a six-week email chain.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.arcadiasw.com
     gallery_images:
-      - images/projects-gallery-img10.jpg
-      - images/projects-gallery-img1.jpg
-      - images/projects-gallery-img5.jpg
+      - images/projects-gallery-img6.jpg
+      - images/unique-stock-20.jpg
+      - images/unique-stock-18.jpg
     full_description: 'Syndicate sat with the Arcadia Software leadership team and mapped the current state in one week. New clients live in ten days instead of a six-week email chain. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600021
 seo_title: 'Digital Onboarding Flow'
 seo_description: 'New clients live in ten days instead of a six-week email chain.'
-seo_image: images/company-mission-img.jpg
+seo_image: images/projects-gallery-img6.jpg
 ---

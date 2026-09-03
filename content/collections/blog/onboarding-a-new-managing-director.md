@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Onboarding a New Managing Director'
 short_description: 'The first 90 days decide whether the MD inherits the real company or the story in the brochure. Give them numbers, people, and problems.'
 image:
-  - images/service-detail.jpg
+  - images/home-v3.jpg
 featured_image:
-  - images/service-detail.jpg
+  - images/home-v3.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500012
 category:

@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Building a Referral Engine for Advisors'
 short_description: 'Referrals are not luck. Ask at the right moment, make the intro easy, and thank people in a way they remember.'
 image:
-  - images/projects-gallery-img6.jpg
+  - images/about-video-image1.jpg
 featured_image:
-  - images/projects-gallery-img6.jpg
+  - images/about-video-image1.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500022
 category:

@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Category Strategy for a Wholesaler'
 category: analyzing
 image:
-  - images/how-we-care-img1.jpg
+  - images/projects-gallery-img10.jpg
 link_text: 'Brand Work'
 description: 'Range, price, and space decided with the same numbers.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.nimbustransit.com
     gallery_images:
-      - images/projects-gallery-img11.jpg
-      - images/projects-gallery-img2.jpg
-      - images/projects-gallery-img6.jpg
+      - images/projects-gallery-img10.jpg
+      - images/unique-stock-18.jpg
+      - images/unique-stock-21.jpg
     full_description: 'Syndicate sat with the Nimbus Transit leadership team and mapped the current state in one week. Range, price, and space decided with the same numbers. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600022
 seo_title: 'Category Strategy for a Wholesaler'
 seo_description: 'Range, price, and space decided with the same numbers.'
-seo_image: images/how-we-care-img1.jpg
+seo_image: images/projects-gallery-img10.jpg
 ---

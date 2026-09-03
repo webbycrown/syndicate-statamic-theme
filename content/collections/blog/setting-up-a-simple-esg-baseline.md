@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Setting Up a Simple ESG Baseline'
 short_description: 'You do not need a 80-page report to start. Energy, waste, and one workforce metric are enough for most mid-market buyers.'
 image:
-  - images/projects-gallery-img1.jpg
+  - images/inner-banner-img.jpg
 featured_image:
-  - images/projects-gallery-img1.jpg
+  - images/inner-banner-img.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500017
 category:

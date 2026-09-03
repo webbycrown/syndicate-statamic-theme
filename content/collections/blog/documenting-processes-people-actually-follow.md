@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Documenting Processes People Actually Follow'
 short_description: 'A 40-page SOP that nobody opens is decoration. Write the six steps that fail when someone is on leave.'
 image:
-  - images/projects-gallery-img3.jpg
+  - images/blog-single-img.jpg
 featured_image:
-  - images/projects-gallery-img3.jpg
+  - images/blog-single-img.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500019
 category:

@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Cyber Hygiene for Firms Without a CIO'
 short_description: 'You do not need a security department to do the basics: MFA, backups you have tested, and a list of who has admin rights.'
 image:
-  - images/projects-gallery-img8.jpg
+  - images/blog-img2.jpg
 featured_image:
-  - images/projects-gallery-img8.jpg
+  - images/blog-img2.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500024
 category:

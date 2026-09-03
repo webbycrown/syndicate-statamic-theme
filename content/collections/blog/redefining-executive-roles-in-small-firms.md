@@ -2,9 +2,9 @@
 id: 72130f8f-e13f-4f83-a0e5-86909ca0c5ea
 blueprint: blog
 title: 'Redefining Executive Roles in Small Firms'
-short_description: 'Which allows you to pay down insurance bills'
+short_description: 'Small firms often ask one person to cover finance, HR, and strategy. Fractional support keeps those roles sharp without a full C-suite.'
 image:
-  - images/masonary-img5.jpg
+  - images/how-we-help-img.jpg
 category:
   - business
   - strategy
@@ -46,10 +46,10 @@ socials:
     name: medium
     url: 'javascript:;'
 featured_image:
-  - images/blog-img1.jpg
+  - images/how-we-help-img.jpg
 seo_title: 'Redefining Executive Roles in Small Firms'
-seo_description: 'Which allows you to pay down insurance bills'
-seo_image: images/blog-grid.jpg
+seo_description: 'How small firms redefine executive roles with hybrid leaders and fractional support.'
+seo_image: images/how-we-help-img.jpg
 content:
   -
     type: paragraph

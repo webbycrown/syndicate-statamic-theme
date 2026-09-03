@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Pricing Packages for Recurring Services'
 short_description: 'Three clear packages beat a custom quote for every retainer. Clients compare faster and your delivery team stops reinventing scope.'
 image:
-  - images/index-3-hero-img.jpg
+  - images/how-we-care-img4.jpg
 featured_image:
-  - images/index-3-hero-img.jpg
+  - images/how-we-care-img4.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500011
 category:

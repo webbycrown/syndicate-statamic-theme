@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Using Scenario Planning Before a Restructure'
 short_description: 'Do not jump to a headcount cut. Model a base, a squeeze, and a recovery so you know which costs are truly variable.'
 image:
-  - images/services.jpg
+  - images/masonary-img5.jpg
 featured_image:
-  - images/services.jpg
+  - images/masonary-img5.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500013
 category:

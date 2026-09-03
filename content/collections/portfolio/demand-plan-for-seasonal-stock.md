@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Demand Plan for Seasonal Stock'
 category: fianance
 image:
-  - images/masonary-img9.jpg
+  - images/projects-gallery-img5.jpg
 link_text: 'Operations'
 description: 'A weekly age report and a rule for the SKU that had not moved.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.westgateint.com
     gallery_images:
-      - images/projects-gallery-img6.jpg
-      - images/projects-gallery-img9.jpg
-      - images/projects-gallery-img1.jpg
+      - images/projects-gallery-img5.jpg
+      - images/unique-stock-19.jpg
+      - images/unique-stock-22.jpg
     full_description: 'Syndicate sat with the Westgate Interiors leadership team and mapped the current state in one week. A weekly age report and a rule for the SKU that had not moved. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600017
 seo_title: 'Demand Plan for Seasonal Stock'
 seo_description: 'A weekly age report and a rule for the SKU that had not moved.'
-seo_image: images/masonary-img9.jpg
+seo_image: images/projects-gallery-img5.jpg
 ---

@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Export First-Order Programme'
 category: analyzing
 image:
-  - images/masonary-img2.jpg
+  - images/quick-consultancy-section-img.jpg
 link_text: 'Strategy'
 description: 'Incoterms, pricing, and cash lag sorted before the first container.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.redstonepack.com
     gallery_images:
-      - images/projects-gallery-img2.jpg
-      - images/projects-gallery-img5.jpg
-      - images/projects-gallery-img9.jpg
+      - images/quick-consultancy-section-img.jpg
+      - images/unique-stock-19.jpg
+      - images/unique-stock-22.jpg
     full_description: 'Syndicate sat with the Redstone Packaging leadership team and mapped the current state in one week. Incoterms, pricing, and cash lag sorted before the first container. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600013
 seo_title: 'Export First-Order Programme'
 seo_description: 'Incoterms, pricing, and cash lag sorted before the first container.'
-seo_image: images/masonary-img2.jpg
+seo_image: images/quick-consultancy-section-img.jpg
 ---

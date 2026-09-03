@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Making Weekly Ops Meetings Useful'
 short_description: 'A weekly meeting fails when it is a status tour. Keep a standing agenda, owners, and one decision log.'
 image:
-  - images/how-we-care-img2.jpg
+  - images/home-v1.jpg
 featured_image:
-  - images/how-we-care-img2.jpg
+  - images/home-v1.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500007
 category:

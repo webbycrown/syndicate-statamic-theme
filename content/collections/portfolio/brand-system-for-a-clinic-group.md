@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Brand System for a Clinic Group'
 category: marketing
 image:
-  - images/masonary-img1.jpg
+  - images/multipurpose-img2.jpg
 link_text: 'Growth'
 description: 'One identity across six sites without losing the local names.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.harborpine.com
     gallery_images:
-      - images/projects-gallery-img1.jpg
-      - images/projects-gallery-img4.jpg
-      - images/projects-gallery-img8.jpg
+      - images/multipurpose-img2.jpg
+      - images/unique-stock-20.jpg
+      - images/unique-stock-18.jpg
     full_description: 'Syndicate sat with the Harbor & Pine leadership team and mapped the current state in one week. One identity across six sites without losing the local names. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600012
 seo_title: 'Brand System for a Clinic Group'
 seo_description: 'One identity across six sites without losing the local names.'
-seo_image: images/masonary-img1.jpg
+seo_image: images/multipurpose-img2.jpg
 ---

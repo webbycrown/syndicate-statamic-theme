@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Improving Utilisation in Professional Services'
 short_description: 'Utilisation is not a moral score. It is a capacity signal. Fix scoping and handoffs before you tell people to work harder.'
 image:
-  - images/blog-grid.jpg
+  - images/hero-img-3.png
 featured_image:
-  - images/blog-grid.jpg
+  - images/hero-img-3.png
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500014
 category:

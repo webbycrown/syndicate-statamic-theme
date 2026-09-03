@@ -4,7 +4,7 @@ blueprint: blog
 title: 'Creative Operations in Modern Businesses'
 short_description: 'In today’s fast-paced market, creative operations streamline workflows between strategy, design, and execution. By optimizing processes and fostering collaboration, businesses can deliver impactful results with greater speed and efficiency.'
 image:
-  - images/masonary-img3.jpg
+  - images/blog-img1.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750312549
 category:
@@ -45,7 +45,7 @@ featured_image:
   - images/blog-img1.jpg
 seo_title: 'Creative Operations in Modern Businesses'
 seo_description: 'In today’s fast-paced market, creative operations streamline workflows between strategy, design, and execution. By optimizing processes and fostering collaboration, businesses can deliver impactful results with greater speed and efficiency.'
-seo_image: images/blog-img3.jpg
+seo_image: images/blog-img1.jpg
 content:
   -
     type: paragraph

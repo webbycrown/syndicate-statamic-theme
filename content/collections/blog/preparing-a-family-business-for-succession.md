@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Preparing a Family Business for Succession'
 short_description: 'Succession is not only a legal handover. It is roles, cash, and trust. Start three to five years early if you want the next generation to inherit a company, not a crisis.'
 image:
-  - images/masonary-img4.jpg
+  - images/how-we-care-img1.jpg
 featured_image:
-  - images/masonary-img4.jpg
+  - images/how-we-care-img1.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750400004
 category:

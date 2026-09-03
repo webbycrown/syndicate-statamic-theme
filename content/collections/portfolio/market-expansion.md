@@ -4,20 +4,20 @@ blueprint: portfolio
 title: 'Market Expansion'
 category: fianance
 image:
-  - images/masonary-img3.jpg
-link_text: 'Digital Marketing'
+  - images/unique-stock-01.jpg
+link_text: 'Markets'
 page_builder:
   -
     id: mbtauda3
     section_subtitle: Portfolio
-    section_title: 'We want to build good market in world wide.'
-    description: 'Our goal is to establish a trusted and influential position in markets around the world. Through innovation, customer focus, and strategic growth, we strive to expand our reach and deliver value to clients across diverse regions and industries.'
+    section_title: 'Entering a market with cash, not only a trip'
+    description: 'We prepared a mid-size manufacturer to take a first overseas order without starving working capital.'
     type: intro_section
     enabled: true
   -
     id: mbtauvp0
-    sub_title: 'Business Growth'
-    content: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Proin at eros non nulla facilisi. Integer feugiat, nulla in rhoncus fermentum, eros elit varius justo, vel pharetra purus velit nec turpis.'
+    sub_title: 'Entering a market with cash, not only a trip'
+    content: 'Export failed for this client once before: the price ignored freight and the cash sat in production for 90 days. We rebuilt the first-order pack—Incoterms, price in the buyer’s currency, and a facility sized to the lag.'
     details_list:
       -
         id: mbtavaks
@@ -26,7 +26,7 @@ page_builder:
       -
         id: mbtavdx7
         key: Client
-        value: 'Tesla Inc.'
+        value: 'Mid-size manufacturer, Midlands'
       -
         id: mbtavfoz
         key: Date
@@ -36,42 +36,31 @@ page_builder:
         key: Website
         value: www.teslabizx.com
     gallery_images:
-      - images/projects-gallery-img5.jpg
-      - images/projects-gallery-img6.jpg
-      - images/projects-gallery-img7.jpg
-    full_description: |-
-      Expanding into new markets is complex—but with the right strategy, it can unlock enormous growth. For this project, we conducted in-depth market research, competitive analysis, and regional consumer behavior studies to guide the client’s entry into new geographies.
-      We designed a go-to-market strategy that balanced risk and opportunity, developed a phased rollout plan, and established key local partnerships. This enabled the client to enter two new international markets successfully, with strong brand acceptance and faster-than-expected revenue realization.
+      - images/unique-stock-01.jpg
+      - images/unique-stock-18.jpg
+      - images/unique-stock-21.jpg
+    full_description: 'Syndicate wrote a one-page export checklist sales could not skip. Pricing, paperwork, and the cash lag had to be filled before a flight was booked. The first order after that process funded itself. The second order used the same pack. That is how expansion became a repeatable motion instead of a gamble.'
     accordions:
       -
-        id: mbtavwfv
+        id: fixmarketa
         column: left
-        question: 'What does FAQ mean in business?'
-        answer: |-
-          FAQ stands for Frequently Asked Questions.
-          In business, an FAQ section provides quick answers to common customer queries about a company’s products, services, policies, or processes—helping reduce support time and improve customer satisfaction.
+        question: 'What was the brief?'
+        answer: 'We prepared a mid-size manufacturer to take a first overseas order without starving working capital.'
       -
-        id: mbtaw3kr
+        id: fixmarketb
         column: left
-        question: 'Pina & Associates Insurance'
-        answer: 'This appears to be the name of an insurance company or firm—likely offering services such as personal, business, or specialized insurance solutions. They may also provide expert advice and risk assessments.'
+        question: 'How did the work run?'
+        answer: 'Discovery in the first two weeks, a written plan with owners, then a weekly review until the first result showed in the numbers.'
       -
-        id: mbtaw6lg
+        id: fixmarketc
         column: right
-        question: 'Payment at Contingency'
-        answer: |-
-          This usually refers to a contingency-based payment model, where the client pays only if certain results or conditions are met (e.g., winning a legal case, securing a claim, etc.).
-          In insurance or consulting, this may mean the fee is paid only when a claim is approved or a successful outcome is achieved.
+        question: 'Who owned the outcome?'
+        answer: 'A named client sponsor and a Syndicate lead. Work without an owner did not start.'
       -
-        id: mbtawbcc
+        id: fixmarketd
         column: right
-        question: 'Better insurancefor everyone'
-        answer: "This is likely a slogan or mission statement, emphasizing the company's goal to provide accessible, affordable, and comprehensive insurance solutions for all types of clients."
-      -
-        id: mbtawej8
-        column: right
-        question: 'We inspire and help our customers'
-        answer: 'Another mission-oriented statement suggesting that the company not only offers services, but also empowers customers through guidance, support, and tailored solutions.'
+        question: 'What changed?'
+        answer: 'Syndicate wrote a one-page export checklist sales could not skip. Pricing, paperwork, and the cash lag had to be filled before a flight was booked. The first order after that process funded itself. The second order used '
     type: portfolio_general_content_section
     enabled: true
   -
@@ -88,5 +77,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750311426
 seo_title: 'Market Expansion'
 seo_description: 'Market Expansion'
-seo_image: images/masonary-img3.jpg
+seo_image: images/unique-stock-01.jpg
 ---

@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Export Readiness for Midsize Manufacturers'
 short_description: 'Exporting is not only a sales trip. Pricing, paperwork, and working capital decide whether the first overseas order helps or hurts.'
 image:
-  - images/company-mission-img.jpg
+  - images/hero-img-1.png
 featured_image:
-  - images/company-mission-img.jpg
+  - images/hero-img-1.png
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500004
 category:

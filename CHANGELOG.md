@@ -24,3 +24,4 @@ Fixes applied in `update/syndicate` (not pushed).
 - Related post cards on blog single share one height, clamped text, and aligned Read more buttons
 - Blog article body now renders (partials no longer swallow the Bard `content` field); new posts have full descriptions
 - Portfolio now has 36 projects with distinct photos; listing shows 16 then Load more
+- Every blog and portfolio card uses a unique photo; leftover lorem on original items is now real copy

@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Preparing for a Lender Review'
 short_description: 'Banks read the pack you send, not the story you tell in the meeting. Give them a forecast, covenants, and no surprises.'
 image:
-  - images/blog-detail-left-sidebar.jpg
+  - images/how-we-care-img2.jpg
 featured_image:
-  - images/blog-detail-left-sidebar.jpg
+  - images/how-we-care-img2.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500016
 category:

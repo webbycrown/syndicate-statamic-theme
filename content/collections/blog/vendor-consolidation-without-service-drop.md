@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Vendor Consolidation Without a Service Drop'
 short_description: 'Fewer suppliers can save money and still fail if you cut the only one who understands your stack. Score risk, not only price.'
 image:
-  - images/blog-grid-3.jpg
+  - images/masonary-img6.jpg
 featured_image:
-  - images/blog-grid-3.jpg
+  - images/masonary-img6.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500015
 category:

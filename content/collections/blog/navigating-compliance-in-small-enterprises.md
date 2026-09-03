@@ -4,7 +4,7 @@ blueprint: blog
 title: 'Navigating Compliance in Small Enterprises'
 short_description: 'Ensuring regulatory compliance can be challenging for small businesses. By adopting clear policies, leveraging digital tools, and staying informed about legal changes, small enterprises can minimize risks and build trust with clients and stakeholders.'
 image:
-  - images/blog-img1.jpg
+  - images/home-v2.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310627
 category:
@@ -45,10 +45,10 @@ socials:
     name: medium
     url: 'javascript:;'
 featured_image:
-  - images/blog-img1.jpg
+  - images/home-v2.jpg
 seo_title: 'Navigating Compliance in Small Enterprises'
 seo_description: 'Ensuring regulatory compliance can be challenging for small businesses. By adopting clear policies, leveraging digital tools, and staying informed about legal changes, small enterprises can minimize risks and build trust with clients and stakeholders.'
-seo_image: images/blog-img1.jpg
+seo_image: images/home-v2.jpg
 content:
   -
     type: paragraph

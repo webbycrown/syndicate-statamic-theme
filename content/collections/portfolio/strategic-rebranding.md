@@ -4,20 +4,20 @@ blueprint: portfolio
 title: 'Strategic Rebranding'
 category: marketing
 image:
-  - images/masonary-img6.jpg
-link_text: 'Digital Marketing'
+  - images/unique-stock-11.jpg
+link_text: 'Brand'
 page_builder:
   -
     id: mbtay5ml
     section_subtitle: Portfolio
-    section_title: 'We have many reviews from our satisfied clients.'
-    description: 'Our goal is to establish a trusted and influential position in markets around the world. Through innovation, customer focus, and strategic growth, we strive to expand our reach and deliver value to clients across diverse regions and industries.'
+    section_title: 'A brand that matched the company they had become'
+    description: 'We led a rebrand for a consumer platform that had outgrown its first identity—audit, message, design, and a rollout the teams could run.'
     type: intro_section
     enabled: true
   -
     id: mbtb0em5
-    sub_title: 'Business Growth'
-    content: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. Sed convallis risus at urna commodo, nec ultricies turpis porta. Morbi quis dapibus magna, sit amet mattis metus.'
+    sub_title: 'A brand that matched the company they had become'
+    content: 'Perception lagged the product. We started with customers and staff, not a mood board. The new system had to work in-app, in ads, and in a sales deck. We wrote the message first, then designed to that sentence.'
     details_list:
       -
         id: mbtb0spq
@@ -36,42 +36,31 @@ page_builder:
         key: Website
         value: www.spotifybrandhub.com
     gallery_images:
-      - images/projects-gallery-img5.jpg
-      - images/projects-gallery-img6.jpg
-      - images/projects-gallery-img7.jpg
-    full_description: |-
-      When perception doesn’t align with potential, it’s time to rebrand. Our client needed a bold, refreshed identity to reflect their evolving mission and values. We led the strategic rebranding process—from brand audit and audience research to new messaging, design, and rollout planning.
-      The result was a modernized brand that resonated with both existing customers and new audiences. The rebranding not only increased brand visibility and engagement but also reignited internal alignment, helping teams rally behind a renewed vision with clarity and purpose.
+      - images/unique-stock-11.jpg
+      - images/unique-stock-18.jpg
+      - images/unique-stock-21.jpg
+    full_description: 'Syndicate ran a brand audit, a short audience study, and a three-option route. Leadership picked one. We delivered a name lock-up, colour, type, and a 12-week rollout plan with owners in marketing and product. Engagement on owned channels rose in the first quarter. Internal teams finally used the same words for the same offer.'
     accordions:
       -
-        id: mbtb1hiu
+        id: fixstratea
         column: left
-        question: 'What does FAQ mean in business?'
-        answer: |-
-          FAQ stands for Frequently Asked Questions.
-          In business, an FAQ section provides quick answers to common customer queries about a company’s products, services, policies, or processes—helping reduce support time and improve customer satisfaction.
+        question: 'What was the brief?'
+        answer: 'We led a rebrand for a consumer platform that had outgrown its first identity—audit, message, design, and a rollout the teams could run.'
       -
-        id: mbtb1qza
+        id: fixstrateb
         column: left
-        question: 'Pina & Associates Insurance'
-        answer: 'This appears to be the name of an insurance company or firm—likely offering services such as personal, business, or specialized insurance solutions. They may also provide expert advice and risk assessments.'
+        question: 'How did the work run?'
+        answer: 'Discovery in the first two weeks, a written plan with owners, then a weekly review until the first result showed in the numbers.'
       -
-        id: mbtb1udr
+        id: fixstratec
         column: right
-        question: 'Payment at Contingency'
-        answer: |-
-          This usually refers to a contingency-based payment model, where the client pays only if certain results or conditions are met (e.g., winning a legal case, securing a claim, etc.).
-          In insurance or consulting, this may mean the fee is paid only when a claim is approved or a successful outcome is achieved.
+        question: 'Who owned the outcome?'
+        answer: 'A named client sponsor and a Syndicate lead. Work without an owner did not start.'
       -
-        id: mbtb1xie
+        id: fixstrated
         column: right
-        question: 'Better insurancefor everyone'
-        answer: "This is likely a slogan or mission statement, emphasizing the company's goal to provide accessible, affordable, and comprehensive insurance solutions for all types of clients."
-      -
-        id: mbtb20k7
-        column: right
-        question: 'We inspire and help our customers'
-        answer: 'Another mission-oriented statement suggesting that the company not only offers services, but also empowers customers through guidance, support, and tailored solutions.'
+        question: 'What changed?'
+        answer: 'Syndicate ran a brand audit, a short audience study, and a three-option route. Leadership picked one. We delivered a name lock-up, colour, type, and a 12-week rollout plan with owners in marketing and product. Engagement'
     type: portfolio_general_content_section
     enabled: true
   -
@@ -88,5 +77,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750311457
 seo_title: 'Strategic Rebranding'
 seo_description: 'Strategic Rebranding'
-seo_image: images/masonary-img6.jpg
+seo_image: images/unique-stock-11.jpg
 ---

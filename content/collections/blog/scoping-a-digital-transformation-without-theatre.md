@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Scoping a Digital Transformation Without Theatre'
 short_description: 'Start with the process you will retire, not the platform you will buy. Otherwise the project becomes a slide deck.'
 image:
-  - images/how-we-care-img3.jpg
+  - images/index-3-hero-img.jpg
 featured_image:
-  - images/how-we-care-img3.jpg
+  - images/index-3-hero-img.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500008
 category:

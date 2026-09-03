@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Cost-to-Serve Model'
 category: marketing
 image:
-  - images/projects-gallery-img10.jpg
+  - images/projects-gallery-img2.jpg
 link_text: 'Consulting'
 description: 'Which customers make money, which ones only look busy.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.fieldstone.energy
     gallery_images:
-      - images/projects-gallery-img10.jpg
-      - images/projects-gallery-img1.jpg
-      - images/projects-gallery-img5.jpg
+      - images/projects-gallery-img2.jpg
+      - images/unique-stock-21.jpg
+      - images/unique-stock-19.jpg
     full_description: 'Syndicate sat with the Fieldstone Energy leadership team and mapped the current state in one week. Which customers make money, which ones only look busy. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600009
 seo_title: 'Cost-to-Serve Model'
 seo_description: 'Which customers make money, which ones only look busy.'
-seo_image: images/projects-gallery-img10.jpg
+seo_image: images/projects-gallery-img2.jpg
 ---

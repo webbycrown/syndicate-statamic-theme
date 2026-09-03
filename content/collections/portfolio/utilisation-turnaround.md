@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Utilisation Turnaround'
 category: fianance
 image:
-  - images/masonary-img4.jpg
+  - images/unique-stock-15.jpg
 link_text: 'Finance'
 description: 'Handoffs and briefs fixed so utilisation rose without longer hours.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.solaramobility.com
     gallery_images:
-      - images/projects-gallery-img3.jpg
-      - images/projects-gallery-img6.jpg
-      - images/projects-gallery-img10.jpg
+      - images/unique-stock-15.jpg
+      - images/unique-stock-21.jpg
+      - images/unique-stock-19.jpg
     full_description: 'Syndicate sat with the Solara Mobility leadership team and mapped the current state in one week. Handoffs and briefs fixed so utilisation rose without longer hours. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600014
 seo_title: 'Utilisation Turnaround'
 seo_description: 'Handoffs and briefs fixed so utilisation rose without longer hours.'
-seo_image: images/masonary-img4.jpg
+seo_image: images/unique-stock-15.jpg
 ---

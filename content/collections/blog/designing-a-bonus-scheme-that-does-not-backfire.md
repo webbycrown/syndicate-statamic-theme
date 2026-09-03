@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Designing a Bonus Scheme That Does Not Backfire'
 short_description: 'If the bonus can be gamed, it will be. Tie variable pay to a few numbers the person can influence and the firm can survive.'
 image:
-  - images/projects-gallery-img9.jpg
+  - images/blog-img3.jpg
 featured_image:
-  - images/projects-gallery-img9.jpg
+  - images/blog-img3.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500025
 category:

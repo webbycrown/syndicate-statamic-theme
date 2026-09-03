@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Exit Readiness 12 Months Out'
 short_description: 'Buyers pay for a business that runs without the founder in the room. Spend the year making yourself less essential.'
 image:
-  - images/projects-gallery-img10.jpg
+  - images/company-mission-img.jpg
 featured_image:
-  - images/projects-gallery-img10.jpg
+  - images/company-mission-img.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500026
 category:

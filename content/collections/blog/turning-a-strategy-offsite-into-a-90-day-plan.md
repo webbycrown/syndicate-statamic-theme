@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Turning a Strategy Offsite into a 90-Day Plan'
 short_description: 'Offsites die in the parking lot. Leave with owners, dates, and a follow-up that is already in the calendar.'
 image:
-  - images/projects-gallery-img4.jpg
+  - images/masonary-img3.jpg
 featured_image:
-  - images/projects-gallery-img4.jpg
+  - images/masonary-img3.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500020
 category:

@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Choosing Between a Raise and a Facility'
 short_description: 'Equity and debt are not interchangeable. Match the instrument to the use of funds, the timeline, and how much control you can give up.'
 image:
-  - images/how-we-care-img1.jpg
+  - images/blog-grid-3.jpg
 featured_image:
-  - images/how-we-care-img1.jpg
+  - images/blog-grid-3.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500006
 category:

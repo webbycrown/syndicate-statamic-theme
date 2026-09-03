@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Risk and Cover Review'
 category: analyzing
 image:
-  - images/projects-gallery-img8.jpg
+  - images/unique-stock-06.jpg
 link_text: 'Strategy'
 description: 'PI, cyber, and key-person cover brought back in line with the work.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.vesperlegal.com
     gallery_images:
-      - images/projects-gallery-img8.jpg
-      - images/projects-gallery-img11.jpg
-      - images/projects-gallery-img3.jpg
+      - images/unique-stock-06.jpg
+      - images/unique-stock-18.jpg
+      - images/unique-stock-21.jpg
     full_description: 'Syndicate sat with the Vesper Legal leadership team and mapped the current state in one week. PI, cyber, and key-person cover brought back in line with the work. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600007
 seo_title: 'Risk and Cover Review'
 seo_description: 'PI, cyber, and key-person cover brought back in line with the work.'
-seo_image: images/projects-gallery-img8.jpg
+seo_image: images/unique-stock-06.jpg
 ---

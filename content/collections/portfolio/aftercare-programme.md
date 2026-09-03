@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Aftercare Programme'
 category: analyzing
 image:
-  - images/multipurpose-img1.jpg
+  - images/masonary-img9.jpg
 link_text: 'Strategy'
 description: 'The first ninety days after go-live owned by a named team.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.keelcanvas.com
     gallery_images:
-      - images/projects-gallery-img8.jpg
-      - images/projects-gallery-img11.jpg
-      - images/projects-gallery-img3.jpg
+      - images/masonary-img9.jpg
+      - images/unique-stock-18.jpg
+      - images/unique-stock-21.jpg
     full_description: 'Syndicate sat with the Keel & Canvas leadership team and mapped the current state in one week. The first ninety days after go-live owned by a named team. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600031
 seo_title: 'Aftercare Programme'
 seo_description: 'The first ninety days after go-live owned by a named team.'
-seo_image: images/multipurpose-img1.jpg
+seo_image: images/masonary-img9.jpg
 ---

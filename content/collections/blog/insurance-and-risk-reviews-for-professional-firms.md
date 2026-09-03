@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Insurance and Risk Reviews for Professional Firms'
 short_description: 'PI, cyber, and key-person cover drift out of date. A yearly risk review is cheaper than a claim that is only half covered.'
 image:
-  - images/how-we-care-img4.jpg
+  - images/hero-img-4.png
 featured_image:
-  - images/how-we-care-img4.jpg
+  - images/hero-img-4.png
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500009
 category:

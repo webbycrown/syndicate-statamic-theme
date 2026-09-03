@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'ERP Scope Without Theatre'
 category: analyzing
 image:
-  - images/projects-gallery-img11.jpg
+  - images/projects-gallery-img8.jpg
 link_text: 'Brand Work'
 description: 'One process retired before any licence was signed.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.atlascomp.com
     gallery_images:
-      - images/projects-gallery-img11.jpg
-      - images/projects-gallery-img2.jpg
-      - images/projects-gallery-img6.jpg
+      - images/projects-gallery-img8.jpg
+      - images/unique-stock-22.jpg
+      - images/unique-stock-20.jpg
     full_description: 'Syndicate sat with the Atlas Components leadership team and mapped the current state in one week. One process retired before any licence was signed. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600010
 seo_title: 'ERP Scope Without Theatre'
 seo_description: 'One process retired before any licence was signed.'
-seo_image: images/projects-gallery-img11.jpg
+seo_image: images/projects-gallery-img8.jpg
 ---

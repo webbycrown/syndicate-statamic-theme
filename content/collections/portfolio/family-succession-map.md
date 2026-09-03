@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Family Succession Map'
 category: analyzing
 image:
-  - images/masonary-img8.jpg
+  - images/service-detail.jpg
 link_text: 'Brand Work'
 description: 'Ownership, management, and the next chair written down before a fight.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.pinnacledairy.com
     gallery_images:
-      - images/projects-gallery-img5.jpg
-      - images/projects-gallery-img8.jpg
-      - images/projects-gallery-img12.jpg
+      - images/service-detail.jpg
+      - images/unique-stock-20.jpg
+      - images/unique-stock-18.jpg
     full_description: 'Syndicate sat with the Pinnacle Dairy leadership team and mapped the current state in one week. Ownership, management, and the next chair written down before a fight. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600016
 seo_title: 'Family Succession Map'
 seo_description: 'Ownership, management, and the next chair written down before a fight.'
-seo_image: images/masonary-img8.jpg
+seo_image: images/service-detail.jpg
 ---

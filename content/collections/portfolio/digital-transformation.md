@@ -4,20 +4,20 @@ blueprint: portfolio
 title: 'Digital Transformation'
 category: fianance
 image:
-  - images/masonary-img7.jpg
-link_text: 'Digital Marketing'
+  - images/projects-gallery-img7.jpg
+link_text: 'Systems'
 page_builder:
   -
     id: mbtaqjky
     section_subtitle: Portfolio
-    section_title: 'We have many reviews from our satisfied clients.'
-    description: 'Our goal is to establish a trusted and influential position in markets around the world. Through innovation, customer focus, and strategic growth, we strive to expand our reach and deliver value to clients across diverse regions and industries.'
+    section_title: 'A digital change that retired real work'
+    description: 'We scoped a systems programme for Emirates Group around one process to switch off, not a platform to buy.'
     type: intro_section
     enabled: true
   -
     id: mbtar964
-    sub_title: 'Business Growth'
-    content: 'Facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Etiam dignissim convallis lorem, sed fringilla nulla gravida vel.'
+    sub_title: 'A digital change that retired real work'
+    content: 'The first workshop named the manual work that would disappear. If a step could not be retired, it did not go on the business case. We then picked a single workflow, an owner, and a date the old spreadsheet would be closed.'
     details_list:
       -
         id: mbtarl1v
@@ -26,7 +26,7 @@ page_builder:
       -
         id: mbtarnus
         key: Client
-        value: 'Emirates Group'
+        value: 'Emirates Group operations'
       -
         id: mbtarpqj
         key: Date
@@ -36,42 +36,31 @@ page_builder:
         key: Website
         value: www.emirtrans.com
     gallery_images:
-      - images/projects-gallery-img2.jpg
-      - images/projects-gallery-img3.jpg
-      - images/projects-gallery-img4.jpg
-    full_description: |-
-      In an age of rapid innovation, our client needed to modernize operations and customer engagement. We led a full-scale digital transformation initiative—from system integrations and cloud adoption to customer experience design and workflow automation.
-      Our team assessed legacy technologies and mapped out a seamless transition plan with minimal business disruption. By integrating digital tools and data analytics, we helped the organization make faster, smarter decisions. This project not only increased productivity but also laid the groundwork for digital agility, giving the client a competitive edge in a digital-first marketplace.
+      - images/projects-gallery-img7.jpg
+      - images/unique-stock-21.jpg
+      - images/unique-stock-19.jpg
+    full_description: 'Syndicate ran a four-week discovery with operations and IT. The output was a one-page scope: the process, the system of record, the training plan, and the cut-over weekend. Implementation followed that scope. The client now closes the same work in two days instead of ten, and the next phase has a written brief instead of a slide deck.'
     accordions:
       -
-        id: mbtasdwk
+        id: fixdigitaa
         column: left
-        question: 'What does FAQ mean in business?'
-        answer: |-
-          FAQ stands for Frequently Asked Questions.
-          In business, an FAQ section provides quick answers to common customer queries about a company’s products, services, policies, or processes—helping reduce support time and improve customer satisfaction.
+        question: 'What was the brief?'
+        answer: 'We scoped a systems programme for Emirates Group around one process to switch off, not a platform to buy.'
       -
-        id: mbtaslv0
+        id: fixdigitab
         column: left
-        question: 'Pina & Associates Insurance'
-        answer: 'This appears to be the name of an insurance company or firm—likely offering services such as personal, business, or specialized insurance solutions. They may also provide expert advice and risk assessments.'
+        question: 'How did the work run?'
+        answer: 'Discovery in the first two weeks, a written plan with owners, then a weekly review until the first result showed in the numbers.'
       -
-        id: mbtasq2c
+        id: fixdigitac
         column: right
-        question: 'Payment at Contingency'
-        answer: |-
-          This usually refers to a contingency-based payment model, where the client pays only if certain results or conditions are met (e.g., winning a legal case, securing a claim, etc.).
-          In insurance or consulting, this may mean the fee is paid only when a claim is approved or a successful outcome is achieved.
+        question: 'Who owned the outcome?'
+        answer: 'A named client sponsor and a Syndicate lead. Work without an owner did not start.'
       -
-        id: mbtasucj
+        id: fixdigitad
         column: right
-        question: 'Better insurancefor everyone'
-        answer: "This is likely a slogan or mission statement, emphasizing the company's goal to provide accessible, affordable, and comprehensive insurance solutions for all types of clients."
-      -
-        id: mbtasy70
-        column: right
-        question: 'We inspire and help our customers'
-        answer: 'Another mission-oriented statement suggesting that the company not only offers services, but also empowers customers through guidance, support, and tailored solutions.'
+        question: 'What changed?'
+        answer: 'Syndicate ran a four-week discovery with operations and IT. The output was a one-page scope: the process, the system of record, the training plan, and the cut-over weekend. Implementation followed that scope. The client '
     type: portfolio_general_content_section
     enabled: true
   -
@@ -88,5 +77,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750311397
 seo_title: 'Digital Transformation'
 seo_description: 'Digital Transformation'
-seo_image: images/masonary-img7.jpg
+seo_image: images/projects-gallery-img7.jpg
 ---

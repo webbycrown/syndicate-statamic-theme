@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Reducing Debtor Days Without Hurting Relationships'
 short_description: 'Collections can stay polite and still get faster. Tighten terms, invoice the same day, and escalate on a written schedule.'
 image:
-  - images/how-we-help-img.jpg
+  - images/image-with-text-overlay-img.jpg
 featured_image:
-  - images/how-we-help-img.jpg
+  - images/image-with-text-overlay-img.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500005
 category:

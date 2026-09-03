@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Claims Process Rewrite'
 category: marketing
 image:
-  - images/service-detail.jpg
+  - images/projects-gallery-img12.jpg
 link_text: 'Consulting'
 description: 'Fewer handoffs, a named owner, and a clock the customer can see.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.ivorycoast.coffee
     gallery_images:
-      - images/projects-gallery-img4.jpg
-      - images/projects-gallery-img7.jpg
-      - images/projects-gallery-img11.jpg
+      - images/projects-gallery-img12.jpg
+      - images/unique-stock-20.jpg
+      - images/unique-stock-18.jpg
     full_description: 'Syndicate sat with the Ivory Coast Coffee leadership team and mapped the current state in one week. Fewer handoffs, a named owner, and a clock the customer can see. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600027
 seo_title: 'Claims Process Rewrite'
 seo_description: 'Fewer handoffs, a named owner, and a clock the customer can see.'
-seo_image: images/service-detail.jpg
+seo_image: images/projects-gallery-img12.jpg
 ---

@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Service Line Relaunch'
 category: marketing
 image:
-  - images/projects-gallery-img7.jpg
+  - images/unique-stock-09.jpg
 link_text: 'Growth'
 description: 'Three packages, one promise, and a sales script the team would use.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.brightharbour.com
     gallery_images:
-      - images/projects-gallery-img7.jpg
-      - images/projects-gallery-img10.jpg
-      - images/projects-gallery-img2.jpg
+      - images/unique-stock-09.jpg
+      - images/unique-stock-21.jpg
+      - images/unique-stock-19.jpg
     full_description: 'Syndicate sat with the Bright Harbour Hotels leadership team and mapped the current state in one week. Three packages, one promise, and a sales script the team would use. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600006
 seo_title: 'Service Line Relaunch'
 seo_description: 'Three packages, one promise, and a sales script the team would use.'
-seo_image: images/projects-gallery-img7.jpg
+seo_image: images/unique-stock-09.jpg
 ---

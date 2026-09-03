@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Operating Model for a Merger'
 category: marketing
 image:
-  - images/how-we-care-img3.jpg
+  - images/unique-stock-03.jpg
 link_text: 'Growth'
 description: 'One leadership map, one close calendar, one customer promise.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.forgeind.com
     gallery_images:
-      - images/projects-gallery-img1.jpg
-      - images/projects-gallery-img4.jpg
-      - images/projects-gallery-img8.jpg
+      - images/unique-stock-03.jpg
+      - images/unique-stock-20.jpg
+      - images/unique-stock-18.jpg
     full_description: 'Syndicate sat with the Forge Industrial leadership team and mapped the current state in one week. One leadership map, one close calendar, one customer promise. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600024
 seo_title: 'Operating Model for a Merger'
 seo_description: 'One leadership map, one close calendar, one customer promise.'
-seo_image: images/how-we-care-img3.jpg
+seo_image: images/unique-stock-03.jpg
 ---

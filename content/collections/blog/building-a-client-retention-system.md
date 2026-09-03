@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Building a Client Retention System'
 short_description: 'Winning a new client costs more than keeping one. A simple retention system—reviews, health scores, and clear owners—keeps advisory relationships from drifting.'
 image:
-  - images/blog-img2.jpg
+  - images/about-image2.jpg
 featured_image:
-  - images/blog-img2.jpg
+  - images/about-image2.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750400002
 category:

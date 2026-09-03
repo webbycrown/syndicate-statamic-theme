@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Capex Gate for a Plant'
 category: analyzing
 image:
-  - images/services.jpg
+  - images/projects-gallery-img1.jpg
 link_text: 'Brand Work'
 description: 'Three questions before a million is spent.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.tidewatchports.com
     gallery_images:
-      - images/projects-gallery-img5.jpg
-      - images/projects-gallery-img8.jpg
-      - images/projects-gallery-img12.jpg
+      - images/projects-gallery-img1.jpg
+      - images/unique-stock-22.jpg
+      - images/unique-stock-20.jpg
     full_description: 'Syndicate sat with the Tidewatch Ports leadership team and mapped the current state in one week. Three questions before a million is spent. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600028
 seo_title: 'Capex Gate for a Plant'
 seo_description: 'Three questions before a million is spent.'
-seo_image: images/services.jpg
+seo_image: images/projects-gallery-img1.jpg
 ---

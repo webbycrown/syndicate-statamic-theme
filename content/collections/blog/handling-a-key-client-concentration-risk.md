@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Handling a Key Client Concentration Risk'
 short_description: 'If one client is more than a quarter of revenue, the board already knows. Build a second pillar before the contract renews.'
 image:
-  - images/projects-gallery-img2.jpg
+  - images/hero-img-2.png
 featured_image:
-  - images/projects-gallery-img2.jpg
+  - images/hero-img-2.png
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500018
 category:

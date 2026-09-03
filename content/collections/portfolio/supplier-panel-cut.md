@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Supplier Panel Cut'
 category: marketing
 image:
-  - images/masonary-img5.jpg
+  - images/unique-stock-12.jpg
 link_text: 'Consulting'
 description: 'A smaller panel with service levels, and a second source where it mattered.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.kindredschools.org
     gallery_images:
-      - images/projects-gallery-img4.jpg
-      - images/projects-gallery-img7.jpg
-      - images/projects-gallery-img11.jpg
+      - images/unique-stock-12.jpg
+      - images/unique-stock-19.jpg
+      - images/unique-stock-22.jpg
     full_description: 'Syndicate sat with the Kindred Schools leadership team and mapped the current state in one week. A smaller panel with service levels, and a second source where it mattered. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600015
 seo_title: 'Supplier Panel Cut'
 seo_description: 'A smaller panel with service levels, and a second source where it mattered.'
-seo_image: images/masonary-img5.jpg
+seo_image: images/unique-stock-12.jpg
 ---

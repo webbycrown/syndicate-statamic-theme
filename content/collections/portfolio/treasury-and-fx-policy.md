@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Treasury and FX Policy'
 category: fianance
 image:
-  - images/how-we-care-img2.jpg
+  - images/unique-stock-14.jpg
 link_text: 'Operations'
 description: 'A simple rule for cash, facilities, and currency exposure.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.elmcourtbk.com
     gallery_images:
-      - images/projects-gallery-img12.jpg
-      - images/projects-gallery-img3.jpg
-      - images/projects-gallery-img7.jpg
+      - images/unique-stock-14.jpg
+      - images/unique-stock-20.jpg
+      - images/unique-stock-18.jpg
     full_description: 'Syndicate sat with the Elm Court Banking leadership team and mapped the current state in one week. A simple rule for cash, facilities, and currency exposure. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600023
 seo_title: 'Treasury and FX Policy'
 seo_description: 'A simple rule for cash, facilities, and currency exposure.'
-seo_image: images/how-we-care-img2.jpg
+seo_image: images/unique-stock-14.jpg
 ---

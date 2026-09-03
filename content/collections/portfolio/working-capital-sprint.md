@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Working Capital Sprint'
 category: fianance
 image:
-  - images/projects-gallery-img6.jpg
+  - images/unique-stock-17.jpg
 link_text: 'Operations'
 description: 'Thirteen weeks of collections, terms, and SKU cuts that funded a new line.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.cedarline.io
     gallery_images:
-      - images/projects-gallery-img6.jpg
-      - images/projects-gallery-img9.jpg
-      - images/projects-gallery-img1.jpg
+      - images/unique-stock-17.jpg
+      - images/unique-stock-18.jpg
+      - images/unique-stock-21.jpg
     full_description: 'Syndicate sat with the Cedarline Logistics leadership team and mapped the current state in one week. Thirteen weeks of collections, terms, and SKU cuts that funded a new line. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600005
 seo_title: 'Working Capital Sprint'
 seo_description: 'Thirteen weeks of collections, terms, and SKU cuts that funded a new line.'
-seo_image: images/projects-gallery-img6.jpg
+seo_image: images/unique-stock-17.jpg
 ---

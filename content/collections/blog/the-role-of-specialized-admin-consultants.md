@@ -2,11 +2,11 @@
 id: e8bbd5aa-c0bd-44c6-a282-df5170505fd4
 blueprint: blog
 title: 'The Role of Specialized Admin Consultants'
-short_description: 'Ullamcorper a lacus vestibulum sed arcu non odio. Nulla porttitor massa id.'
+short_description: 'Specialised admin consultants give growing firms a compliance and operations backbone without a full in-house department.'
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310703
 image:
-  - images/projects-gallery-img12.jpg
+  - images/masonary-img2.jpg
 category:
   - personal
 tag:
@@ -43,10 +43,10 @@ socials:
     name: medium
     url: 'javascript:;'
 featured_image:
-  - images/blog-img1.jpg
+  - images/masonary-img2.jpg
 seo_title: 'The Role of Specialized Admin Consultants'
-seo_description: 'Ullamcorper a lacus vestibulum sed arcu non odio. Nulla porttitor massa id.'
-seo_image: images/projects-gallery-img12.jpg
+seo_description: 'How specialised admin consultants help growing firms handle filings, audits, and day-to-day coordination.'
+seo_image: images/masonary-img2.jpg
 content:
   -
     type: paragraph

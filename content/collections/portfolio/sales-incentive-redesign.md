@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Sales Incentive Redesign'
 category: marketing
 image:
-  - images/about-image1.jpg
+  - images/unique-stock-08.jpg
 link_text: 'Growth'
 description: 'A bonus that could not starve cash or quality.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.summitortho.com
     gallery_images:
-      - images/projects-gallery-img7.jpg
-      - images/projects-gallery-img10.jpg
-      - images/projects-gallery-img2.jpg
+      - images/unique-stock-08.jpg
+      - images/unique-stock-20.jpg
+      - images/unique-stock-18.jpg
     full_description: 'Syndicate sat with the Summit Ortho leadership team and mapped the current state in one week. A bonus that could not starve cash or quality. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600018
 seo_title: 'Sales Incentive Redesign'
 seo_description: 'A bonus that could not starve cash or quality.'
-seo_image: images/about-image1.jpg
+seo_image: images/unique-stock-08.jpg
 ---

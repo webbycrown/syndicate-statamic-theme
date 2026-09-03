@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Pricing Reset for a Regional Retailer'
 category: analyzing
 image:
-  - images/projects-gallery-img2.jpg
+  - images/unique-stock-05.jpg
 link_text: 'Strategy'
 description: 'We rebuilt the price architecture so promotions stopped eroding margin.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.northbridge.co
     gallery_images:
-      - images/projects-gallery-img2.jpg
-      - images/projects-gallery-img5.jpg
-      - images/projects-gallery-img9.jpg
+      - images/unique-stock-05.jpg
+      - images/unique-stock-22.jpg
+      - images/unique-stock-20.jpg
     full_description: 'Syndicate sat with the Northbridge Retail leadership team and mapped the current state in one week. We rebuilt the price architecture so promotions stopped eroding margin. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600001
 seo_title: 'Pricing Reset for a Regional Retailer'
 seo_description: 'We rebuilt the price architecture so promotions stopped eroding margin.'
-seo_image: images/projects-gallery-img2.jpg
+seo_image: images/unique-stock-05.jpg
 ---

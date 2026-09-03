@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Pricing Advisory Work Without Hourly Traps'
 short_description: 'Hourly billing trains clients to ration advice. Value-based and scoped retainers make pricing clearer for both sides and protect delivery quality.'
 image:
-  - images/blog-img3.jpg
+  - images/how-we-care-img3.jpg
 featured_image:
-  - images/blog-img3.jpg
+  - images/how-we-care-img3.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750400003
 category:

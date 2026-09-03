@@ -4,9 +4,9 @@ blueprint: blog
 title: 'When Outsourcing Finance Makes Sense'
 short_description: 'Outsource transactions. Keep judgment. If the outsourcer owns the forecast, you have outsourced the steering wheel.'
 image:
-  - images/projects-gallery-img5.jpg
+  - images/masonary-img7.jpg
 featured_image:
-  - images/projects-gallery-img5.jpg
+  - images/masonary-img7.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500021
 category:

@@ -4,7 +4,7 @@ blueprint: portfolio
 title: 'Customer Retention Cadence'
 category: analyzing
 image:
-  - images/about-image2.jpg
+  - images/projects-gallery-img3.jpg
 link_text: 'Strategy'
 description: 'Owners, health scores, and a quarterly review that saved two accounts.'
 page_builder:
@@ -37,9 +37,9 @@ page_builder:
         key: Website
         value: www.bluefinch.insure
     gallery_images:
-      - images/projects-gallery-img8.jpg
-      - images/projects-gallery-img11.jpg
       - images/projects-gallery-img3.jpg
+      - images/unique-stock-22.jpg
+      - images/unique-stock-20.jpg
     full_description: 'Syndicate sat with the Bluefinch Insurance leadership team and mapped the current state in one week. Owners, health scores, and a quarterly review that saved two accounts. We then set a 90-day plan with owners, dates, and a short KPI list. The work stayed practical: a pack the board would read, a process someone could run on leave, and a number that moved. That is how the project became an operating habit instead of a report.'
     accordions:
       -
@@ -78,5 +78,5 @@ updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750600019
 seo_title: 'Customer Retention Cadence'
 seo_description: 'Owners, health scores, and a quarterly review that saved two accounts.'
-seo_image: images/about-image2.jpg
+seo_image: images/projects-gallery-img3.jpg
 ---

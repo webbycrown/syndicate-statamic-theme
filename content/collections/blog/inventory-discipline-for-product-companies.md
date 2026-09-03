@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Inventory Discipline for Product Companies'
 short_description: 'Stock is cash on a shelf. Age it, count it, and stop buying the SKU that has not moved in 90 days.'
 image:
-  - images/projects-gallery-img7.jpg
+  - images/home-two-banner.png
 featured_image:
-  - images/projects-gallery-img7.jpg
+  - images/home-two-banner.png
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500023
 category:

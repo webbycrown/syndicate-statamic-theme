@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Building an Internal Audit Rhythm'
 short_description: 'Internal audit does not need a huge team. A quarterly cycle on cash, access, and supplier changes catches most quiet failures.'
 image:
-  - images/image-with-text-overlay-img.jpg
+  - images/about.jpg
 featured_image:
-  - images/image-with-text-overlay-img.jpg
+  - images/about.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750500010
 category:

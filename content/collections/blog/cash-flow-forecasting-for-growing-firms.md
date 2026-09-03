@@ -4,9 +4,9 @@ blueprint: blog
 title: 'Cash Flow Forecasting for Growing Firms'
 short_description: 'A practical cash flow forecast helps growing companies avoid surprises, plan hiring, and decide when to invest. Here is how advisory teams build a forecast leadership can actually use.'
 image:
-  - images/masonary-img1.jpg
+  - images/blog-detail-left-sidebar.jpg
 featured_image:
-  - images/masonary-img1.jpg
+  - images/blog-detail-left-sidebar.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750400001
 category:
