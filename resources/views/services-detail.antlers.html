@@ -3,7 +3,11 @@
     <section class="inner-hero-section content__item">
       <!-- inner- banner img -->
       <div class="inner-banner-img item-overflow">
+       {{ if hero_image }}
        {{ hero_image }} <img src="{{ url }}" alt="inner banner img" class="content-item-zoom object-cover">{{ /hero_image }}
+       {{ else }}
+       {{ setting }}{{ inner_banner_image }} <img src="{{ url }}" alt="inner banner img" class="content-item-zoom object-cover">{{ /inner_banner_image }}{{ /setting }}
+       {{ /if }}
         <div class="d-none content-item-y">d none</div>
       </div>
       <div class="container">
@@ -11,7 +15,7 @@
           <div class="col-12">
             <!-- start inner hero content -->
               <div class="inner-hero-content">
-                <h1 class="title">Service detail</h1>
+                <h1 class="title">{{ title ?? 'Service detail' }}</h1>
                 
                 <!-- breadcrumb -->
                 <nav aria-label="breadcrumb">

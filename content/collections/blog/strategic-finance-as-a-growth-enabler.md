@@ -4,7 +4,7 @@ blueprint: blog
 title: 'Strategic Finance as a Growth Enabler'
 short_description: 'Finance isn’t just about managing numbers—it’s a powerful driver of growth. With strategic planning, data-driven forecasting, and effective resource allocation, businesses can unlock new opportunities and scale sustainably.'
 image:
-  - images/blog-img2.jpg
+  - images/masonary-img2.jpg
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310671
 category:

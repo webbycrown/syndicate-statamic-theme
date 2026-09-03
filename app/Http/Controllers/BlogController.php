@@ -12,50 +12,65 @@ class BlogController extends Controller
 {   
     /**
      * Handle blog search via AJAX request.
-     * Filters blog entries by title, orders by update date, limits results, and returns JSON.
      */
-
     public function search(Request $request)
     {   
-        // Get the search keyword from the request
-        $query = $request->get('q');
+        $query = trim((string) $request->get('q', ''));
 
-        // Query blog entries from the 'blog' collection matching the title
+        if ($query === '') {
+            return response()->json([]);
+        }
+
+        $needle = mb_strtolower($query);
+
         $entries = Entry::query()
             ->where('collection', 'blog')
-            ->where('title', 'like', "%$query%")
-            ->orderBy('updated_at', 'desc') // Sort results by last updated
-            ->limit(6) // Limit the number of results to 2
+            ->orderBy('updated_at', 'desc')
             ->get()
+            ->filter(function ($entry) use ($needle) {
+                $haystack = mb_strtolower(implode(' ', [
+                    (string) $entry->get('title'),
+                    (string) $entry->get('short_description'),
+                    (string) $entry->slug(),
+                    $this->plainText($entry->get('content')),
+                    $this->termsText($entry->get('category')),
+                    $this->termsText($entry->get('tag')),
+                ]));
+
+                return str_contains($haystack, $needle);
+            })
+            ->take(24)
             ->map(function ($entry) {
-                $image = $entry->get('image'); // Get image field (can be array of asset IDs)
+                $image = $entry->get('image') ?: $entry->get('featured_image');
+                $urls = collect(is_array($image) ? $image : ($image ? [$image] : []))
+                    ->map(function ($asset) {
+                        return url('/assets/'.ltrim((string) $asset, '/'));
+                    })
+                    ->values()
+                    ->all();
+
+                $updated = $entry->get('updated_at');
+                $date = is_numeric($updated)
+                    ? Carbon::createFromTimestamp($updated)
+                    : Carbon::parse($updated ?: 'now');
+
                 return [
                     'title' => $entry->get('title'),
                     'slug' => $entry->slug(),
                     'url' => $entry->url(),
-                    // Convert asset paths to public URLs
-                    'image' =>  collect($image)->map(function ($asset) {
-                        return url('assets/'.$asset);
-                    })->toArray(),
-                    // Format the updated date
-
-                    'updated_at' => Carbon::createFromTimestamp($entry->get('updated_at'))->format('F d, Y'),
+                    'image' => $urls,
+                    'short_description' => $entry->get('short_description'),
+                    'updated_at' => $date->format('F d, Y'),
                 ];
-            });
+            })
+            ->values();
 
-        return response()->json($entries);  // Return as JSON response
+        return response()->json($entries);
     }
 
-
-    /**
-     * Handle newsletter subscription.
-     * Validates email, checks for duplicates, and saves new submissions.
-     */
     public function newsLetter( Request $request ){
-        // Get email from request, default to empty string
-        $email = $request->get('email') ? $request->get('email') : '';
+        $email = $request->input('email', '');
 
-        // Validate email format
         $validator = Validator::make(['email' => $email], [
             'email' => [
                 'required',
@@ -63,23 +78,19 @@ class BlogController extends Controller
             ]
         ]);
 
-        // If validation fails, return error response
         if ($validator->fails()) {
             return response()->json([
                 'status' => false,
-                'message' => 'email is required',
+                'message' => 'Please enter a valid email address.',
             ], 200);
         }
 
-        // Load the 'newsletter' form
         $form = Form::find('newsletter');
 
-        // Check if the email has already been submitted
         $existing = $form->submissions()->filter(function ($item) use ($email) {
             return $item->get('email') === $email;
         })->first();
 
-        // If email already exists, return message    
         if ($existing) {
             return response()->json([
                 'status'=> false , 
@@ -87,16 +98,58 @@ class BlogController extends Controller
             ], 200);
         }
 
-        // Save new form submission
         $form->makeSubmission()->data([
             'email' => $email,
         ])->save();
 
-        // Return success response
         return response()->json([
             'status' => true,
             'message' => 'Thank you for subscribing!',
         ]);
+    }
 
+    private function termsText($value): string
+    {
+        if (is_array($value)) {
+            return implode(' ', $value);
+        }
+
+        return (string) $value;
+    }
+
+    private function plainText($content): string
+    {
+        if (is_string($content)) {
+            return trim(strip_tags($content));
+        }
+
+        if (! is_array($content)) {
+            return '';
+        }
+
+        $parts = [];
+        $walk = function ($node) use (&$walk, &$parts) {
+            if (! is_array($node)) {
+                return;
+            }
+
+            if (isset($node['text']) && is_string($node['text'])) {
+                $parts[] = $node['text'];
+            }
+
+            if (isset($node['blockqoute']) && is_string($node['blockqoute'])) {
+                $parts[] = $node['blockqoute'];
+            }
+
+            foreach ($node as $value) {
+                if (is_array($value)) {
+                    $walk($value);
+                }
+            }
+        };
+
+        $walk($content);
+
+        return implode(' ', $parts);
     }
 }

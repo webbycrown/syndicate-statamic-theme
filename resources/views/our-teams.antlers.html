@@ -9,20 +9,4 @@
     {{ /page_builder }}
 
 <!-- Team Popup -->
-
-<div id="team-popup" class="mfp-hide all-pupop team-popup">
-  {{ if {partial:our-teams/show} }}
-    {{ partial:our-teams/show }}
-  {{ else }}
-    <div class="default-content">
-      <h2>Team Member Details</h2>
-      {{ our-teams:show }}
-        {{ if no_results }}
-          <p>No team member selected</p>
-        {{ else }}
-          {{ title }} - {{ position }}
-        {{ /if }}
-      {{ /our-teams:show }}
-    </div>
-  {{ /if }}
-</div>
+<div id="team-popup" class="mfp-hide all-pupop team-popup"></div>

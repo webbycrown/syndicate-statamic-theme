@@ -12,4 +12,6 @@ export_paths:
   - storage/forms
   - package.json
   - vite.config.js
+  - resources/css
+  - resources/js
   - README.md

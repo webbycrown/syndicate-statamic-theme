@@ -4,7 +4,7 @@ blueprint: blog
 title: 'Redefining Executive Roles in Small Firms'
 short_description: 'Which allows you to pay down insurance bills'
 image:
-  - images/blog-grid.jpg
+  - images/masonary-img5.jpg
 category:
   - business
   - strategy

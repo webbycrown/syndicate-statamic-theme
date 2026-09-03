@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row related-blog-posts">
   <div class="col-12">
     <h2 class="title" data-aos="fade-up" data-aos-duration="1000">Related post</h2>
   </div>
   {{ related_blog limit='{limit}' }}
   <!-- blog grid -->
-  <div class="col-12 col-md-6">
+  <div class="col-12 col-md-6 d-flex">
     <div class="blog-grid-style-3">
       <div class="blog-img">
         {{ image }}<a href="/blog/{{slug}}"><img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>

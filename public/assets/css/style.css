@@ -3977,6 +3977,16 @@ textarea.form-control{
 .read-more-bottom .btn:hover img{
     filter: brightness(16.5);
 }
+.read-more-bottom .btn img{
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.read-more-bottom .btn.loading{
+    pointer-events: none;
+    opacity: 0.85;
+}
 
 /*=============================================
     end Our Recent Projects section style 3 CSS
@@ -4310,6 +4320,42 @@ textarea.form-control{
 .blog-grid-style-3 .blog-info .btn{
     font-size: var(--font-size-b4);
     padding: 3px 18px;
+}
+.related-blog-posts{
+    align-items: stretch;
+}
+.related-blog-posts .blog-grid-style-3{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    align-items: stretch;
+}
+.related-blog-posts .blog-grid-style-3 .blog-img{
+    align-self: stretch;
+}
+.related-blog-posts .blog-grid-style-3 .blog-info{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+.related-blog-posts .blog-grid-style-3 .blog-info h6{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.5em;
+}
+.related-blog-posts .blog-grid-style-3 .blog-info p{
+    flex: 1 1 auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 80px;
+}
+.related-blog-posts .blog-grid-style-3 .blog-info .btn{
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 /*=============================================
@@ -5330,6 +5376,39 @@ textarea.form-control{
 .sidebar .search .search-form .form-control{
     border-radius: 5px;
 }
+.blog-page-search{
+    width: 100%;
+    position: relative;
+}
+.blog-page-search .search-form-box{
+    position: relative;
+    padding: 0;
+}
+.blog-page-search .form-control{
+    height: 56px;
+    padding-right: 58px;
+    border-radius: 5px;
+    background: var(--color-secondary-light);
+    border: 1px solid var(--color-tertiary);
+}
+.blog-page-search button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary);
+    color: #fff;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-page-search button:hover{
+    background: var(--color-dark);
+    color: #fff;
+}
 .sidebar .search .search-form button{
     position: absolute;
     top: 0;
@@ -5491,6 +5570,15 @@ textarea.form-control{
     line-height: var(--h3-lineHeight);
 }
 .blog-single-content p{
+    margin-bottom: 25px;
+}
+.blog-single-content .blog-lead{
+    font-size: var(--font-size-b2);
+    line-height: 1.6;
+    color: var(--color-heading);
+    margin-bottom: 22px;
+}
+.blog-single-content .blog-article-body p{
     margin-bottom: 25px;
 }
 .blockqoute{

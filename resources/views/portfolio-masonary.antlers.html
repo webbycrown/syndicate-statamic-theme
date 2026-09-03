@@ -28,7 +28,7 @@
 
               <!-- All gallery -->
               <div class="gallery-list masonary-gallery">
-                  {{ collection:portfolio as="portfolio"  paginate="true" limit="12" }}
+                  {{ collection:portfolio as="portfolio"  paginate="true" limit="16" }}
                 <div class="row grid-masonary">
                    {{ portfolio }}
                   <div class="col-6 col-sm-6 col-md-4 col-lg-3 grid-item {{ category:slug }}">
@@ -36,7 +36,7 @@
                       <div class="projects-gallery-img">{{ image }}<img src="{{ url }}" alt="projects gallery img 1" class="object-cover">{{ /image }}</div>
                       <div class="projects-gallery-hover">
                         <a href="/portfolio/{{ slug }}">
-                           <span class="icon"><img src="{{ theme:asset }}assets/images/arrow-btn.svg" alt="arrow btn" class="object-cover"></span>
+                           <span class="icon"><img src="/assets/images/arrow-btn.svg" alt="arrow btn" class="object-cover"></span>
                           {{ link_text }}
                         </a>
                       </div>
@@ -52,7 +52,7 @@
                 {{ if total_pages !=  current_page}}
                   <div class="col-12 load-more-wrap">
                     <div class="read-more-bottom">
-                      <a href="{{ next_page }}" class="btn btn-secondary btn-style-3 ajax-load-more-grid">Load more <img src="assets/images/loader.svg" alt="loader" class="object-cover d-none"></a>
+                      <a href="{{ next_page }}" class="btn btn-secondary btn-style-3 ajax-load-more-grid">Load more <img src="/assets/images/loader.svg" alt="loader" class="object-cover d-none"></a>
                     </div>
                   </div>
                   {{ /if }}

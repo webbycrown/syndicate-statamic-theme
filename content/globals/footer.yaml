@@ -24,13 +24,17 @@ data:
       id: mbkrv98e
       label: Contact
       url: /contact-us
+    -
+      id: mbkrvpriv
+      label: 'Privacy Policy'
+      url: /privacy-policy
   copyright: 'Copyright © 2023 <a href="/">Synndicate</a>. All Rights Reserved'
   designed_by_text: 'Designed by <a href="https://webbytemplate.com/">Webbytemplate.</a>'
   service_links:
     -
       id: mbvpwtoa
       label: 'Our Team'
-      url: /our-teams
+      url: /our-team
     -
       id: mbvpwz4h
       label: Career
@@ -47,3 +51,7 @@ data:
       id: mbvpxa4i
       label: Testimonial
       url: /testimonial
+    -
+      id: mbvpxpriv
+      label: 'Privacy Policy'
+      url: /privacy-policy

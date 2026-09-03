@@ -15,4 +15,6 @@ use App\Http\Controllers\BlogController;
 Route::get('/blog-search', [BlogController::class, 'search'])->name('blog.search');
 
 // Route to handle newsletter subscription form submissions
-Route::get('/newsLetter', [BlogController::class, 'newsLetter'])->name('newsLetter');
+Route::post('/newsLetter', [BlogController::class, 'newsLetter'])->name('newsLetter');
+
+Route::redirect('/our-teams', '/our-team');

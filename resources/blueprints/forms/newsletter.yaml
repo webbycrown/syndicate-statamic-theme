@@ -10,5 +10,5 @@ tabs:
               type: text
               display: Email
               validate:
+                - required
                 - email
-                - 'new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})'

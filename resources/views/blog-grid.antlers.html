@@ -5,7 +5,7 @@
 {{ /if }}
     <!-- end inner hero banner section -->
 
-    <!-- start Our Team Members section -->
+    <!-- start blog grid page section -->
     <section class="blog-grid-section blog-grid-page inner-wrapper">
       <div class="container">
         {{ page_builder scope="block" }}
@@ -14,88 +14,33 @@
         {{ /if }}
         {{ /page_builder }}
 
-        <div class="row" id="blog-grid-wrapper">
-          {{ collection:blog as="blogs" paginate="true" limit="6" }}
-          {{ blogs }}
-          <!-- blog grid -->
-          <div class="col-12 col-md-4">
-            <div class="blog-grid">
-              <div class="blog-grid-wrap">
-                <div class="blog-img">
-                  <a href="blog/{{slug}}">{{ image }}<img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
-                </div>
-                <div class="blog-info">
-                  <h5><a href="blog/{{slug}}">{{ title }}</a></h5>
-                  <p>{{ short_description }}</p>
-                </div>
+        <div class="row mb-4">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form class="search-form blog-page-search" action="/blog" method="get">
+              <div class="search-form-box">
+                <input type="text" id="blog-listing-search" name="search" class="form-control" placeholder="Search articles..." value="{{ get:search }}">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
-              <div class="read-more-btn">
-                <a href="blog/{{slug}}" class="btn btn-primary">Read more</a>
-              </div>
-            </div>
+            </form>
           </div>
-          {{ /blogs }}
-
-          <div class="col-12">
-            <div class="pagination-part">
-              {{ paginate }}
-              <nav aria-label="Page navigation">
-               <ul class="pagination justify-content-center">
-                {{ if prev_page }}
-                <li class="page-item"> <a class="page-link" href="{{ prev_page }}">Previous</a></li>
-                {{ /if }}
-
-                {{ links:segments }}
-
-                {{ first }}
-                {{ if page == current_page }}
-                <li class="page-item active"><a class="page-link">{{ page }}</a></li>
-                {{ else }}
-                <li class="page-item"><a class="page-link" href="{{ url }}">{{ page }}</a></li>
-                {{ /if }}
-                {{ /first }}
-
-                {{ if slider }}
-                <li class="page-item disabled"><span>...</span></li>
-                {{ /if }}
-
-                {{ slider }}
-                {{ if page == current_page }}
-                <li class="page-item active"><a class="page-link">{{ page }}</a></li>
-                {{ else }}
-                <li class="page-item"><a class="page-link" href="{{ url }}">{{ page }}</a></li>
-                {{ /if }}
-                {{ /slider }}
-
-                {{ if slider || (!slider && last) }}
-                <li class="page-item disabled"><span>...</span></li>
-                {{ /if }}
-
-                {{ last }}
-                {{ if page == current_page }}
-                <li class="page-item active"><a class="page-link">{{ page }}</a></li>
-                {{ else }}
-                <li class="page-item"><a class="page-link" href="{{ url }}">{{ page }}</a></li>
-                {{ /if }}
-                {{ /last }}
-
-                {{ /links:segments }}
-
-                {{ if next_page }}
-                <li class="page-item"><a class="page-link" href="{{ next_page }}">Next</a></li>
-                {{ /if }}
-              </ul>
-            </nav>
-            {{ /paginate }}
-          </div>
-
         </div>
-        {{ /collection:blog }}
 
-      </div>
-        <!-- Pagination -->
+        <div class="row" id="blog-grid-wrapper">
+          {{ if get:category }}
+          {{ collection:blog as="blogs" paginate="true" limit="21" :category:contains="get:category" }}
+          {{ partial:blog-grid-items }}
+          {{ /collection:blog }}
+          {{ elseif get:tag }}
+          {{ collection:blog as="blogs" paginate="true" limit="21" :tag:contains="get:tag" }}
+          {{ partial:blog-grid-items }}
+          {{ /collection:blog }}
+          {{ else }}
+          {{ collection:blog as="blogs" paginate="true" limit="21" }}
+          {{ partial:blog-grid-items }}
+          {{ /collection:blog }}
+          {{ /if }}
+        </div>
 
-  
       </div>
     </section>
-    <!-- End Our Team Members section -->
+    <!-- End blog grid page section -->

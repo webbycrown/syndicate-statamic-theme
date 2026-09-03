@@ -1319,6 +1319,11 @@
 
 @media only screen and (max-width: 767px) {
 
+    .related-blog-posts .blog-grid-style-3{
+        height: auto;
+        margin-bottom: 20px;
+    }
+
     p{
         margin-bottom: 20px;
     }

@@ -384,12 +384,24 @@ Home Three js
     06. Preloader JS
     ======================================*/  
     Preloader_js: function() {
-      //After 2s preloader is fadeOut
-      $('.preloader').delay(2000).fadeOut('slow');
-      setTimeout(function() {
-      //After 2s, the no-scroll class of the body will be removed
-        $('body').removeClass('no-scroll');
-      }, 2000); //Here you can change preloader time
+      var hidden = false;
+      function hidePreloader() {
+        if (hidden) {
+          return;
+        }
+        hidden = true;
+        $('body').addClass('is-ready').removeClass('no-scroll');
+        $('.preloader').fadeOut(250, function () {
+          $(this).remove();
+        });
+      }
+
+      if (document.readyState === 'complete') {
+        hidePreloader();
+      } else {
+        $(window).on('load', hidePreloader);
+        setTimeout(hidePreloader, 1200);
+      }
     },
 
 
@@ -611,7 +623,7 @@ Home Three js
 })(jQuery);
 
 $(document).ready(function() {
-  $(document).on('submit','#onlineConsultForm', function(e) {
+  $(document).on('submit','#onlineConsultForm, #contactForm', function(e) {
     e.preventDefault(); 
 
     const $form = $(this);
@@ -778,6 +790,54 @@ $(document).ready(function() {
 });
 
 
+  $(document).on('click', '.ajax-load-more-blog', function (e) {
+    e.preventDefault();
+    var $button = $(this);
+    if ($button.hasClass('loading')) {
+      return;
+    }
+    var nextPageUrl = $button.attr('href');
+    if (!nextPageUrl || nextPageUrl === '#' || nextPageUrl === window.location.pathname) {
+      $button.closest('.load-more-wrap').remove();
+      return;
+    }
+
+    $button.addClass('loading').attr('aria-busy', 'true');
+    $button.find('img').removeClass('d-none');
+
+    $.ajax({
+      url: nextPageUrl,
+      type: 'GET',
+      dataType: 'html',
+      headers: { 'X-Requested-With': 'XMLHttpRequest' },
+      success: function (response) {
+        var $response = $('<div>').html(response);
+        var $newItems = $response.find('#blog-list-wrapper .blog-grid-style-3');
+        var $newLoadMore = $response.find('.ajax-load-more-blog');
+        var newHref = $newLoadMore.attr('href');
+
+        if ($newItems.length) {
+          $('#blog-list-wrapper').append($newItems);
+          listBlogsBackup = $('#blog-list-wrapper').html();
+        }
+
+        if (newHref && newHref !== '#' && newHref !== window.location.pathname) {
+          $button.attr('href', newHref);
+        } else {
+          $button.closest('.load-more-wrap').remove();
+        }
+      },
+      error: function () {
+        $button.closest('.load-more-wrap').find('a').removeClass('loading').attr('aria-busy', 'false');
+        $button.find('img').addClass('d-none');
+      },
+      complete: function () {
+        $button.removeClass('loading').attr('aria-busy', 'false');
+        $button.find('img').addClass('d-none');
+      }
+    });
+  });
+
    $(document).on('click', '.ajax-load-more-grid', function (e) {
       e.preventDefault();
       var $button = $(this);
@@ -888,37 +948,171 @@ $(document).on('click', '.team-popup-link', function(e) {
 });
 
 
-$(document).on('keyup','#blog-search-input', function () {
-      const query = $(this).val();
+    var blogSearchTimer = null;
+    var recentBlogsBackup = $('#recent-blogs-result').html();
+    var listBlogsBackup = $('#blog-list-wrapper').html();
+    var gridBlogsBackup = $('#blog-grid-wrapper').html();
+
+    function currentSearchTarget() {
+      if ($('#blog-grid-wrapper').length) {
+        return 'grid';
+      }
+      if ($('#blog-list-wrapper').length) {
+        return 'list';
+      }
+      return 'recent';
+    }
+
+    function blogThumb(item) {
+      if (Array.isArray(item.image) && item.image.length) {
+        return item.image[0];
+      }
+      if (typeof item.image === 'string' && item.image) {
+        return item.image;
+      }
+      return '/assets/images/blog-img1.jpg';
+    }
+
+    function renderRecentResults(data) {
+      if (!data.length) {
+        return '<p>No blog posts found.</p>';
+      }
+      return data.map(function (item) {
+        return `
+          <div class="recent-post-single">
+            <div class="recent-post-img">
+              <img src="${blogThumb(item)}" alt="${item.title}" class="object-cover">
+            </div>
+            <div class="recent-post-bio">
+              <h6><a href="${item.url}">${item.title}</a></h6>
+              <span>${item.updated_at}</span>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    function renderGridResults(data) {
+      if (!data.length) {
+        return '<div class="col-12"><p>No blog posts found for your search.</p></div>';
+      }
+      return data.map(function (item) {
+        var excerpt = item.short_description || ('Updated on ' + item.updated_at);
+        return `
+          <div class="col-12 col-md-4">
+            <div class="blog-grid">
+              <div class="blog-grid-wrap">
+                <div class="blog-img">
+                  <a href="${item.url}"><img src="${blogThumb(item)}" alt="${item.title}" class="object-cover" /></a>
+                </div>
+                <div class="blog-info">
+                  <h5><a href="${item.url}">${item.title}</a></h5>
+                  <p>${excerpt}</p>
+                </div>
+              </div>
+              <div class="read-more-btn">
+                <a href="${item.url}" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    function renderListResults(data) {
+      if (!data.length) {
+        return '<p>No blog posts found for your search.</p>';
+      }
+      return data.map(function (item) {
+        var excerpt = item.short_description || ('Updated on ' + item.updated_at);
+        return `
+          <div class="blog-grid-style-3 blog-full-grig">
+            <div class="blog-img">
+              <a href="${item.url}"><img src="${blogThumb(item)}" alt="${item.title}" class="object-cover"></a>
+            </div>
+            <div class="blog-info">
+              <div class="blog-admin-info">
+                <div class="blog-date">${item.updated_at}</div>
+              </div>
+              <h6><a href="${item.url}">${item.title}</a></h6>
+              <p>${excerpt}</p>
+              <a href="${item.url}" class="btn btn-primary">Read more</a>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    function restoreBlogListing(target) {
+      if (target === 'list' && listBlogsBackup) {
+        $('#blog-list-wrapper').html(listBlogsBackup);
+        $('.read-more-bottom').show();
+      }
+      if (target === 'grid' && gridBlogsBackup) {
+        $('#blog-grid-wrapper').html(gridBlogsBackup);
+        $('.pagination-part').show();
+      }
+      if (target === 'recent' && recentBlogsBackup) {
+        $('#recent-blogs-result').html(recentBlogsBackup);
+      }
+    }
+
+    function applyBlogResults(data, target) {
+      if (target === 'list' && $('#blog-list-wrapper').length) {
+        $('#blog-list-wrapper').html(renderListResults(data));
+        $('.read-more-bottom').hide();
+        return;
+      }
+      if (target === 'grid' && $('#blog-grid-wrapper').length) {
+        $('#blog-grid-wrapper').html(renderGridResults(data));
+        $('.pagination-part').hide();
+        return;
+      }
+      if ($('#recent-blogs-result').length) {
+        $('#recent-blogs-result').html(renderRecentResults(data));
+      }
+    }
+
+    function runBlogSearch(query, target) {
+      query = (query || '').trim();
+      target = target || currentSearchTarget();
+      if (!query) {
+        restoreBlogListing(target);
+        return;
+      }
+      if (typeof searchUrl === 'undefined') {
+        return;
+      }
 
       $.ajax({
         url: searchUrl,
         type: 'GET',
         data: { q: query },
         success: function (data) {
-          let html = '';
-
-          if (data.length === 0) {
-            html = '<p>No blog posts found.</p>';
-          } else {
-            data.forEach(function (item) {
-              html += `
-                <div class="recent-post-single">
-                  <div class="recent-post-img">
-                    ${item.image ? `<img src="${item.image}" alt="thumb" class="object-cover">` : ''}
-                  </div>
-                  <div class="recent-post-bio">
-                    <h6><a href="${item.url}">${item.title}</a></h6>
-                    <span>${item.updated_at}</span>
-                  </div>
-                </div>
-              `;
-            });
-          }
-
-          $('#recent-blogs-result').html(html);
+          applyBlogResults(data, target);
         }
       });
+    }
+
+    $(document).on('keyup', '#blog-search-input, #blog-listing-search', function () {
+      var query = $(this).val();
+      var target = currentSearchTarget();
+      clearTimeout(blogSearchTimer);
+      blogSearchTimer = setTimeout(function () {
+        runBlogSearch(query, target);
+      }, 250);
+    });
+
+    $(document).on('submit', '.search-form, .blog-page-search', function (e) {
+      var $input = $(this).find('input[type="text"], input[type="search"], input[name="search"]');
+      var query = ($input.val() || '').trim();
+      if (!query) {
+        return;
+      }
+      if ($('#blog-grid-wrapper, #blog-list-wrapper').length) {
+        e.preventDefault();
+        runBlogSearch(query, currentSearchTarget());
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState({}, '', window.location.pathname + '?search=' + encodeURIComponent(query));
+        }
+      }
     });
  
 
@@ -978,13 +1172,15 @@ $(document).on('keyup','#blog-search-input', function () {
 
       $.ajax({
         url: newsLetterUrl,  
-        method: 'get',
+        method: 'POST',
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         data: {
           email:email
         },
         dataType: 'json',
         success: function(response) {
-        // You get a JSON response from Statamic
           if (response.status === true) {
             $message.text(response.message).css('color', '#ffcb79').fadeIn();
               setTimeout(() => {
@@ -1001,61 +1197,26 @@ $(document).on('keyup','#blog-search-input', function () {
     });
 
     $(document).on('click', '.home_search', function (e) {
-  e.preventDefault();
-  var search_value = $('#header_search').val(); // not $(this).find(...)
+      e.preventDefault();
+      var search_value = ($('#header_search').val() || '').trim();
+      if (!search_value) {
+        return;
+      }
+      window.location.href = '/blog?search=' + encodeURIComponent(search_value);
+    });
+    $(document).on('submit', '.search-popup form', function (e) {
+      e.preventDefault();
+      var search_value = ($('#header_search').val() || '').trim();
+      if (!search_value) {
+        return;
+      }
+      window.location.href = '/blog?search=' + encodeURIComponent(search_value);
+    });
 
-  if (search_value.trim() === '') return;
-
-  window.location.href = blogPageRedirect+'?search='+search_value;
-  
-});
-     const params = new URLSearchParams(window.location.search);
-  const searchValue = params.get('search');
-  blogSearch(searchValue)
-
-    function blogSearch(search_value){
-      $.ajax({
-          url: searchUrl, // your Laravel route that maps to search controller
-          type: 'GET',
-          data: { q: search_value },
-          success: function (response) {
-            let html = '';
-            if (response.length > 0) {
-              response.forEach(function (item) {
-                html += `
-          <div class="col-12 col-md-4">
-          <div class="blog-grid">
-          <div class="blog-grid-wrap">
-          <div class="blog-img">
-          <a href="${item.url}">
-          <img src="${item.image[0] ?? '/path/to/default.jpg'}" alt="${item.title}" class="object-cover" />
-          </a>
-          </div>
-          <div class="blog-info">
-          <h5><a href="${item.url}">${item.title}</a></h5>
-          <p>Updated on ${item.updated_at}</p>
-          </div>
-          </div>
-          <div class="read-more-btn">
-          <a href="${item.url}" class="btn btn-primary">Read more</a>
-          </div>
-          </div>
-                  </div>`;
-                });
-            } else {
-              html = `<p>No blog posts found for your search.</p>`;
-            }
-
-            $('#blog-grid-wrapper').html(html);
-          if ($('.pagination-part').length > 0) {
-          $('.pagination-part').hide(); // Now it will work!
-        }
-        },
-        error: function () {
-          $('#blog-grid-wrapper').html('');
-          $('.pagination-part').show(); 
-        }
-      });
+    var listingSearch = new URLSearchParams(window.location.search).get('search');
+    if (listingSearch) {
+      $('#blog-listing-search, #blog-search-input').val(listingSearch);
+      runBlogSearch(listingSearch, currentSearchTarget());
     }
 
     
@@ -1097,7 +1258,7 @@ $(document).on('keyup','#blog-search-input', function () {
 
 
     if (localStorage.getItem('NewsletterPopup') ) {
-      $popup.removeClass('open').hide();
+      $('.newsletter-popup').removeClass('open').hide();
     }
 
     // Show popup if eligible
@@ -1130,7 +1291,10 @@ $(document).on('keyup','#blog-search-input', function () {
 
       $.ajax({
         url: newsLetterUrl,  
-        method: 'get',
+        method: 'POST',
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
         data: {
           email:email
         },
@@ -1150,13 +1314,8 @@ $(document).on('keyup','#blog-search-input', function () {
 
           } else {
 
-            setCookie(NEWSLETTER_COOKIE, new Date().toISOString(), 365);
-
             $message.text(response.message).css('color', '#df5243').fadeIn();
 
-            setTimeout(() => {
-              $.magnificPopup.close();
-            }, 1500);
           }
         },
         error: function(response) {

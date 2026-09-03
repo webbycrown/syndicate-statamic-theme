@@ -70,6 +70,10 @@ tree:
         id: 8e359fb3-be8a-4dd5-beed-b0f76ebb0031
         title: Contact
         url: /contact-us
+      -
+        id: c8f2e1a0-4b7d-4e9c-9a11-5d6e7f8a9b0c
+        title: 'Privacy Policy'
+        url: /privacy-policy
   -
     id: ea4f9944-e4e3-4ae0-8fc6-00bdcc47ffbf
     title: Portfolio

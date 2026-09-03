@@ -47,35 +47,35 @@
                   </div>
                   
                   <h2 class="title">{{ title }}</h2>
-                  {{ content }}
-                  {{ if type == "text" }}
-                  <p>{{ text }}</p>
+                  {{ if short_description }}
+                  <p class="blog-lead">{{ short_description }}</p>
                   {{ /if }}
-
-                  {{ if type == "blockqoute" }}
-                  <blockquote class="blockqoute">
-                   {{ blockqoute }}
-                    </blockquote>
+                  <div class="blog-article-body">
+                  {{ body }}
+                    {{ if type == "text" || type == "paragraph" }}
+                    <p>{{ text }}</p>
                     {{ /if }}
-
-                  {{ if type == "image" }}
-                  <div class="row">
-                     {{ image }}
-                    <div class="col-12 col-md-6">
-                       <img src="{{ url }}" alt="blog image" class="img-fluid object-cover">
+                    {{ if type == "blockqoute" }}
+                    <blockquote class="blockqoute">{{ blockqoute }}</blockquote>
+                    {{ /if }}
+                    {{ if type == "image" }}
+                    <div class="row">
+                      {{ image }}
+                      <div class="col-12 col-md-6">
+                        <img src="{{ url }}" alt="blog image" class="img-fluid object-cover">
+                      </div>
+                      {{ /image }}
                     </div>
-                     {{ /image }}
+                    {{ /if }}
+                  {{ /body }}
                   </div>
-                  {{ /if }}
-
-                  {{ /content }}
 
                   <div class="blog-details-tags">
-                    <div class="share-icon"><img src="{{ theme:asset }}assets/images/share-icon.svg" alt="share icon" class="object-cover"></div>
+                    <div class="share-icon"><img src="/assets/images/share-icon.svg" alt="share icon" class="object-cover"></div>
                     <ul class="blog-tags">
                        {{ tag }}
 
-                      <li><a href="#">{{ title }}</a></li>
+                      <li><a href="/blog?tag={{ slug }}">{{ title }}</a></li>
                       {{ /tag }}
                     </ul>
 

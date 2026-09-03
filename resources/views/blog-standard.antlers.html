@@ -17,10 +17,11 @@
           <div class="col-12 col-md-8">
             <!-- blog grid -->
             {{ collection:blog as="blogs" paginate="true" limit="6" }}
+            <div id="blog-list-wrapper">
             {{ blogs }}
               <div class="blog-grid-style-3 blog-full-grig">
                 <div class="blog-img">
-                  <a href="blog/{{slug}}">{{ image }}<img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
+                  <a href="/blog/{{ slug }}">{{ image }}<img src="{{ url }}" alt="blog img1" class="object-cover">{{ /image }}</a>
                   
                 </div>
                 <div class="blog-info">
@@ -29,19 +30,23 @@
                       {{ updated_at format="d M Y" }}
                     </div>
                   </div>
-                  <h6><a href="blog/{{slug}}">{{ title }}</a></h6>
+                  <h6><a href="/blog/{{ slug }}">{{ title }}</a></h6>
                   <p>{{ short_description }}</p>
-                  <a href="blog/{{slug}}" class="btn btn-primary">Read more</a>
+                  <a href="/blog/{{ slug }}" class="btn btn-primary">Read more</a>
                 </div>
               </div>
                {{ /blogs }}
-               {{ /collection:blog }}
-            
-              <div class="col-12">
+            </div>
+            {{ paginate }}
+              {{ if next_page }}
+              <div class="col-12 load-more-wrap">
                 <div class="read-more-bottom text-start">
-                    <a href="/blog" class="btn btn-secondary btn-style-3">Load more <img src="assets/images/loader.svg" alt="loader" class="object-cover"></a>
+                    <a href="{{ next_page }}" class="btn btn-secondary btn-style-3 ajax-load-more-blog">Load more <img src="/assets/images/loader.svg" alt="loader" class="object-cover d-none"></a>
                 </div>
               </div>
+              {{ /if }}
+            {{ /paginate }}
+            {{ /collection:blog }}
         </div>
         <div class="col-12 col-md-4 ps-lg-5">
 

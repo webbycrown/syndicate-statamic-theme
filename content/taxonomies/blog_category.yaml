@@ -1,1 +1,7 @@
 title: 'Blog Category'
+route: '/blog/category/{slug}'
+template: blog-grid
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
