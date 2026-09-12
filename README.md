@@ -2,6 +2,9 @@
 
 At Syndicate Statamic, we make it easy to build stunning websites with zero hassle. Our theme comes packed with customizable sections for blogs, services, portfolios, testimonials, and more—so you can focus on content, not complexity.
 
+**Live demo:** https://syndicate-statamic.webbydemo.in/  
+Control Panel: `/cp` — `admin@example.com` / `password`
+
 ## Pages of Syndicate
 
 - Home Pages (3 variants)
@@ -21,6 +24,16 @@ At Syndicate Statamic, we make it easy to build stunning websites with zero hass
 - Portfolio Masonary Page
 - Portfolio Detail Page ( Single Portfolio Detail Page )
 - Privacy Policy Page
+
+## Collections
+
+- **Pages**: Site structure and static content.
+- **Blog**: News and advisory articles (3 listing + 3 detail layouts).
+- **Business services**: Service catalog and detail pages.
+- **Portfolio**: Project grid, masonry, and detail.
+- **Team members**: Staff listing and profiles.
+- **Testimonials**: Client quotes.
+- **Multipurpose sections**: Reusable page-builder content.
 
 ## Features of Syndicate
 
