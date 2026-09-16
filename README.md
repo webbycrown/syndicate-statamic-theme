@@ -4,9 +4,6 @@ Syndicate is a consulting and multipurpose marketing starter kit for Statamic 5.
 
 Every marketing page uses one global **Page** template. Add, remove, or reorder Theme sections in the Control Panel. Collection details (blog, services, portfolio, team) keep their own entry templates.
 
-**Live demo:** https://syndicate-statamic.webbydemo.in/  
-Control Panel: `/cp` — `admin@example.com` / `password`
-
 ## Pages of Syndicate
 
 - **Home Pages**: 3 variants
@@ -41,16 +38,6 @@ Add any section to any page from **CP → Pages → Theme sections**.
 - **Testimonials**: Client quotes.
 
 Site logo, contact, and social links live in **Globals** (Setting, Footer, Header).
-
-## Collections
-
-- **Pages**: Site structure and static content.
-- **Blog**: News and advisory articles (3 listing + 3 detail layouts).
-- **Business services**: Service catalog and detail pages.
-- **Portfolio**: Project grid, masonry, and detail.
-- **Team members**: Staff listing and profiles.
-- **Testimonials**: Client quotes.
-- **Multipurpose sections**: Reusable page-builder content.
 
 ## Features of Syndicate
 
