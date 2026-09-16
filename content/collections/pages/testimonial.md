@@ -3,7 +3,7 @@ id: 950fd846-f6d4-4089-8e80-090f74d99af2
 blueprint: page
 title: Testimonial
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: testimonial
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310365
 page_builder:

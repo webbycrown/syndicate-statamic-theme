@@ -3,7 +3,7 @@ id: 637aa372-6ad7-4312-923a-bc016eb50a7f
 blueprint: page
 title: 'Career Two'
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: career-2
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310340
 page_builder:

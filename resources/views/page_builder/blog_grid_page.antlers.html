@@ -1,0 +1,46 @@
+
+    <!-- start inner hero banner section -->
+{{ if show_hero_section == true }}
+  {{ partial:inner-hero-section }}
+{{ /if }}
+    <!-- end inner hero banner section -->
+
+    <!-- start blog grid page section -->
+    <section class="blog-grid-section blog-grid-page inner-wrapper">
+      <div class="container">
+        {{ page_builder scope="block" }}
+        {{if type == "intro_section"}}
+        {{ partial src="page_builder/{type}" }}
+        {{ /if }}
+        {{ /page_builder }}
+
+        <div class="row mb-4">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form class="search-form blog-page-search" action="/blog" method="get">
+              <div class="search-form-box">
+                <input type="text" id="blog-listing-search" name="search" class="form-control" placeholder="Search articles..." value="{{ get:search }}">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row" id="blog-grid-wrapper">
+          {{ if get:category }}
+          {{ collection:blog as="blogs" paginate="true" limit="21" :category:contains="get:category" }}
+          {{ partial:blog-grid-items }}
+          {{ /collection:blog }}
+          {{ elseif get:tag }}
+          {{ collection:blog as="blogs" paginate="true" limit="21" :tag:contains="get:tag" }}
+          {{ partial:blog-grid-items }}
+          {{ /collection:blog }}
+          {{ else }}
+          {{ collection:blog as="blogs" paginate="true" limit="21" }}
+          {{ partial:blog-grid-items }}
+          {{ /collection:blog }}
+          {{ /if }}
+        </div>
+
+      </div>
+    </section>
+    <!-- End blog grid page section -->

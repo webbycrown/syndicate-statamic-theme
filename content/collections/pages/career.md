@@ -3,7 +3,7 @@ id: dc7e4bcb-226c-4b84-ad84-9db7c6a8434a
 blueprint: page
 title: Career
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: career
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310326
 page_builder:

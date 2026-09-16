@@ -3,7 +3,7 @@ id: 9c310bad-4383-46f7-921e-651de16687c0
 blueprint: page
 title: 'About Us'
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: about-us
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310212
 page_builder:

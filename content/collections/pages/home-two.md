@@ -3,7 +3,7 @@ id: 964956a9-9293-4935-a4f6-6da73f82e531
 blueprint: page
 title: 'Home Two'
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: index-2
+template: page
 show_hero_section: false
 page_builder:
   -

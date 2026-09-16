@@ -3,7 +3,7 @@ id: d00241ea-5d06-4f56-bef4-e512771dfa64
 blueprint: page
 title: Blog
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: blog-grid
+template: page
 show_hero_section: true
 section_title: 'Blog grid'
 page_builder:

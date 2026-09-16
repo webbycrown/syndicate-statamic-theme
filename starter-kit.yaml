@@ -1,3 +1,6 @@
+title: Syndicate Theme
+user: webbycrown
+repo: webbycrown/syndicate-statamic-theme
 export_paths:
   - routes
   - content
