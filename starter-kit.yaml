@@ -9,9 +9,9 @@ export_paths:
   - resources/views
   - public/assets
   - public/build
-  - storage/forms
   - package.json
   - vite.config.js
   - resources/css
   - resources/js
   - README.md
+  - THIRD_PARTY.md
