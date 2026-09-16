@@ -2,7 +2,7 @@
 id: home
 blueprint: page
 title: 'Syndicate Business Advisory'
-template: home
+template: page
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310565

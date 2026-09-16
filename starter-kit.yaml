@@ -1,3 +1,6 @@
+title: Syndicate Theme
+user: webbycrown
+repo: webbycrown/syndicate-statamic-theme
 export_paths:
   - routes
   - content
@@ -9,9 +12,9 @@ export_paths:
   - resources/views
   - public/assets
   - public/build
-  - storage/forms
   - package.json
   - vite.config.js
   - resources/css
   - resources/js
   - README.md
+  - THIRD_PARTY.md

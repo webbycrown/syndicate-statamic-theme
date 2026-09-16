@@ -3,7 +3,7 @@ id: 67c5cb9c-5eec-4286-9d1b-6bca1bddc3be
 blueprint: page
 title: Services
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: services
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310224
 page_builder:

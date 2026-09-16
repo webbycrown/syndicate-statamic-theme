@@ -3,7 +3,7 @@ id: 0c1fe9d4-b301-462e-bb19-ae5e11e79bdd
 blueprint: page
 title: 'Contact Us Two'
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: contact-us-2
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310265
 page_builder:

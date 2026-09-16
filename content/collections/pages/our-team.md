@@ -3,7 +3,7 @@ id: 8c207b5d-76ec-41d7-8ad2-b369064c6a25
 blueprint: page
 title: 'Our Team'
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: our-teams
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310378
 page_builder:

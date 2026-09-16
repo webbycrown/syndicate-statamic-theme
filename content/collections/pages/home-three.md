@@ -3,7 +3,7 @@ id: a2a7333d-d866-466e-a1a2-8b39f2d566c0
 blueprint: page
 title: 'Home Three'
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: index-3
+template: page
 show_hero_section: false
 page_builder:
   -

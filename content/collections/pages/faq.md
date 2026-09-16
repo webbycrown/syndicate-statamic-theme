@@ -3,7 +3,7 @@ id: 825c80d6-d7ae-421c-a4c2-189e866f5b9d
 blueprint: page
 title: FAQ
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: faq
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310352
 page_builder:

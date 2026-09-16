@@ -3,7 +3,7 @@ id: 52f8b9cc-0914-404c-83fa-6a64ec8d15cd
 blueprint: page
 title: 'Services Detail'
 author: 918c9014-13db-4bd0-be5a-2303bf77da4d
-template: services-detail
+template: page
 updated_by: 918c9014-13db-4bd0-be5a-2303bf77da4d
 updated_at: 1750310314
 section_subtitle: 'Service detail'
